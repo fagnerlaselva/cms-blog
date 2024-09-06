@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt/config"
+import { defineNuxtConfig } from 'nuxt/config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
   eslint: {
-    checker: true // <---
-  }
-})
+    checker: true, // <---
+  },
+  
+});

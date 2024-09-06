@@ -3,10 +3,9 @@ export default {
   content: [],
   theme: {
     fontFamily: {
-      'sans': ['Segoe UI', 'ui-sans-serif', 'system-ui']
+      sans: ['Segoe UI', 'ui-sans-serif', 'system-ui'],
     },
     extend: {},
   },
   plugins: [],
-}
-
+};

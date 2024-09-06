@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.5",
@@ -23,6 +24,7 @@
     "@vue/eslint-config-airbnb": "^8.0.0",
     "eslint": "^9.9.1",
     "eslint-plugin-vue": "^9.28.0",
+    "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   }
 }

@@ -7,7 +7,9 @@
       </header>
 
       <section class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4">Artigos por {{ author?.name }}</h2>
+        <h2 class="text-2xl font-semibold mb-4">
+          Artigos por {{ author?.name }}
+        </h2>
         <ul class="list-disc pl-5">
           <li v-for="article in author.articles" :key="article.id">
             <NuxtLink
@@ -36,6 +38,6 @@ import { authors, articles } from '@/utils/data.js'; // Importando dados fictíc
 const route = useRoute();
 const slug = route.params.slug;
 
-const author = authors.find(a => a.slug === slug);
-author.articles = articles.filter(a => a.authorSlug === slug); // Filtra artigos do autor
+const author = authors.find((a) => a.slug === slug);
+author.articles = articles.filter((a) => a.authorSlug === slug); // Filtra artigos do autor
 </script>
