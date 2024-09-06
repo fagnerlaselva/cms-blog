@@ -1,9 +1,7 @@
 <template>
 	<div class="container mx-auto p-4">
-		<header class="mb-8">
-			<h1 class="text-3xl font-bold mb-4">Artigos de {{ author?.name }}</h1>
-		</header>
-		<section>
+		<section class="pt-12">
+			<h1 class="grid grid-cols-1 text-3xl font-bold mb-6 gap-6">Artigos de {{ author.name }}</h1>
 			<div v-if="filteredArticles.length > 0">
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					<article
@@ -20,8 +18,8 @@
 								:src="article.image"
 								:alt="article.title"
 								class="w-full h-70 object-cover mb-6"
-							/>
-							<h3 class="text-2xl font-semibold mb-2">
+							>
+							<h3 class="text-2xl mb-2 text-gray-900 font-extrabold">
 									{{ article.title }}
 							</h3>
 							<p class="text-gray-600 mb-4">{{ article.excerpt }}</p>

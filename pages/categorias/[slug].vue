@@ -1,62 +1,47 @@
 <template>
   <div class="container mx-auto p-4">
-    <header class="mb-8">
-      <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Categoria: {{ category?.name }}</h1>
-    </header>
-
-    <div v-if="filteredArticles.length > 0">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article
-          v-for="article in filteredArticles"
-          :key="article.id"
-          class=""
-        >
-        <NuxtLink
-              :to="'/post/' + article.slug"
-              class="text-gray-800 "
-            >
-          <img
-            v-if="article.image"
-            :src="article.image"
-            :alt="article.title"
-            class="w-full h-40 object-cover mb-6 "
-          />
-          <h3 class="text-2xl font-semibold mb-2">
-            
-              {{ article.title }}
-            
-          </h3>
-          <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
-         
-          </NuxtLink>
-        </article>
+    <section class="pt-12">
+      <div v-if="category && filteredArticles.length > 0">
+        <h1 class="grid grid-cols-1 text-3xl font-bold mb-6 gap-6">{{ category.name }}</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article v-for="article in filteredArticles" :key="article.slug">
+            <NuxtLink :to="'/post/' + article.slug" class="block">
+              <img :src="article.image" :alt="article.title" class="w-full h-70 object-cover mb-6">
+              <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ article.title }}</h3>
+              <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
+            </NuxtLink>
+          </article>
+        </div>
       </div>
-    </div>
-
-    <div v-else>
-      <p class="text-gray-600">Não há artigos nesta categoria.</p>
-    </div>
-
-    <footer class="mt-8">
-      <NuxtLink to="/" class="text-blue-600 hover:underline">
-        ← Voltar para a lista
-      </NuxtLink>
-    </footer>
+      <div v-else>
+        <p class="text-gray-600">Nenhum artigo encontrado para esta categoria.</p>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import { articles, categories } from '@/utils/data.js';
+import { articles as allArticles, categories } from '@/utils/data.js';
 
 const route = useRoute();
-const categorySlug = route.params.slug;
+const slug = route.params.slug;
 
-// Encontrando a categoria com base no slug da rota
-const category = categories.find(c => c.slug === categorySlug);
+const category = ref(null);
+const filteredArticles = ref([]);
 
-// Filtrando artigos da categoria correspondente
-const filteredArticles = articles.filter(
-  a => a.category.toLowerCase() === category?.name.toLowerCase()
-);
+onMounted(() => {
+  const categoryData = categories.find(cat => cat.slug === slug);
+  if (categoryData) {
+    category.value = categoryData;
+    filteredArticles.value = allArticles.filter(article => article.categories.some(cat => cat.slug === slug));
+  } else {
+    console.error(`Categoria com slug ${slug} não encontrada`);
+  }
+});
 </script>
+
+<style scoped>
+/* Adicione estilos específicos aqui se necessário */
+</style>
