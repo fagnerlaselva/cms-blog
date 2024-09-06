@@ -10,21 +10,25 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "start:serveo": "ssh -R 80:localhost:3000 serveo.net"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.5",
     "nuxt": "^3.13.0",
-    "vue": "latest",
+    "vue": "^3.5.3",
     "vue-router": "latest"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "devDependencies": {
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@vue/eslint-config-airbnb": "^8.0.0",
     "eslint": "^9.9.1",
     "eslint-plugin-vue": "^9.28.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vite-plugin-eslint2": "^4.4.0"
   }
 }
