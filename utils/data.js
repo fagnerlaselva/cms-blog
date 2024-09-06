@@ -60,10 +60,10 @@ export const articles = [
   },
   {
     id: 4,
-    title: "Como Escrever Conteúdo Engajador",
+    title: "Apresentando nossa base dados inteligente. Eleve seu ofício com Contatus.",
     slug: "escrever-conteudo-engajador",
     category: "Conteúdo",
-    authorSlug: "fernando-souza",
+    authorSlug: "maria-oliveira",
     image: "https://inspire.savee.it/content/images/size/w2000/2024/03/v8-1.gif",
     content: "Dicas para criar conteúdo que realmente engaja seu público e gera resultados positivos...",
     excerpt: "Aprenda a escrever conteúdo que captura a atenção e o interesse do seu público."
@@ -73,7 +73,7 @@ export const articles = [
     title: "O Impacto da Inteligência Artificial no Marketing",
     slug: "impacto-ia-marketing",
     category: "Marketing",
-    authorSlug: "luana-santos",
+    authorSlug: "maria-oliveira",
     image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
     content: "Como a inteligência artificial está transformando a forma como fazemos marketing...",
     excerpt: "Entenda o papel crescente da IA no marketing moderno e como aproveitar essa tecnologia."
