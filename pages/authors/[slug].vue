@@ -5,7 +5,6 @@
         <h1 class="text-3xl font-bold mb-4">{{ author?.name }}</h1>
         <p class="text-gray-600 mb-4">{{ author?.bio }}</p>
       </header>
-
       <section class="mb-8">
         <h2 class="text-2xl font-semibold mb-4">
           Artigos por {{ author?.name }}
@@ -22,7 +21,7 @@
         </ul>
       </section>
 
-      <footer>
+      <footer class="mb-8">
         <NuxtLink to="/authors" class="text-blue-600 hover:underline">
           ← Voltar para a lista de autores
         </NuxtLink>

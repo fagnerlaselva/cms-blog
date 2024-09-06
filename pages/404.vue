@@ -30,11 +30,7 @@
               :to="'/post/' + article.slug"
               class="text-gray-800 hover:text-blue-600 hover:underline"
             >
-              <img
-                :src="article.image"
-                :alt="article.title"
-                class="w-full h-48 object-cover mb-4"
-              />
+              <img :src="article.image" :alt="article.title" class="w-full h-48 object-cover mb-4" >
               {{ article.title }}
             </NuxtLink>
           </h3>
