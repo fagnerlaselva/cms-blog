@@ -46,12 +46,7 @@ inspiration and getting inspired. We see it as a dynamic hub where creatives lik
 you can elevate your craft, refine your skills, and unleash your creativity to its
 fullest potential.
       </p>
-      <p class="text-gray-800 py-3 px-20">
-        We've always dreamed of Savee being more than just a place for saving
-inspiration and getting inspired. We see it as a dynamic hub where creatives like
-you can elevate your craft, refine your skills, and unleash your creativity to its
-fullest potential.
-      </p>
+     
       
       <p class="text-gray-600 mt-20 px-20">
         <NuxtLink :to="'/autores/' + author?.slug" 
