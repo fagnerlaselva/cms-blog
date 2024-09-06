@@ -1,10 +1,10 @@
 <template>
   <div class="container mx-auto p-4">
   <section class="pt-12">
-    <div v-if="category && filteredArticles.length > 0">
-      <h1 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6">{{ category.name }}</h1>
+    <div v-if="category && filteredArticles.length > 0" class="">
+      <h1 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">{{ category.name }}</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article v-for="article in filteredArticles" :key="article.slug">
+        <article v-for="article in filteredArticles" :key="article.slug" class="p-4">
           <NuxtLink :to="'/post/' + article.slug" class="block">
             <img :src="article.image" :alt="article.title" class="w-full h-70 object-cover mb-6">
             <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ article.title }}</h3>
@@ -17,6 +17,20 @@
       <p class="text-gray-600">Nenhum artigo encontrado para esta categoria.</p>
     </div>
   </section>
+  <section class="w-full">
+      <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">
+        Últimos Artigos
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article v-for="article in recentArticles" :key="article.id" class="p-4">
+          <NuxtLink :to="'/post/' + article.slug">
+            <img :src="article.image" :alt="article.title" class="w-full h-70 object-cover mb-6" >
+            <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ article.title }}</h3>
+            <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
+          </NuxtLink>
+        </article>
+      </div>
+    </section>
 </div>
 </template>
 
@@ -30,7 +44,7 @@ const slug = route.params.slug;
 
 const category = ref(null);
 const filteredArticles = ref([]);
-
+const recentArticles = articles.slice(-3);
 onMounted(() => {
   const categoryData = categories.find(cat => cat.slug === slug);
   if (categoryData) {

@@ -46,6 +46,21 @@
         {{ author?.bio }}
       </p>
     </section>
+     <!-- Seção de últimos artigos -->
+     <section class="w-full">
+      <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">
+        Últimos Artigos
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article v-for="article in recentArticles" :key="article.id" class="p-4">
+          <NuxtLink :to="'/post/' + article.slug">
+            <img :src="article.image" :alt="article.title" class="w-full h-70 object-cover mb-6" >
+            <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ article.title }}</h3>
+            <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
+          </NuxtLink>
+        </article>
+      </div>
+    </section>
     <footer class="py-3 px-20">
       <NuxtLink to="/" class="text-blue-600 hover:underline">
         ← Voltar para a lista
@@ -70,4 +85,5 @@ const slug = route.params.slug;
 
 const article = articles.find((a) => a.slug === slug);
 const author = article ? authors.find((a) => a.slug === article.authorSlug) : null;
+const recentArticles = articles.slice(-3);
 </script>

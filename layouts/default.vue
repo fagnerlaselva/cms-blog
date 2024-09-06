@@ -4,7 +4,7 @@
     <!-- Cabeçalho ou Navbar -->
     <header class="container mx-auto p-4">
   <nav>
-    <ul class="flex flex-wrap gap-4">
+    <ul class="flex flex-wrap gap-4 p-4">
       <!-- Link para Home -->
       <li>
         <NuxtLink to="/" class="hover:underline">
@@ -32,7 +32,7 @@
 
     <!-- Rodapé -->
     <footer class="container mx-auto p-4">
-      <div class="">
+      <div class="text-center">
         <p>© 2024 CMS Blog. Todos os direitos reservados.</p>
       </div>
     </footer>

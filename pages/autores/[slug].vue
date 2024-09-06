@@ -1,13 +1,13 @@
 <template>
-	<div class="container mx-auto p-4">
+	<div class="container mx-auto p-4 pt-12">
 		<section >
-			<h1 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6">Artigos de {{ author.name }}</h1>
+			<h1 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">Artigos de {{ author.name }}</h1>
 			<div v-if="filteredArticles.length > 0">
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					<article
-						v-for="article in filteredArticles"
-						:key="article.id"
-						class=""
+v-for="article in filteredArticles"
+:key="article.id"
+						class="p-4"
 					>
 						<NuxtLink
 							:to="'/post/' + article.slug"

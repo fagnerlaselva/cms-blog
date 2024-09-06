@@ -16,7 +16,7 @@
 
     <!-- Seção de últimos artigos -->
     <section class="w-full">
-      <h2 class="text-4xl font-bold text-gray-800 mb-4 text-left">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4 text-left p-4">
         Últimos Artigos
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
