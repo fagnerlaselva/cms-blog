@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto p-4">
-  <section class="pt-12">
+  <div class="">
+  <section class="pt-12 container mx-auto p-4">
     <div v-if="category && filteredArticles.length > 0" class="">
       <h1 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">{{ category.name }}</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
