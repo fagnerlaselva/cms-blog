@@ -21,20 +21,51 @@
 						>
 							{{ author.name }}
 						</NuxtLink>
-						<p class="text-gray-600">14 nov 2024 • 3 min de leitura</p>
+						<p class="text-gray-600">14 nov 2024 • 3 min de leitura</p>						
 					</div>
 				</div>
 			</div>
 		</header>
 		<section class="mb-8" />
 		<section class="mb-8 text-xl font-serif">
-			<p class="text-gray-800 py-3 px-20">{{ article.content }}</p>
 			<img
 				v-if="article.image"
 				:src="article.image"
 				:alt="article.title"
 				class="w-full h-100 object-cover my-4"
 			>
+			<p class="text-gray-800 py-3 px-20">We've always dreamed of Savee being more than just a place for saving
+inspiration and getting inspired. We see it as a dynamic hub where creatives like
+you can elevate your craft, refine your skills, and unleash your creativity to its
+fullest potential.</p>
+			<p class="text-gray-800 py-3 px-20">
+				That's why we're thrilled to announce the launch of our very own marketplace,
+featuring 15 brand-new After Effects templates designed to take your projects to
+the next level.
+			</p>
+			<p class="text-gray-800 py-3 px-20">{{ article.content }}</p>
+			
+			<p class="text-gray-800 py-3 px-20" >Whether you're a seasoned professional or just starting out on your creative
+				journey, our marketplace offers something for everyone. From stunning visual
+				effects to captivating animations, each template is crafted with precision and
+				creativity to help you bring your ideas to life in ways you never thought possible</p>
+			<p class="text-gray-800 py-3 px-20">Here's what you can expect from our marketplace:</p>
+			<ul>
+				<li class="text-gray-800 py-3 px-20 pl-24">
+					<strong>High-Quality Templates:</strong> Explore a diverse range of After Effects
+					templates, meticulously crafted by our team of talented designers.
+				</li>
+				<li class="text-gray-800 py-3 px-20 pl-24">
+					<strong>Versatile Options:</strong> Whether you're working on a video project,
+					presentation, or social media content, our templates offer versatility to
+					suit your needs.
+				</li>
+				<li class="text-gray-800 py-3 px-20 pl-24">
+					<strong>Regular Updates:</strong> Stay ahead of the curve with regular updates and
+					new additions to our growing collection of templates.
+				</li>
+			</ul>
+			<p class="text-gray-800 py-3 px-20">Here's what you can expect from our marketplace:</p>
 			<p class="text-gray-600 mt-20 px-20">
 				<NuxtLink
 					v-if="author"
@@ -52,14 +83,14 @@
 				Últimos Artigos
 			</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-	<article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
-		<NuxtLink :to="'/post/' + recentArticle.slug">
-			<img :src="recentArticle.image" :alt="recentArticle.title" class="w-full h-70 object-cover mb-6">
-			<h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h3>
-			<p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
-		</NuxtLink>
-	</article>
-</div>
+			<article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
+				<NuxtLink :to="'/post/' + recentArticle.slug">
+					<img :src="recentArticle.image" :alt="recentArticle.title" class="w-full h-70 object-cover mb-6">
+					<h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h3>
+					<p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
+				</NuxtLink>
+			</article>
+		</div>
 
 		</section>
 		<footer class="py-3 px-20">

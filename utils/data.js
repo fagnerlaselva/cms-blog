@@ -9,6 +9,7 @@ export const articles = [
     authorSlug: 'fagner-mendes',
     image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
     content: "Um guia completo sobre as melhores práticas de desenvolvimento web que você deve seguir...",
+    excerpt: "Fique por dentro das tendências mais importantes para o Desenvolvimento digital neste ano."
   },
   {
     id: 2,
@@ -134,6 +135,7 @@ export const authors = [
     id: 1,
     name: 'Fagner Mendes',
     slug: 'fagner-mendes',
+    image: 'https://avatars.githubusercontent.com/u/34191081?v=4',
     bio: `Fagner é apaixonado por criar interfaces intuitivas e eficientes, sempre com foco na produtividade e em uma experiência de usuário de alta qualidade. Ao longo de sua trajetória, atuou em projetos de grande impacto, como All in Marketing Cloud, BTG 360 e Templatize durante sua passagem pela Locaweb.
 Atualmente, Fagner faz parte das equipes da Contatus Expertise Marketing Direto e da Assisty 24h, onde continua a aplicar suas habilidades para otimizar o desempenho e a experiência dos usuários em soluções de marketing direto e mailing segmentado.'`
   }

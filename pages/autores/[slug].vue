@@ -1,12 +1,16 @@
 <template>
 	<div class="">
 		<section class="container p-4 pt-12" >
-			<h1 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">Artigos de {{ author.name }}</h1>
+			<img :src="author.image" :alt="author.title" class="w-20 h-20 object-cover m-4 rounded-full">
+			<h1 class="grid grid-cols-2 text-3xl font-bold gap-6 p-4">{{ author.name }}</h1>
+			<p class="grid grid-cols-2 mb-4 gap-6 p-4">
+				{{ author?.bio }}
+			</p>
 			<div v-if="filteredArticles.length > 0">
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					<article
-v-for="article in filteredArticles"
-:key="article.id"
+						v-for="article in filteredArticles"
+						:key="article.id"
 						class="p-4"
 					>
 						<NuxtLink
