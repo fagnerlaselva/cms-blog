@@ -32,6 +32,7 @@
             >
               <img :src="article.image" :alt="article.title" class="w-full h-48 object-cover mb-4" >
               {{ article.title }}
+              teste
             </NuxtLink>
           </h3>
           <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
