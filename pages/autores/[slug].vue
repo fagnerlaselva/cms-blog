@@ -21,7 +21,7 @@
 								v-if="article.image"
 								:src="article.image"
 								:alt="article.title"
-								class="w-full h-70 object-cover mb-6"
+								class="w-full h-60 object-cover mb-6"
 							>
 							<h3 class="text-2xl mb-2 text-gray-900 font-extrabold">
 									{{ article.title }}
@@ -35,9 +35,9 @@
 				<p class="text-gray-600">Não há artigos para este autor.</p>
 			</div>
 		</section>
-		<footer class="mt-8">
-			<NuxtLink to="/" class="text-blue-600 hover:underline">
-				← Voltar para a lista
+		<footer class="mt-8 p-2">
+			<NuxtLink to="/" class="text-blue-600  hover:underline">
+				← Voltar para a Home
 			</NuxtLink>
 		</footer>
 	</div>

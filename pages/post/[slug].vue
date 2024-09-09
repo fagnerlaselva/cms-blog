@@ -1,4 +1,5 @@
 <template>
+	<div class="">
 	<article v-if="article" class="container mx-auto p-4 max-w-5xl">
 		<header class="mb-8">
 			<h1
@@ -26,7 +27,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="mb-8" />
+		
 		<section class="mb-8 text-xl font-serif">
 			<img
 				v-if="article.image"
@@ -66,7 +67,17 @@ the next level.
 				</li>
 			</ul>
 			<p class="text-gray-800 py-3 px-20">Here's what you can expect from our marketplace:</p>
-			<p class="text-gray-600 mt-20 px-20">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/F8NKvTg1ZaU" title="DELL INSPIRON 3530 // É o novo🥇REI DO CUSTO BENEFÍCIO BARATO? vem ver os UPGRADES!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen/>
+			<p class="text-gray-800 py-3 px-20" >Whether you're a seasoned professional or just starting out on your creative
+				journey, our marketplace offers something for everyone. From stunning visual
+				effects to captivating animations, each template is crafted with precision and
+				creativity to help you bring your ideas to life in ways you never thought possible</p>
+		</section>
+		 <!-- Seção de últimos artigos -->
+		
+	</article>
+	<!-- <section>
+		<p class="text-gray-600 mt-20 px-20">
 				<NuxtLink
 					v-if="author"
 					:to="'/autores/' + author.slug"
@@ -76,36 +87,35 @@ the next level.
 				</NuxtLink>
 				{{ author?.bio }}
 			</p>
-		</section>
-		 <!-- Seção de últimos artigos -->
-		 <section class="w-full">
-			<h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">
-				Últimos Artigos
-			</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+	</section> -->
+	<section class="w-full">
+		<h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">
+			Últimos Artigos
+		</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			<article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
 				<NuxtLink :to="'/post/' + recentArticle.slug">
-					<img :src="recentArticle.image" :alt="recentArticle.title" class="w-full h-70 object-cover mb-6">
+					<img :src="recentArticle.image" :alt="recentArticle.title" class="w-full h-60 object-cover mb-6">
 					<h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h3>
 					<p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
 				</NuxtLink>
 			</article>
 		</div>
+	</section>
 
-		</section>
-		<footer class="py-3 px-20">
-			<NuxtLink to="/" class="text-blue-600 hover:underline">
-				← Voltar para a lista
-			</NuxtLink>
-			<NuxtLink
-				v-if="article.category"
-				:to="'/categorias/' + article.category.slug"
-				class="text-blue-600 hover:underline"
-			>
-				Ver mais artigos em {{ article.category.name }}
-			</NuxtLink>
-		</footer>
-	</article>
+	<footer class="p-2">
+		<NuxtLink to="/" class="text-blue-600 hover:underline">
+			← Voltar para Home
+		</NuxtLink>
+		<NuxtLink
+			v-if="article.category"
+			:to="'/categorias/' + article.category.slug"
+			class="text-blue-600 hover:underline"
+		>
+			Ver mais artigos em {{ article.category.name }}
+		</NuxtLink>
+	</footer>
+	</div>
 </template>
 
 <script setup>

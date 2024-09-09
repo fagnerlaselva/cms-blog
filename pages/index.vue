@@ -45,13 +45,14 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <article v-for="article in articles" :key="article.id" class="p-4">
           <NuxtLink :to="'/post/' + article.slug">
-            <img :src="article.image" :alt="article.title" class="w-full h-70 object-cover mb-6" >
+            <img :src="article.image" :alt="article.title" class="w-full h-60 object-cover mb-6" >
             <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ article.title }}</h3>
             <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
           </NuxtLink>
         </article>
       </div>
     </section>
+    
   </div>
 </template>
 

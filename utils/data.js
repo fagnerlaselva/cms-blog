@@ -119,7 +119,20 @@ export const articles = [
     image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
     content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
     excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
-  }
+  },
+  {
+    id: 10,
+    title: "Cinco novos recursos: salvar vídeos, novo aplicativo móvel, criador de sites, modelos Figma e muito mais.",
+    slug: "recursos-salvar-videos",
+    categories: [
+      { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
+    ],
+    authorSlug: 'fagner-mendes',
+    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
+    excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
+  },
+
 ];
 
 
