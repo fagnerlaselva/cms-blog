@@ -18,7 +18,7 @@
     </div>
   </section>
   <section class="w-full">
-      <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">
+      <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4 py-10">
         Últimos Artigos
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -31,6 +31,11 @@
         </article>
       </div>
     </section>
+    <section class="container p-4 py-12">
+			<NuxtLink to="/" class="text-blue-600  hover:underline">
+				← Voltar para a Home
+			</NuxtLink>
+		</section>
 </div>
 </template>
 

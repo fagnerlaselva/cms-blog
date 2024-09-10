@@ -11,7 +11,7 @@
 					<article
 						v-for="article in filteredArticles"
 						:key="article.id"
-						class="p-4"
+						class="p-4 text-gray-900"
 					>
 						<NuxtLink
 							:to="'/post/' + article.slug"
@@ -35,11 +35,11 @@
 				<p class="text-gray-600">Não há artigos para este autor.</p>
 			</div>
 		</section>
-		<footer class="mt-8 p-2">
+		<section class="container p-4 py-12">
 			<NuxtLink to="/" class="text-blue-600  hover:underline">
 				← Voltar para a Home
 			</NuxtLink>
-		</footer>
+		</section>
 	</div>
 </template>
 

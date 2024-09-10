@@ -11,7 +11,6 @@
           Home
         </NuxtLink>
       </li>
-
       <!-- Listagem de Categorias -->
       <li v-for="category in uniqueCategories" :key="category.slug">
         <NuxtLink

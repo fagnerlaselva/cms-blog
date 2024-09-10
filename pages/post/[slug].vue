@@ -35,40 +35,52 @@
 				:alt="article.title"
 				class="w-full h-100 object-cover my-4"
 			>
-			<p class="text-gray-800 py-3 px-20">We've always dreamed of Savee being more than just a place for saving
-inspiration and getting inspired. We see it as a dynamic hub where creatives like
-you can elevate your craft, refine your skills, and unleash your creativity to its
-fullest potential.</p>
-			<p class="text-gray-800 py-3 px-20">
-				That's why we're thrilled to announce the launch of our very own marketplace,
-featuring 15 brand-new After Effects templates designed to take your projects to
-the next level.
-			</p>
-			<p class="text-gray-800 py-3 px-20">{{ article.content }}</p>
+			<p class="text-gray-900 py-3 px-20">We've always dreamed of Savee being more than just a place for saving
+			inspiration and getting inspired. We see it as a dynamic hub where creatives like
+			you can elevate your craft, refine your skills, and unleash your creativity to its
+			fullest potential.</p>
+			<p class="text-gray-900 py-3 px-20">
+			That's why we're thrilled to announce the launch of our very own marketplace,
+			featuring 15 brand-new After Effects templates designed to take your projects to
+			the next level.
+						</p>
+			<p class="text-gray-900 py-3 px-20">{{ article.content }}</p>
 			
-			<p class="text-gray-800 py-3 px-20" >Whether you're a seasoned professional or just starting out on your creative
-				journey, our marketplace offers something for everyone. From stunning visual
-				effects to captivating animations, each template is crafted with precision and
-				creativity to help you bring your ideas to life in ways you never thought possible</p>
+			<p class="text-gray-900 py-3 px-20" >Whether you're a seasoned professional or just starting out on your creative
+			journey, our marketplace offers something for everyone. From stunning visual
+			effects to captivating animations, each template is crafted with precision and
+			creativity to help you bring your ideas to life in ways you never thought possible</p>
 			<p class="text-gray-800 py-3 px-20">Here's what you can expect from our marketplace:</p>
 			<ul>
-				<li class="text-gray-800 py-3 px-20 pl-24">
+				<li class="text-gray-800 py-4 px-20 pl-24">
 					<strong>High-Quality Templates:</strong> Explore a diverse range of After Effects
 					templates, meticulously crafted by our team of talented designers.
 				</li>
-				<li class="text-gray-800 py-3 px-20 pl-24">
+				<li class="text-gray-800 py-4 px-20 pl-24">
 					<strong>Versatile Options:</strong> Whether you're working on a video project,
 					presentation, or social media content, our templates offer versatility to
 					suit your needs.
 				</li>
-				<li class="text-gray-800 py-3 px-20 pl-24">
+				<li class="text-gray-800 py-4 px-20 pl-24">
 					<strong>Regular Updates:</strong> Stay ahead of the curve with regular updates and
 					new additions to our growing collection of templates.
 				</li>
 			</ul>
-			<p class="text-gray-800 py-3 px-20">Here's what you can expect from our marketplace:</p>
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/F8NKvTg1ZaU" title="DELL INSPIRON 3530 // É o novo🥇REI DO CUSTO BENEFÍCIO BARATO? vem ver os UPGRADES!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen/>
-			<p class="text-gray-800 py-3 px-20" >Whether you're a seasoned professional or just starting out on your creative
+			<p class="text-gray-800 py-4 px-20">Here's what you can expect from our marketplace:</p>
+			<div class="video-container py-4">
+				<div class="relative overflow-hidden" style="padding-top: 56.25%">
+					<iframe
+					class="absolute top-0 left-0 w-full h-full"
+					src="https://www.youtube.com/embed/HwDciaUCF98?modestbranding=1"
+					title="DELL INSPIRON 3530 // É o novo🥇REI DO CUSTO BENEFÍCIO BARATO? vem ver os UPGRADES!"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+					/>
+
+				</div>
+			</div>
+			<p class="text-gray-800 py-4 px-20" >Whether you're a seasoned professional or just starting out on your creative
 				journey, our marketplace offers something for everyone. From stunning visual
 				effects to captivating animations, each template is crafted with precision and
 				creativity to help you bring your ideas to life in ways you never thought possible</p>
@@ -102,11 +114,13 @@ the next level.
 			</article>
 		</div>
 	</section>
-
+	<section class="container p-4 py-12">
+			<NuxtLink to="/" class="text-blue-600  hover:underline">
+				← Voltar para a Home
+			</NuxtLink>
+		</section>
 	<footer class="p-2">
-		<NuxtLink to="/" class="text-blue-600 hover:underline">
-			← Voltar para Home
-		</NuxtLink>
+		
 		<NuxtLink
 			v-if="article.category"
 			:to="'/categorias/' + article.category.slug"
@@ -129,3 +143,8 @@ const article = articles.find((a) => a.slug === slug);
 const author = article ? authors.find((a) => a.slug === article.authorSlug) : null;
 const recentArticles = articles.slice(-3);
 </script>
+<style scoped>
+.video-container {
+  max-width: 100%;
+}
+</style>

@@ -42,17 +42,35 @@
     
     <!-- Seção de Artigos -->
     <section class="pt-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article v-for="article in articles" :key="article.id" class="p-4">
-          <NuxtLink :to="'/post/' + article.slug">
-            <img :src="article.image" :alt="article.title" class="w-full h-60 object-cover mb-6" >
-            <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ article.title }}</h3>
-            <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
+      <div class="grid gap-6">
+        <!-- Primeiro card: Imagem à esquerda e texto à direita -->
+        <article
+          v-for="(article, index) in articles" :key="article.id" 
+          :class="{
+            'md:grid md:grid-cols-1 md:gap-8 lg:col-span-3': index === 0,  /* Layout de 2 colunas para o primeiro card */
+            
+          }" 
+          class="p-4"
+        >
+          <NuxtLink :to="'/post/' + article.slug" class="block">
+            <div :class="index === 0 ? 'md:flex' : ''">
+              <!-- Imagem -->
+              <img
+                :src="article.image" :alt="article.title" 
+                :class="index === 0 ? 'md:w-2/3 w-full h-auto object-cover text-5xl' : 'w-full h-70 object-cover mb-6 '" 
+              >
+              <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
+              <div :class="index === 0 ? 'md:w-1/2 flex flex-col justify-start p-5 md:pl-6 mt-4 md:mt-0' : ' text-gray-900'">
+                <h3 :class="index === 0 ? 'text-5xl font-extrabold  tracking-tight' : 'text-2xl mb-2 text-gray-900 font-extrabold'">{{ article.title }}</h3>
+                <p :class="index === 0 ? 'text-1xl py-5' : 'text-gray-600 mb-4 text-gray-900'">{{ article.excerpt }}</p>
+                <date class="text-gray-400 text-1xl">Set 10, 2024 - Leitura de 3 min.</date>
+              </div>
+            </div>
           </NuxtLink>
         </article>
       </div>
     </section>
-    
+
   </div>
 </template>
 

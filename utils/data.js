@@ -1,31 +1,31 @@
 export const articles = [
   {
     id: 1,
-    title: "Como Maximizar sua Produtividade",
+    title: "Como elevar sua produtividade ao próximo nível no mundo do desenvolvimento web",
     slug: "maximizar-produtividade",
     categories: [
       { slug: "produtividade", name: "Produtividade" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "https://inspire.savee.it/content/images/size/w2000/2024/03/v8-1.gif",
     content: "Um guia completo sobre as melhores práticas de desenvolvimento web que você deve seguir...",
-    excerpt: "Fique por dentro das tendências mais importantes para o Desenvolvimento digital neste ano."
+    excerpt: "Explore as tendências mais importantes e inovações impactantes para impulsionar seu desenvolvimento digital e aumentar sua produtividade em 2024."
   },
   {
     id: 2,
-    title: "As Melhores Práticas de Desenvolvimento Web",
-    slug: "melhores-praticas-web",
+    title: "Cinco novos recursos: salvar vídeos, novo aplicativo móvel, criador de sites, modelos Figma e muito mais.",
+    slug: "recursos-salvar-videos",
     categories: [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w2000/2023/10/Features-Designed-4.jpg",
-    content: "Um guia completo sobre as melhores práticas de desenvolvimento web que você deve seguir...",
-    excerpt: "Dicas essenciais para se tornar um desenvolvedor web mais eficiente."
+    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
+    excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
   },
   {
     id: 3,
-    title: "Tendências de Desenvolvimento Digital em 2024",
+    title: "Tendências de Desenvolvimento Web em 2024",
     slug: "tendencias-desenvolvimento-2024",
     categories: [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
@@ -49,7 +49,7 @@ export const articles = [
   },
   {
     id: 5,
-    title: "O Impacto da Inteligência Artificial no Desenvolvimento",
+    title: "O impacto da inteligência artificial no Desenvolvimento Web",
     slug: "impacto-ia-desenvolvimento",
     categories: [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
@@ -61,7 +61,7 @@ export const articles = [
   },
   {
     id: 6,
-    title: "Ferramentas Essenciais para Desenvolvedores",
+    title: "Ferramentas essenciais para desenvolvedores",
     slug: "ferramentas-desenvolvedores",
     categories: [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" },
@@ -74,7 +74,7 @@ export const articles = [
   },
   {
     id: 7,
-    title: "Como Melhorar o SEO do Seu Site",
+    title: "Como melhorar o SEO do seu site",
     slug: "melhorar-seo-site",
     categories: [
       { slug: "seo", name: "SEO" }
@@ -86,7 +86,7 @@ export const articles = [
   },
   {
     id: 8,
-    title: "O Futuro do Desenvolvimento Front-End",
+    title: "O Futuro do desenvolvimento front-End",
     slug: "futuro-desenvolvimento-front-end",
     categories: [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
@@ -98,7 +98,7 @@ export const articles = [
   },
   {
     id: 9,
-    title: "Criando Experiências de Usuário Incríveis",
+    title: "Criando experiências de usuário incríveis",
     slug: "criando-experiencias-usuario",
     categories: [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
@@ -110,7 +110,7 @@ export const articles = [
   },
   {
     id: 10,
-    title: "Técnicas Avançadas de Desenvolvimento em Vue.js",
+    title: "Técnicas avançadas de desenvolvimento em Vue.js",
     slug: "tecnicas-avancadas-vue",
     categories: [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
@@ -120,8 +120,21 @@ export const articles = [
     content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
     excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
   },
+
   {
-    id: 10,
+    id: 11,
+    title: "As melhores práticas de Desenvolvimento web",
+    slug: "melhores-praticas-web",
+    categories: [
+      { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
+    ],
+    authorSlug: 'fagner-mendes',
+    image: "https://inspire.savee.it/content/images/size/w2000/2023/10/Features-Designed-4.jpg",
+    content: "Um guia completo sobre as melhores práticas de desenvolvimento web que você deve seguir...",
+    excerpt: "Dicas essenciais para se tornar um desenvolvedor web mais eficiente."
+  },
+  {
+    id: 12,
     title: "Cinco novos recursos: salvar vídeos, novo aplicativo móvel, criador de sites, modelos Figma e muito mais.",
     slug: "recursos-salvar-videos",
     categories: [
@@ -132,10 +145,7 @@ export const articles = [
     content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
     excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
   },
-
 ];
-
-
 
 export const categories = [
   { name: "Produtividade", slug: "produtividade" },
