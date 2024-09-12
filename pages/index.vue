@@ -14,14 +14,18 @@
         <div class="flex flex-col justify-center p-4" style="">
           <div class="flex flex-col items-center">
             <div
-              class="flex w-full flex-col sm:flex-row overflow-hidden rounded-lg"
-              style="background-color: rgb(249, 250, 251); border: 2px solid rgb(0, 0, 0)"
+              class="flex w-full flex-col sm:flex-row overflow-hidden rounded-lg sm:t-center"
+              style="
+                background-color: rgb(249, 250, 251);
+                border: 2px solid rgb(0, 0, 0);
+                max-width: 600px;
+              "
             >
               <div class="flex w-full items-center" style="background-color: rgb(249, 250, 251)">
                 <input
                   autocomplete="email"
                   required
-                  class="wt-button-font p-5 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-lg focus:text-lg active:text-lg sm:text-lg"
+                  class="wt-button-font p-5 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-lg focus:text-lg active:text-lg sm:text-lg text-center"
                   placeholder="Coloque seu e-mail"
                   yar
                   type="email"
