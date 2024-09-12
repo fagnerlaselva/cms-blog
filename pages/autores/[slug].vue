@@ -44,15 +44,15 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router';
-import { articles, authors } from '@/utils/data.js';
+	import { useRoute } from 'vue-router';
+	import { articles, authors } from '@/utils/data.js';
 
-const route = useRoute();
-const authorSlug = route.params.slug;
+	const route = useRoute();
+	const authorSlug = route.params.slug;
 
-// Encontrando o autor com base no slug da rota
-const author = authors.find(a => a.slug === authorSlug);
+	// Encontrando o autor com base no slug da rota
+	const author = authors.find(a => a.slug === authorSlug);
 
-// Filtrando artigos do autor correspondente
-const filteredArticles = articles.filter(a => a.authorSlug === authorSlug);
+	// Filtrando artigos do autor correspondente
+	const filteredArticles = articles.filter(a => a.authorSlug === authorSlug);
 </script>

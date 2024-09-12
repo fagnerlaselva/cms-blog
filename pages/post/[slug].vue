@@ -3,7 +3,7 @@
 	<article v-if="article" class="container mx-auto p-4 max-w-5xl">
 		<header class="mb-8">
 			<h1
-				class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl sm:w-3/4 py-10 px-20 pb-10 flex items-center leading-loose"
+				class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl sm:w-3/4 py-10 px-20 pb-10 flex items-center leading-loose box-decoration-slice"
 			>
 				{{ article.title }}
 			</h1>
@@ -28,25 +28,27 @@
 			</div>
 		</header>
 		
-		<section class="mb-8 text-xl font-serif">
+		<section class="mb-8 text-xl font-serif tracking-wide text-gray-900">
 			<img
 				v-if="article.image"
 				:src="article.image"
 				:alt="article.title"
 				class="w-full h-100 object-cover my-4"
 			>
-			<p class="text-gray-900 py-3 px-20">We've always dreamed of Savee being more than just a place for saving
+			<p
+class="py-3 px-20   first-letter:text-7xl first-letter:font-bold 
+  first-letter:mr-3 first-letter:float-left">We've always dreamed of Savee being more than just a place for saving
 			inspiration and getting inspired. We see it as a dynamic hub where creatives like
 			you can elevate your craft, refine your skills, and unleash your creativity to its
 			fullest potential.</p>
-			<p class="text-gray-900 py-3 px-20">
+			<p class="py-3 px-20">
 			That's why we're thrilled to announce the launch of our very own marketplace,
 			featuring 15 brand-new After Effects templates designed to take your projects to
 			the next level.
 						</p>
-			<p class="text-gray-900 py-3 px-20">{{ article.content }}</p>
+			<p class="py-3 px-20">{{ article.content }}</p>
 			
-			<p class="text-gray-900 py-3 px-20" >Whether you're a seasoned professional or just starting out on your creative
+			<p class="py-3 px-20" >Whether you're a seasoned professional or just starting out on your creative
 			journey, our marketplace offers something for everyone. From stunning visual
 			effects to captivating animations, each template is crafted with precision and
 			creativity to help you bring your ideas to life in ways you never thought possible</p>
