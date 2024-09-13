@@ -8,17 +8,21 @@
         <ul class="flex flex-wrap gap-4">
           <!-- Listagem de Categorias -->
           <li>
-            <NuxtLink to="/" class="text-2xl text-gray-900 font-bold"> Assisty 24h </NuxtLink>
+            <NuxtLink to="/" class="text-2xl text-gray-900 font-bold">
+              <img
+                src="https://www.assisty24h.com.br/_next/static/images/logo-01459debd8f90bb390dbb0fda7bd72b6.svg"
+              />
+            </NuxtLink>
           </li>
-          <li v-for="category in uniqueCategories" :key="category.slug" class="">
+          <!-- <li v-for="category in uniqueCategories" :key="category.slug" class="">
             <NuxtLink :to="'/categorias/' + category.slug" class="hover:underline">
               {{ category.name }}
             </NuxtLink>
-          </li>
+          </li> -->
         </ul>
       </div>
 
-      <!-- <nav>
+      <nav>
         <ul class="flex flex-wrap gap-4">
           <li v-for="category in uniqueCategories" :key="category.slug">
             <NuxtLink :to="'/categorias/' + category.slug" class="hover:underline">
@@ -26,7 +30,7 @@
             </NuxtLink>
           </li>
         </ul>
-      </nav> -->
+      </nav>
       <div class="">
         <svg
           width="22"
