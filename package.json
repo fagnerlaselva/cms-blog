@@ -2,6 +2,10 @@
   "name": "cms-blog",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Fagner Mendes",
+    "email": "fagnerlaselva@gmail.com"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

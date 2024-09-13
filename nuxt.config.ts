@@ -16,20 +16,12 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/post/[slug.vue]', 'sitemap.xml'],
+      routes: ['/', 'sitemap.xml'],
     },
   },
+  
   site: {
     url: 'https://cms-blog-lilac.vercel.app/',
     name: 'CMS BLOG'
   },
-  
-  routeRules: {
-    // modify the sitemap.xml entry for specific URLs
-    '/': { sitemap: { changefreq: 'daily', priority: 1 } },
-    '/post/': { sitemap: { changefreq: 'daily', priority: 0.7 } }
-  }
- 
-  
-
 });
