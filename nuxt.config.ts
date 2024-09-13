@@ -4,9 +4,32 @@ import { defineNuxtConfig } from 'nuxt/config';
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/eslint',
+    '@nuxtjs/sitemap',
+    
+  ],
   eslint: {
     checker: true, // <---
   },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/post/[slug.vue]', 'sitemap.xml'],
+    },
+  },
+  site: {
+    url: 'https://cms-blog-lilac.vercel.app/',
+    name: 'CMS BLOG'
+  },
   
+  routeRules: {
+    // modify the sitemap.xml entry for specific URLs
+    '/': { sitemap: { changefreq: 'daily', priority: 1 } },
+    '/post/': { sitemap: { changefreq: 'daily', priority: 0.7 } }
+  }
+ 
+  
+
 });
