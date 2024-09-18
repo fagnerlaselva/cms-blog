@@ -16,6 +16,9 @@ export default defineNuxtConfig({
   eslint: {
     checker: true, // <---
   },
+  vitalizer: {
+    disablePrefetchLinks: true
+  },
   nitro: {
     prerender: {
       crawlLinks: true,

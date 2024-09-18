@@ -8,10 +8,10 @@
         <ul class="flex flex-wrap gap-4">
           <!-- Listagem de Categorias -->
           <li>
-            <NuxtLink to="/" class="text-2xl text-gray-900 font-bold">
+            <NuxtLink to="/" alt="Home Page" class="text-2xl text-gray-900 font-bold">
               <img
                 src="https://www.assisty24h.com.br/_next/static/images/logo-01459debd8f90bb390dbb0fda7bd72b6.svg"
-              >
+              />
             </NuxtLink>
           </li>
           <!-- <li v-for="category in uniqueCategories" :key="category.slug" class="">
