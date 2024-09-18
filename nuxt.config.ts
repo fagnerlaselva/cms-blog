@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxtjs/sitemap',
+    '@formkit/auto-animate/nuxt'
     
   ],
   eslint: {
