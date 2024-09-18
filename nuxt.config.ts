@@ -19,7 +19,6 @@ export default defineNuxtConfig({
       routes: ['/', 'sitemap.xml'],
     },
   },
-  
   site: {
     url: 'https://cms-blog-lilac.vercel.app/',
     name: 'CMS BLOG'

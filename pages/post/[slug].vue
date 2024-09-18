@@ -14,7 +14,7 @@
               :src="article.image"
               :alt="article.title"
               class="h-16 rounded-full object-cover mb-4 flex-none w-16 mr-2"
-            />
+            >
             <div class="flex-1 w-64">
               <NuxtLink
                 :to="'/autores/' + author.slug"
@@ -34,7 +34,7 @@
           :src="article.image"
           :alt="article.title"
           class="w-full h-100 object-cover my-4"
-        />
+        >
         <p
           class="py-3 px-20 first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left"
         >
@@ -113,7 +113,7 @@
               :src="recentArticle.image"
               :alt="recentArticle.title"
               class="w-full h-60 object-cover mb-6"
-            />
+            >
             <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h3>
             <p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
           </NuxtLink>
