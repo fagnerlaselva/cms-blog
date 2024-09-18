@@ -8,8 +8,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxtjs/sitemap',
-    '@formkit/auto-animate/nuxt'
-    
+    '@formkit/auto-animate/nuxt',
+    '@nuxtjs/seo',
+    'nuxt-vitalizer',
+    '@nuxtjs/robots',
   ],
   eslint: {
     checker: true, // <---
@@ -24,4 +26,6 @@ export default defineNuxtConfig({
     url: 'https://cms-blog-lilac.vercel.app/',
     name: 'CMS BLOG'
   },
+  
+ 
 });
