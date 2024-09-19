@@ -13,6 +13,14 @@ export default defineNuxtConfig({
     'nuxt-vitalizer',
     '@nuxtjs/robots',
   ],
+  app: {
+    head: {
+        htmlAttrs: {
+            lang: 'pt-br',
+        },
+        charset: 'utf-8',
+    }
+  },
   eslint: {
     checker: true, // <---
   },
