@@ -66,6 +66,11 @@
             <div :class="index === 0 ? 'lg:flex lg:gap-5 md:gap-4 xl:gap-8' : ''">
               <NuxtPicture
                 format="avif,webp"
+                loading="lazy"
+                placeholder
+                quality="70"
+                placeholder-class="custom"
+                densities="x1 x2"
                 :src="article.image"
                 :alt="article.title"
                 :class="
@@ -74,7 +79,6 @@
                     : 'w-full h-70 object-cover mb-4'
                 "
               />
-
               <!-- <img
                 :src="article.image"
                 :alt="article.title"
