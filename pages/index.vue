@@ -92,7 +92,7 @@
                   index === 0 ? 'lg:w-2/2 flex flex-col justify-start md:mt-0' : ' text-gray-900'
                 "
               >
-                <h3
+                <h2
                   :class="
                     index === 0
                       ? 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:py-6 font-extrabold '
@@ -100,7 +100,7 @@
                   "
                 >
                   {{ article.title }}
-                </h3>
+                </h2>
                 <p :class="index === 0 ? 'text-1xl py-5' : 'text-gray-600 mb-4 text-gray-900'">
                   {{ article.excerpt }}
                 </p>
