@@ -27,10 +27,9 @@
                   required
                   class="wt-button-font p-5 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-lg focus:text-lg active:text-lg sm:text-lg text-center"
                   placeholder="Coloque seu e-mail"
-                  yar
                   type="email"
                   name="email"
-                  style="font-family: Roboto; color: rgb(17, 24, 39)"
+                  style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 50px"
                 />
               </div>
               <input
@@ -41,6 +40,7 @@
                   background-color: rgb(0, 0, 0);
                   color: rgb(255, 255, 255);
                   font-family: Roboto;
+                  min-height: 50px;
                 "
               />
             </div>
@@ -70,12 +70,15 @@
                 placeholder-class="custom"
                 :src="article.image"
                 :alt="article.title"
+                :width="800"
+                :height="600"
                 :class="
                   index === 0
                     ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'
                     : 'w-full h-70 object-cover mb-4'
                 "
               />
+
               <!-- <img
                 :src="article.image"
                 :alt="article.title"

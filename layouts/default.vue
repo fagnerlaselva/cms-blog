@@ -11,7 +11,9 @@
             <NuxtLink to="/" alt="Home Page" class="text-2xl text-gray-900 font-bold">
               <img
                 alt="logo"
-                src="https://www.assisty24h.com.br/_next/static/images/logo-01459debd8f90bb390dbb0fda7bd72b6.svg"
+                src="https://www.assisty24h.com.br/_next/static/images/logo-01459debd8f90bb390d…"
+                width="200"
+                height="50"
               />
             </NuxtLink>
           </li>
@@ -137,3 +139,9 @@ const uniqueAuthors = computed(() => {
   return Array.from(unique.values())
 })
 </script>
+<style>
+img {
+  aspect-ratio: 4 / 3; /* ou outra proporção */
+  width: 100%; /* largura total para imagens responsivas */
+}
+</style>
