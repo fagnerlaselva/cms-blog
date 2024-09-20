@@ -104,7 +104,7 @@
                 <p :class="index === 0 ? 'text-1xl py-5' : 'text-gray-600 mb-4 text-gray-900'">
                   {{ article.excerpt }}
                 </p>
-                <div class="text-gray-400 text-sm">Set 10, 2024 - Leitura de 3 min.</div>
+                <div class="text-gray-600 text-sm">Set 10, 2024 - Leitura de 3 min.</div>
               </div>
             </div>
           </NuxtLink>
