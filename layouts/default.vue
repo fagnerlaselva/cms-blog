@@ -8,12 +8,19 @@
         <ul class="flex flex-wrap gap-4">
           <!-- Listagem de Categorias -->
           <li>
-            <NuxtLink to="/" alt="Home Page" class="text-2xl text-gray-900 font-bold">
-              <img
-                alt="logo"
-                src="https://www.assisty24h.com.br/_next/static/images/logo-01459debd8f90bb390d…"
-                width="200"
-                height="50"
+            <NuxtLink
+              to="/"
+              alt="Home Page"
+              class="text-2xl text-gray-900 font-bold"
+              style="width: 156px; height: 36px"
+            >
+              <NuxtPicture
+                loading="lazy"
+                placeholder-class="custom"
+                src="/assets/img/logo-assysty24g.svg"
+                :alt="logo"
+                :width="156"
+                :height="36"
               />
             </NuxtLink>
           </li>
