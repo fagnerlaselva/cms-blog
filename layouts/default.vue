@@ -11,6 +11,7 @@
             <NuxtLink
               to="/"
               alt="Home Page"
+              aria-label="Ir para Home page"
               class="text-2xl text-gray-900 font-bold"
               style="width: 156px; height: 36px"
             >
@@ -18,7 +19,7 @@
                 loading="lazy"
                 placeholder-class="custom"
                 src="/assets/img/logo-assysty24g.svg"
-                :alt="logo"
+                alt="Logo Assisaty 24h"
                 :width="156"
                 :height="36"
               />
