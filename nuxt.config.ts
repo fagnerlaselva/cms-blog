@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     'nuxt-vitalizer',
     '@nuxtjs/robots',
+    '@nuxt/image',
   ],
   app: {
     head: {

@@ -31,7 +31,7 @@
                   type="email"
                   name="email"
                   style="font-family: Roboto; color: rgb(17, 24, 39)"
-                >
+                />
               </div>
               <input
                 class="cursor-pointer px-5 py-5 font-semibold w-full sm:w-auto text-lg focus:text-lg active:text-lg sm:text-lg rounded-lg rounded-none sm:rounded-lg-r"
@@ -42,7 +42,7 @@
                   color: rgb(255, 255, 255);
                   font-family: Roboto;
                 "
-              >
+              />
             </div>
           </div>
         </div>
@@ -64,7 +64,8 @@
         >
           <NuxtLink :to="'/post/' + article.slug" class="block">
             <div :class="index === 0 ? 'lg:flex lg:gap-5 md:gap-4 xl:gap-8' : ''">
-              <img
+              <NuxtPicture
+                format="avif,webp"
                 :src="article.image"
                 :alt="article.title"
                 :class="
@@ -72,7 +73,17 @@
                     ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'
                     : 'w-full h-70 object-cover mb-4'
                 "
-              >
+              />
+
+              <!-- <img
+                :src="article.image"
+                :alt="article.title"
+                :class="
+                  index === 0
+                    ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'
+                    : 'w-full h-70 object-cover mb-4'
+                "
+              /> -->
               <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
               <div
                 :class="

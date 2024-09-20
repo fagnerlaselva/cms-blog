@@ -20,6 +20,7 @@
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
     "@nuxt/eslint": "^0.5.5",
+    "@nuxt/image": "^1.8.0",
     "@nuxtjs/robots": "^4.1.7",
     "@nuxtjs/seo": "^2.0.0-rc.21",
     "@nuxtjs/sitemap": "^6.0.1",
