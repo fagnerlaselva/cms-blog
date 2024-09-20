@@ -70,6 +70,7 @@
                 placeholder-class="custom"
                 :src="article.image"
                 :alt="article.title"
+                sizes="100vw sm:50vw md:400px"
                 :class="
                   index === 0
                     ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'

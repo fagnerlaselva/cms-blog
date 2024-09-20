@@ -7,7 +7,7 @@ export const articles = [
       { slug: "produtividade", name: "Produtividade" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w2000/2024/03/v8-1.gif",
+    image: "/assets/img/v8-1.webp",
     content: "Um guia completo sobre as melhores práticas de desenvolvimento web que você deve seguir...",
     excerpt: "Explore as tendências mais importantes e inovações impactantes para impulsionar seu desenvolvimento digital e aumentar sua produtividade em 2024."
   },
@@ -19,7 +19,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
     excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
   },
@@ -31,7 +31,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: "fagner-mendes",
-    image: "https://inspire.savee.it/content/images/size/w2000/2023/12/Cover-1M---v3-1.jpg",
+    image: "/assets/img/Cover-1M---v3-1.webp",
     content: "Explore as principais tendências de Desenvolvimento digital que irão dominar o mercado em 2024...",
     excerpt: "Fique por dentro das tendências mais importantes para o Desenvolvimento digital neste ano."
   },
@@ -43,7 +43,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: "fagner-mendes",
-    image: "https://inspire.savee.it/content/images/size/w2000/2024/03/v8-1.gif",
+    image: "/assets/img/v8-1.webp",
     content: "Dicas para criar conteúdo que realmente engaja seu público e gera resultados positivos...",
     excerpt: "Aprenda a escrever conteúdo que captura a atenção e o interesse do seu público."
   },
@@ -55,7 +55,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Como a inteligência artificial está transformando a forma como fazemos Desenvolvimento...",
     excerpt: "Entenda o papel crescente da IA no Desenvolvimento moderno e como aproveitar essa tecnologia."
   },
@@ -68,7 +68,7 @@ export const articles = [
       { slug: "produtividade", name: "Produtividade" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Uma lista das ferramentas mais úteis para desenvolvedores de software e suas funções...",
     excerpt: "Conheça as ferramentas que todo desenvolvedor deve ter em seu arsenal."
   },
@@ -80,7 +80,7 @@ export const articles = [
       { slug: "seo", name: "SEO" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Estratégias e técnicas para otimizar o SEO do seu site e aumentar sua visibilidade...",
     excerpt: "Dicas para melhorar a otimização de busca e atrair mais visitantes para seu site."
   },
@@ -92,7 +92,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Análise das tendências emergentes no desenvolvimento front-end e o que esperar para o futuro...",
     excerpt: "Fique atualizado sobre as próximas tendências no desenvolvimento front-end."
   },
@@ -104,7 +104,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Dicas para projetar interfaces de usuário que proporcionam uma experiência excepcional...",
     excerpt: "Melhore suas habilidades de design para criar experiências de usuário marcantes."
   },
@@ -116,7 +116,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
     excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
   },
@@ -129,7 +129,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w2000/2023/10/Features-Designed-4.jpg",
+    image: "/assets/img/Features-Designed-4.webp",
     content: "Um guia completo sobre as melhores práticas de desenvolvimento web que você deve seguir...",
     excerpt: "Dicas essenciais para se tornar um desenvolvedor web mais eficiente."
   },
@@ -141,7 +141,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/03/image-1.png",
+    image: "/assets/img/image-1.webp",
     content: "Explore técnicas avançadas para aprimorar suas aplicações Vue.js...",
     excerpt: "Aprofunde-se em técnicas avançadas para melhorar suas habilidades com Vue.js."
   },
