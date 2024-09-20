@@ -67,9 +67,12 @@
               <NuxtPicture
                 format="avif,webp"
                 loading="lazy"
+                provider="ipx"
                 placeholder-class="custom"
                 :src="article.image"
                 :alt="article.title"
+                sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, 1000px"
+                :widths="[300, 600, 1000, 2000]"
                 :class="
                   index === 0
                     ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'

@@ -83,6 +83,7 @@
             />
           </div>
         </div> -->
+
         <p class="text-gray-800 py-4 px-20">
           Whether you're a seasoned professional or just starting out on your creative journey, our
           marketplace offers something for everyone. From stunning visual effects to captivating
