@@ -110,10 +110,12 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
           <NuxtLink :to="'/post/' + recentArticle.slug">
-            <img
+            <NuxtImage
               :src="recentArticle.image"
               :alt="recentArticle.title"
-              class="w-full h-60 object-cover mb-6"
+              format="webp,avif"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 800px"
+              class="w-full h-100 object-cover my-4"
             />
             <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h3>
             <p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
