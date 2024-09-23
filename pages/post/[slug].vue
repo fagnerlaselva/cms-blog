@@ -30,18 +30,43 @@
       </header>
 
       <section class="mb-8 text-xl font-serif tracking-wide text-gray-900">
-        <figure>
+        <figure class="my-12">
           <NuxtPicture
             v-if="article.image"
             :src="article.image"
             :alt="article.title"
-            class="w-full my-3"
+            class="w-full"
+          />
+        </figure>
+        <p class="py-4 px-4 sm:px-20">
+          We've always dreamed of Savee being more than just a place for saving inspiration and
+          getting inspired. We see it as a dynamic hub where creatives like you can elevate your
+          craft, refine your skills, and unleash your creativity to its fullest potential.
+        </p>
+        <p class="py-4 px-4 sm:px-20">
+          That's why we're thrilled to announce the launch of our very own marketplace, featuring 15
+          brand-new After Effects templates designed to take your projects to the next level.
+        </p>
+        <p class="py-4 px-4 sm:px-20">{{ article.content }}</p>
+
+        <p class="py-4 px-4 sm:px-20">
+          Whether you're a seasoned professional or just starting out on your creative journey, our
+          marketplace offers something for everyone. From stunning visual effects to captivating
+          animations, each template is crafted with precision and creativity to help you bring your
+          ideas to life in ways you never thought possible
+        </p>
+        <figure class="my-12">
+          <NuxtPicture
+            v-if="article.image"
+            :src="article.image"
+            :alt="article.title"
+            class="w-full"
           />
           <figcaption
-            class="pb-4"
+            class="mb-4"
             style="
               color: rgba(0, 0, 0, 0.5);
-              font-size: 0.8rem;
+              font-size: 0.9rem;
               line-height: 1.4em;
               padding: 1.5rem 1.5rem 0;
               text-align: center;
@@ -52,37 +77,20 @@
             </span>
           </figcaption>
         </figure>
-        <p class="py-3 px-4 sm:px-20">
-          We've always dreamed of Savee being more than just a place for saving inspiration and
-          getting inspired. We see it as a dynamic hub where creatives like you can elevate your
-          craft, refine your skills, and unleash your creativity to its fullest potential.
-        </p>
-        <p class="py-3 px-4 sm:px-20">
-          That's why we're thrilled to announce the launch of our very own marketplace, featuring 15
-          brand-new After Effects templates designed to take your projects to the next level.
-        </p>
-        <p class="py-3 px-4 sm:px-20">{{ article.content }}</p>
-
-        <p class="py-3 px-4 sm:px-20">
-          Whether you're a seasoned professional or just starting out on your creative journey, our
-          marketplace offers something for everyone. From stunning visual effects to captivating
-          animations, each template is crafted with precision and creativity to help you bring your
-          ideas to life in ways you never thought possible
-        </p>
         <h3 class="text-gray-900 py-3 px-4 sm:px-20">
           Here's what you can expect from our marketplace:
         </h3>
         <ul>
-          <li class="text-gray-800 py-4 sm:px-20 pl-8 sm:pl-24">
+          <li class="text-gray-800 py-2 sm:px-20 pl-8 sm:pl-24">
             <strong>High-Quality Templates:</strong> Explore a diverse range of After Effects
             templates, meticulously crafted by our team of talented designers.
           </li>
-          <li class="text-gray-800 py-4 px-4 sm:px-20 pl-8 sm:pl-24">
+          <li class="text-gray-800 py-2 px-4 sm:px-20 pl-8 sm:pl-24">
             <strong>Versatile Options:</strong> Whether you're working on a video project,
             presentation, or social media content, our templates offer versatility to suit your
             needs.
           </li>
-          <li class="text-gray-800 py-4 px-4 sm:px-20 pl-8 sm:pl-24">
+          <li class="text-gray-800 py-2 px-4 sm:px-20 pl-8 sm:pl-24">
             <strong>Regular Updates:</strong> Stay ahead of the curve with regular updates and new
             additions to our growing collection of templates.
           </li>
