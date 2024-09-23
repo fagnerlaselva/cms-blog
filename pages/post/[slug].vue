@@ -10,10 +10,10 @@
         <div v-if="author" class="mb-4 px-4 sm:px-20">
           <div class="text-gray-600 flex">
             <NuxtImg
-              v-if="article.image"
+              v-if="author.image"
               format="avif,webp"
-              :src="article.image"
-              :alt="article.title"
+              :src="author.image"
+              :alt="author.name"
               class="h-16 rounded-full object-cover mb-4 flex-none w-16 mr-2"
             />
             <div class="flex-1 w-64">
@@ -30,16 +30,29 @@
       </header>
 
       <section class="mb-8 text-xl font-serif tracking-wide text-gray-900">
-        <NuxtImg
-          v-if="article.image"
-          :src="article.image"
-          :alt="article.title"
-          style="height: auto"
-          class="w-full my-6"
-        />
-        <p
-          class="py-3 px-4 sm:px-20 first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left"
-        >
+        <figure>
+          <NuxtPicture
+            v-if="article.image"
+            :src="article.image"
+            :alt="article.title"
+            class="w-full my-3"
+          />
+          <figcaption
+            class="pb-4"
+            style="
+              color: rgba(0, 0, 0, 0.5);
+              font-size: 0.8rem;
+              line-height: 1.4em;
+              padding: 1.5rem 1.5rem 0;
+              text-align: center;
+            "
+          >
+            <span style="white-space: pre-wrap">
+              {{ article.title }}
+            </span>
+          </figcaption>
+        </figure>
+        <p class="py-3 px-4 sm:px-20">
           We've always dreamed of Savee being more than just a place for saving inspiration and
           getting inspired. We see it as a dynamic hub where creatives like you can elevate your
           craft, refine your skills, and unleash your creativity to its fullest potential.

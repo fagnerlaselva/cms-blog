@@ -43,7 +43,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: "fagner-mendes",
-    image: "/assets/img/v8-1.webp",
+    image: "https://inspire.savee.it/content/images/2024/06/Mobile.jpg",
     content: "Dicas para criar conteúdo que realmente engaja seu público e gera resultados positivos...",
     excerpt: "Aprenda a escrever conteúdo que captura a atenção e o interesse do seu público."
   },
@@ -68,7 +68,7 @@ export const articles = [
       { slug: "produtividade", name: "Produtividade" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "/assets/img/image-1.webp",
+    image: "/assets/img/v8-1.webp",
     content: "Uma lista das ferramentas mais úteis para desenvolvedores de software e suas funções...",
     excerpt: "Conheça as ferramentas que todo desenvolvedor deve ter em seu arsenal."
   },
