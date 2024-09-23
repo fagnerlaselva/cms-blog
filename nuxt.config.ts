@@ -38,6 +38,7 @@ export default defineNuxtConfig({
     url: 'https://cms-blog-lilac.vercel.app/',
     name: 'CMS BLOG'
   },
+
   
  
 });

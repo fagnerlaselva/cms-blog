@@ -32,8 +32,12 @@
         <figure class="my-12">
           <NuxtPicture
             v-if="article.image"
-            sizes="100vw sm:50vw md:400px"
+            preset="cover"
+            loading="lazy"
             format="webp"
+            sizes="(max-width: 600px) 100vw, 50vw"
+            width="1200"
+            height="800"
             :src="article.image"
             :alt="article.title"
             class="w-full"
@@ -59,8 +63,12 @@
         <figure class="my-12">
           <NuxtPicture
             v-if="article.image"
-            sizes="100vw sm:50vw md:400px"
+            preset="cover"
+            loading="lazy"
             format="webp"
+            sizes="(max-width: 600px) 100vw, 50vw"
+            width="1200"
+            height="800"
             :src="article.image"
             :alt="article.title"
             class="w-full"
@@ -140,9 +148,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
           <NuxtLink :to="'/post/' + recentArticle.slug">
-            <img
+            <NuxtPicture
               preset="cover"
+              loading="lazy"
               format="webp"
+              sizes="(max-width: 600px) 100vw, 50vw"
               :src="recentArticle.image"
               :alt="recentArticle.title"
               class="w-full h-60 object-cover my-4"
