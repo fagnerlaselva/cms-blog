@@ -147,9 +147,3 @@ const uniqueAuthors = computed(() => {
   return Array.from(unique.values())
 })
 </script>
-<style>
-img {
-  aspect-ratio: 4 / 3; /* ou outra proporção */
-  width: 100%; /* largura total para imagens responsivas */
-}
-</style>

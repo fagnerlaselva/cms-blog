@@ -64,10 +64,18 @@
         >
           <NuxtLink :to="'/post/' + article.slug" class="block">
             <div :class="index === 0 ? 'lg:flex lg:gap-5 md:gap-4 xl:gap-8' : ''">
-              <NuxtPicture
+              <!-- <img
+                :src="article.image"
+                :alt="article.title"
+                :class="
+                  index === 0
+                    ? 'md:w-3/3 lg:w-2/3 h-60 object-cover gap-10 mb-6 lg:mb-2'
+                    : 'w-full h-60 object-cover mb-4'
+                "
+              /> -->
+
+              <img
                 format="avif,webp"
-                loading="lazy"
-                placeholder-class="custom"
                 :src="article.image"
                 :alt="article.title"
                 :class="
@@ -76,16 +84,6 @@
                     : 'w-full h-70 object-cover mb-4'
                 "
               />
-
-              <!-- <img 
-                :src="article.image"
-                :alt="article.title"
-                :class="
-                  index === 0
-                    ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'
-                    : 'w-full h-70 object-cover mb-4'
-                "
-              /> -->
               <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
               <div
                 :class="

@@ -55,7 +55,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "/assets/img/image-1.webp",
+    image: "https://inspire.savee.it/content/images/size/w1600/2024/06/sites.jpg",
     content: "Como a inteligência artificial está transformando a forma como fazemos Desenvolvimento...",
     excerpt: "Entenda o papel crescente da IA no Desenvolvimento moderno e como aproveitar essa tecnologia."
   },
