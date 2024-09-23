@@ -11,7 +11,6 @@
           <div class="text-gray-600 flex">
             <NuxtImg
               v-if="author.image"
-              format="avif,webp"
               :src="author.image"
               :alt="author.name"
               class="h-16 rounded-full object-cover mb-4 flex-none w-16 mr-2"
@@ -33,6 +32,8 @@
         <figure class="my-12">
           <NuxtPicture
             v-if="article.image"
+            sizes="100vw sm:50vw md:400px"
+            format="webp"
             :src="article.image"
             :alt="article.title"
             class="w-full"
@@ -58,6 +59,8 @@
         <figure class="my-12">
           <NuxtPicture
             v-if="article.image"
+            sizes="100vw sm:50vw md:400px"
+            format="webp"
             :src="article.image"
             :alt="article.title"
             class="w-full"
@@ -138,7 +141,8 @@
         <article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
           <NuxtLink :to="'/post/' + recentArticle.slug">
             <img
-              format="avif,webp"
+              preset="cover"
+              format="webp"
               :src="recentArticle.image"
               :alt="recentArticle.title"
               class="w-full h-60 object-cover my-4"
@@ -202,5 +206,9 @@ watchEffect(() => {
 <style scoped>
 .video-container {
   max-width: 100%;
+}
+picture img,
+picture source {
+  margin: auto !important;
 }
 </style>
