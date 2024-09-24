@@ -15,6 +15,8 @@
               :alt="author.name"
               loading="lazy"
               format="webp"
+              width="100"
+              height="100"
               class="h-10 w-10 rounded-full mb-4 flex-none mr-2"
             />
 
@@ -168,7 +170,9 @@
               format="webp"
               :src="recentArticle.image"
               :alt="recentArticle.title"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1200px"
+              sizes="(max-width: 400px) 100vw, (max-width: 400px) 50vw, 400px"
+              width="400"
+              height="300"
               quality="80"
               class="w-full h-60 object-cover my-4"
             />
