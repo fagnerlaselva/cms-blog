@@ -9,17 +9,12 @@
         </h1>
         <div v-if="author" class="mb-4 px-4 sm:px-20">
           <div class="text-gray-600 flex">
-            <NuxtPicture
+            <img
               v-if="author.image"
               :src="author.image"
               :alt="author.name"
-              loading="lazy"
-              format="webp, avif"
-              width="120"
-              height="120"
               class="h-10 w-10 rounded-full mb-4 flex-none mr-2"
             />
-
             <div class="flex-1 w-64">
               <NuxtLink
                 :to="'/autores/' + author.slug"

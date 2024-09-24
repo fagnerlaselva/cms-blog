@@ -73,39 +73,40 @@
                     : 'w-full h-60 object-cover mb-4'
                 "
               /> -->
-              <div
+
+              <img
+                format="avif,webp"
+                :src="article.image"
+                :alt="article.title"
+                sizes="(max-width: 370px) 100vw, (max-width: 370px) 50vw, 370px"
+                width="600"
+                height="300"
+                quality="70"
                 :class="
                   index === 0
                     ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'
                     : 'w-full h-70 object-cover mb-4'
                 "
+              />
+              <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
+              <div
+                :class="
+                  index === 0 ? 'lg:w-2/2 flex flex-col justify-start md:mt-0' : ' text-gray-900'
+                "
               >
-                <NuxtPicture
-                  format="avif,webp"
-                  :src="article.image"
-                  :alt="article.title"
-                  quality="70"
-                />
-                <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
-                <div
+                <h2
                   :class="
-                    index === 0 ? 'lg:w-2/2 flex flex-col justify-start md:mt-0' : ' text-gray-900'
+                    index === 0
+                      ? 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:py-6 font-extrabold '
+                      : 'text-2xl mb-2 text-gray-900 font-extrabold tracking-wide'
                   "
                 >
-                  <h2
-                    :class="
-                      index === 0
-                        ? 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:py-6 font-extrabold '
-                        : 'text-2xl mb-2 text-gray-900 font-extrabold tracking-wide'
-                    "
-                  >
-                    {{ article.title }}
-                  </h2>
-                  <p :class="index === 0 ? 'text-1xl py-5' : 'text-gray-600 mb-4 text-gray-900'">
-                    {{ article.excerpt }}
-                  </p>
-                  <div class="text-gray-600 text-sm">Set 10, 2024 - Leitura de 3 min.</div>
-                </div>
+                  {{ article.title }}
+                </h2>
+                <p :class="index === 0 ? 'text-1xl py-5' : 'text-gray-600 mb-4 text-gray-900'">
+                  {{ article.excerpt }}
+                </p>
+                <div class="text-gray-600 text-sm">Set 10, 2024 - Leitura de 3 min.</div>
               </div>
             </div>
           </NuxtLink>

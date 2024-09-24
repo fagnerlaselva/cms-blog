@@ -43,7 +43,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: "fagner-mendes",
-    image: "https://inspire.savee.it/content/images/2024/06/Mobile.jpg",
+    image: "/assets/img/Cover-1M---v3-1.webp",
     content: "Dicas para criar conteúdo que realmente engaja seu público e gera resultados positivos...",
     excerpt: "Aprenda a escrever conteúdo que captura a atenção e o interesse do seu público."
   },
@@ -55,7 +55,7 @@ export const articles = [
       { slug: "desenvolvimento-web", name: "Desenvolvimento Web" }
     ],
     authorSlug: 'fagner-mendes',
-    image: "https://inspire.savee.it/content/images/size/w1600/2024/06/sites.jpg",
+    image: "/assets/img/Cover-1M---v3-1.webp",
     content: "Como a inteligência artificial está transformando a forma como fazemos Desenvolvimento...",
     excerpt: "Entenda o papel crescente da IA no Desenvolvimento moderno e como aproveitar essa tecnologia."
   },
