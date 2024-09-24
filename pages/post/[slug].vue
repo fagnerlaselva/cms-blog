@@ -9,14 +9,14 @@
         </h1>
         <div v-if="author" class="mb-4 px-4 sm:px-20">
           <div class="text-gray-600 flex">
-            <img
+            <NuxtPicture
               v-if="author.image"
               :src="author.image"
               :alt="author.name"
               loading="lazy"
-              format="webp"
-              width="100"
-              height="100"
+              format="webp, avif"
+              width="120"
+              height="120"
               class="h-10 w-10 rounded-full mb-4 flex-none mr-2"
             />
 
@@ -170,10 +170,10 @@
               format="webp"
               :src="recentArticle.image"
               :alt="recentArticle.title"
-              sizes="(max-width: 400px) 100vw, (max-width: 400px) 50vw, 400px"
-              width="400"
+              sizes="(max-width: 370px) 100vw, (max-width: 370px) 50vw, 370px"
+              width="600"
               height="300"
-              quality="80"
+              quality="70"
               class="w-full h-60 object-cover my-4"
             />
             <h2 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h2>

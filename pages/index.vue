@@ -30,7 +30,7 @@
                   type="email"
                   name="email"
                   style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 50px"
-                >
+                />
               </div>
               <input
                 class="cursor-pointer px-5 py-5 font-semibold w-full sm:w-auto text-lg focus:text-lg active:text-lg sm:text-lg rounded-lg rounded-none sm:rounded-lg-r"
@@ -42,7 +42,7 @@
                   font-family: Roboto;
                   min-height: 50px;
                 "
-              >
+              />
             </div>
           </div>
         </div>
@@ -73,36 +73,39 @@
                     : 'w-full h-60 object-cover mb-4'
                 "
               /> -->
-
-              <img
-                format="avif,webp"
-                :src="article.image"
-                :alt="article.title"
+              <div
                 :class="
                   index === 0
                     ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'
                     : 'w-full h-70 object-cover mb-4'
                 "
               >
-              <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
-              <div
-                :class="
-                  index === 0 ? 'lg:w-2/2 flex flex-col justify-start md:mt-0' : ' text-gray-900'
-                "
-              >
-                <h2
+                <NuxtPicture
+                  format="avif,webp"
+                  :src="article.image"
+                  :alt="article.title"
+                  quality="70"
+                />
+                <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
+                <div
                   :class="
-                    index === 0
-                      ? 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:py-6 font-extrabold '
-                      : 'text-2xl mb-2 text-gray-900 font-extrabold tracking-wide'
+                    index === 0 ? 'lg:w-2/2 flex flex-col justify-start md:mt-0' : ' text-gray-900'
                   "
                 >
-                  {{ article.title }}
-                </h2>
-                <p :class="index === 0 ? 'text-1xl py-5' : 'text-gray-600 mb-4 text-gray-900'">
-                  {{ article.excerpt }}
-                </p>
-                <div class="text-gray-600 text-sm">Set 10, 2024 - Leitura de 3 min.</div>
+                  <h2
+                    :class="
+                      index === 0
+                        ? 'text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:py-6 font-extrabold '
+                        : 'text-2xl mb-2 text-gray-900 font-extrabold tracking-wide'
+                    "
+                  >
+                    {{ article.title }}
+                  </h2>
+                  <p :class="index === 0 ? 'text-1xl py-5' : 'text-gray-600 mb-4 text-gray-900'">
+                    {{ article.excerpt }}
+                  </p>
+                  <div class="text-gray-600 text-sm">Set 10, 2024 - Leitura de 3 min.</div>
+                </div>
               </div>
             </div>
           </NuxtLink>
