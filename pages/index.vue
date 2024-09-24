@@ -30,7 +30,7 @@
                   type="email"
                   name="email"
                   style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 50px"
-                />
+                >
               </div>
               <input
                 class="cursor-pointer px-5 py-5 font-semibold w-full sm:w-auto text-lg focus:text-lg active:text-lg sm:text-lg rounded-lg rounded-none sm:rounded-lg-r"
@@ -42,7 +42,7 @@
                   font-family: Roboto;
                   min-height: 50px;
                 "
-              />
+              >
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
                     ? 'md:w-3/3 lg:w-2/3 h-auto object-cover gap-10 mb-6 lg:mb-2'
                     : 'w-full h-70 object-cover mb-4'
                 "
-              />
+              >
               <!-- Texto ao lado direito do card no primeiro card, abaixo nos outros -->
               <div
                 :class="

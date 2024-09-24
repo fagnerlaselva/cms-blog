@@ -16,5 +16,6 @@ module.exports = {
     // Aqui você pode adicionar regras personalizadas
     'no-console': 'warn', // Alerta sobre o uso de console.log
     'no-unused-vars': 'warn', // Alerta sobre variáveis não utilizadas
+    'vue/html-self-closing': 'off',
   },
 };

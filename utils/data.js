@@ -158,7 +158,7 @@ export const authors = [
     id: 1,
     name: 'Fagner Mendes',
     slug: 'fagner-mendes',
-    image: 'https://avatars.githubusercontent.com/u/34191081?v=4',
+    image: '/assets/img/fagner-mendes.webp',
     bio: `Fagner é apaixonado por criar interfaces intuitivas e eficientes, com foco em uma ótima experiência de usuário. Ao longo de sua trajetória, atuou em projetos de grande impacto, como All in Marketing Cloud, BTG 360 e Templatize durante sua passagem pela Locaweb.
 Atualmente, Fagner faz parte das equipes da Contatus Expertise Marketing Direto e Assisty 24h`
   }
