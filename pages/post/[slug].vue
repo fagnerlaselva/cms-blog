@@ -39,9 +39,16 @@
             format="webp"
             width="1200"
             height="700"
+            quality="70"
             :src="article.image"
             :alt="article.title"
-            class="w-full"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1200px"
+            :srcset="[
+              { src: article.image, width: 400 },
+              { src: article.image, width: 800 },
+              { src: article.image, width: 1200 }
+            ]"
+            class="w-full sm:w-1/2 lg:w-[1200px] h-auto object-cover"
             placeholder-class="custom"
           />
         </figure>
@@ -69,10 +76,17 @@
             format="webp"
             width="1200"
             height="700"
-            sizes="(max-width: 1200px) 50vw, 900px"
+            quality="70"
             :src="article.image"
             :alt="article.title"
-            class="w-full"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1200px"
+            :srcset="[
+              { src: article.image, width: 400 },
+              { src: article.image, width: 800 },
+              { src: article.image, width: 1200 }
+            ]"
+            class="w-full sm:w-1/2 lg:w-[1200px] h-auto object-cover"
+            placeholder-class="custom"
           />
           <figcaption
             class="mb-4"
@@ -89,9 +103,9 @@
             </span>
           </figcaption>
         </figure>
-        <h3 class="text-gray-900 py-3 px-4 sm:px-20">
+        <h2 class="text-gray-900 py-3 px-4 sm:px-20">
           Here's what you can expect from our marketplace:
-        </h3>
+        </h2>
         <ul>
           <li class="text-gray-800 py-2 sm:px-20 pl-8 sm:pl-24">
             <strong>High-Quality Templates:</strong> Explore a diverse range of After Effects
@@ -154,6 +168,8 @@
               format="webp"
               :src="recentArticle.image"
               :alt="recentArticle.title"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1200px"
+              quality="80"
               class="w-full h-60 object-cover my-4"
             />
             <h2 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h2>
