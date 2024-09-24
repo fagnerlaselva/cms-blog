@@ -32,7 +32,6 @@
         <figure class="my-12">
           <NuxtPicture
             v-if="article.image"
-            preset="cover"
             loading="lazy"
             format="webp"
             sizes="(max-width: 600px) 100vw, 50vw"
@@ -63,7 +62,6 @@
         <figure class="my-12">
           <NuxtPicture
             v-if="article.image"
-            preset="cover"
             loading="lazy"
             format="webp"
             sizes="(max-width: 600px) 100vw, 50vw"
@@ -149,7 +147,6 @@
         <article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
           <NuxtLink :to="'/post/' + recentArticle.slug">
             <NuxtPicture
-              preset="cover"
               loading="lazy"
               format="webp"
               sizes="(max-width: 600px) 100vw, 50vw"
