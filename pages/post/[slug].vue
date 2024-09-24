@@ -13,8 +13,11 @@
               v-if="author.image"
               :src="author.image"
               :alt="author.name"
-              class="h-16 rounded-full object-cover mb-4 flex-none w-16 mr-2"
+              loading="lazy"
+              format="webp"
+              class="h-10 w-10 rounded-full mb-4 flex-none mr-2"
             />
+
             <div class="flex-1 w-64">
               <NuxtLink
                 :to="'/autores/' + author.slug"
@@ -34,9 +37,7 @@
             v-if="article.image"
             loading="lazy"
             format="webp"
-            sizes="(max-width: 600px) 100vw, 50vw"
-            width="1200"
-            height="800"
+            width="900"
             :src="article.image"
             :alt="article.title"
             class="w-full"
@@ -64,9 +65,7 @@
             v-if="article.image"
             loading="lazy"
             format="webp"
-            sizes="(max-width: 600px) 100vw, 50vw"
-            width="1200"
-            height="800"
+            width="900"
             :src="article.image"
             :alt="article.title"
             class="w-full"
@@ -149,7 +148,7 @@
             <NuxtPicture
               loading="lazy"
               format="webp"
-              sizes="(max-width: 600px) 100vw, 50vw"
+              width="400"
               :src="recentArticle.image"
               :alt="recentArticle.title"
               class="w-full h-60 object-cover my-4"
@@ -160,6 +159,7 @@
         </article>
       </div>
     </section>
+
     <section class="container p-4 py-12">
       <NuxtLink to="/" class="text-blue-600 hover:underline"> ← Voltar para a Home </NuxtLink>
     </section>

@@ -37,6 +37,9 @@ export default defineNuxtConfig({
   site: {
     url: 'https://cms-blog-lilac.vercel.app/',
     name: 'CMS BLOG'
-  } 
+  },
+  image: {
+    quality: 70, // Defina a qualidade das imagens (0 a 100)
+  }
  
 });
