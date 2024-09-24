@@ -9,7 +9,7 @@
         </h1>
         <div v-if="author" class="mb-4 px-4 sm:px-20">
           <div class="text-gray-600 flex">
-            <NuxtImg
+            <img
               v-if="author.image"
               :src="author.image"
               :alt="author.name"
@@ -37,10 +37,12 @@
             v-if="article.image"
             loading="lazy"
             format="webp"
-            width="900"
+            width="1200"
+            height="700"
             :src="article.image"
             :alt="article.title"
             class="w-full"
+            placeholder-class="custom"
           />
         </figure>
         <p class="py-4 px-4 sm:px-20">
@@ -65,7 +67,9 @@
             v-if="article.image"
             loading="lazy"
             format="webp"
-            width="900"
+            width="1200"
+            height="700"
+            sizes="(max-width: 1200px) 50vw, 900px"
             :src="article.image"
             :alt="article.title"
             class="w-full"
@@ -80,7 +84,7 @@
               text-align: center;
             "
           >
-            <span style="white-space: pre-wrap">
+            <span class="text-gray-600 text-sm" style="white-space: pre-wrap">
               {{ article.title }}
             </span>
           </figcaption>
@@ -148,12 +152,11 @@
             <NuxtPicture
               loading="lazy"
               format="webp"
-              width="400"
               :src="recentArticle.image"
               :alt="recentArticle.title"
               class="w-full h-60 object-cover my-4"
             />
-            <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h3>
+            <h2 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h2>
             <p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
           </NuxtLink>
         </article>
