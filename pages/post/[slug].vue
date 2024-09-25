@@ -155,6 +155,45 @@
 				{{ author?.bio }}
 			</p>
 	</section> -->
+    <section>
+      <div class="flex h-full justify-center items-center dark:bg-gray-800 py-8">
+        <div class="p-6">
+          <div
+            class="flex flex-wrap items-center w-full max-w-5xl p-5 mx-auto text-left border border-gray-200 rounded lg:flex-nowrap md:p-8 dark:border-gray-700"
+          >
+            <div class="flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2">
+              <h3 class="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-200">
+                Assine nossa Newsletter
+              </h3>
+              <p class="text-gray-800">
+                Para receber notificações por e-mail quando lançarmos novos produtos ou publicarmos
+                novos artigos
+              </p>
+            </div>
+            <div class="w-full px-1 flex-0 md:w-auto lg:w-1/2">
+              <form novalidate="">
+                <input type="hidden" name="tags" value="earlyaccess" />
+                <div class="flex flex-col sm:flex-row">
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Insira seu endereço de e-mail"
+                    class="flex-1 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  />
+                  <button
+                    type="submit"
+                    class="w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap dark:bg-gray-900"
+                  >
+                    Inscrever-se
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="w-full">
       <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">Últimos Artigos</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

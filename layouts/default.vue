@@ -1,10 +1,15 @@
-<!-- layouts/default.vue -->
 <template>
-  <div>
+  <div class="">
     <!-- Cabeçalho ou Navbar -->
-    <header class="container mx-auto p-7 py-8 flex justify-between items-center">
-      <nav class="bg-white fixed w-full z-20 top-0 start-0">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="container mx-auto relative">
+      <header
+        :class="[
+          ' p-7 py-2 flex justify-between items-center transition-transform duration-500 ease-in-out',
+          { '-translate-y-full': !showHeader }
+        ]"
+        class="container bg-white fixed w-full z-20 top-0"
+      >
+        <nav class="container flex flex-wrap items-center justify-between mx-auto p-0 py-2">
           <!-- Logo e Título -->
           <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <NuxtPicture
@@ -49,6 +54,7 @@
               </svg>
             </button>
           </div>
+
           <!-- Menu de Navegação -->
           <div
             id="navbar-sticky"
@@ -56,7 +62,7 @@
             class="items-center justify-between w-full md:flex md:w-auto md:order-1"
           >
             <ul
-              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+              class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
             >
               <li class="py-2 px-2">
                 <NuxtLink
@@ -65,8 +71,9 @@
                   alt="Home Page"
                   aria-label="Ir para Home page"
                   class="text-1xl text-gray-900 hover:underline"
-                  >Home</NuxtLink
                 >
+                  Home
+                </NuxtLink>
               </li>
               <li v-for="category in uniqueCategories" :key="category.slug" class="py-2 px-2">
                 <NuxtLink
@@ -78,49 +85,12 @@
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
-
-      <!-- Menu Hambúrguer -->
-      <button class="block md:hidden" @click="isMenuOpen = !isMenuOpen">
-        <svg
-          class="w-7 h-7"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
-        </svg>
-      </button>
-
-      <!-- Ícone de busca -->
-      <div class="hidden md:block">
-        <svg
-          width="22"
-          height="22"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M21 21L15.0001 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-    </header>
+        </nav>
+      </header>
+    </div>
 
     <!-- Conteúdo dinâmico -->
-    <main class="container mx-auto">
+    <main class="container mx-auto pt-20">
       <NuxtPage />
     </main>
 
@@ -160,53 +130,69 @@
           <li v-for="author in uniqueAuthors" :key="author.name" class="py-2 hover:underline">
             <NuxtLink :to="'/autores/' + author.slug" class="hover:underline">
               {{ author.name }}
-              <!-- Aqui está o erro, deveria ser 'author.name' -->
             </NuxtLink>
           </li>
         </ul>
       </div>
       <div class="text-center py-10">
-        <NuxtLink to="https://nuxtjs.org" target="_blank" class="hover:underline"
-          >© 2024 CMS Blog. Todos os direitos reservados.</NuxtLink
-        >
+        <NuxtLink to="https://nuxtjs.org" target="_blank" class="hover:underline">
+          © 2024 CMS Blog. Todos os direitos reservados.
+        </NuxtLink>
       </div>
     </footer>
   </div>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { categories, authors } from '@/utils/data.js' // Ajuste o caminho conforme necessário
 
+// Estado do menu hambúrguer
 const isMenuOpen = ref(false)
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
 }
 
+// Estado para exibir/esconder o cabeçalho
+const showHeader = ref(true)
+let lastScrollY = 0
+
+// Função para detectar direção do scroll
+function handleScroll() {
+  const currentScrollY = window.scrollY
+  showHeader.value = currentScrollY <= lastScrollY || currentScrollY <= 0
+  lastScrollY = currentScrollY
+}
+
+// Adiciona o evento de scroll ao carregar o componente
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
 // Obtendo categorias únicas
 const uniqueCategories = computed(() => {
-  // Certifique-se de que 'categories' está definido e é uma lista
   const allCategories = categories || []
-
-  // Remove duplicatas e retorna categorias únicas
   const unique = new Map()
   allCategories.forEach((item) => !unique.has(item.slug) && unique.set(item.slug, item))
-
   return [...unique.values()]
 })
 
+// Obtendo autores únicos
 const uniqueAuthors = computed(() => {
-  // Certifique-se de que 'authors' está definido e é uma lista
   const allAuthors = authors || []
-
-  // Remove duplicatas e retorna autores únicos
   const unique = new Map()
   allAuthors.forEach((author) => {
     if (!unique.has(author.slug)) {
       unique.set(author.slug, author)
     }
   })
-
   return Array.from(unique.values())
 })
 </script>
+
+<style scoped>
+/* Transição suave para o cabeçalho */
+header {
+  transition: transform 0.5s ease-in-out;
+}
+</style>
