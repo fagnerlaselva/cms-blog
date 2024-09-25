@@ -13,7 +13,7 @@
               v-if="author.image"
               :src="author.image"
               :alt="author.name"
-              class="h-10 w-10 rounded-full mb-4 flex-none mr-2"
+              class="h-16 w-16 rounded-full mb-4 flex-none mr-2"
             />
             <div class="flex-1 w-64">
               <NuxtLink
@@ -219,9 +219,9 @@ watchEffect(() => {
       title: article.value.title,
       ogTitle: article.value.title,
       description:
-        article.value.description || 'This is my amazing site, let me tell you all about it.',
+        article.value.description || 'Este é meu site incrível, deixe-me contar tudo sobre ele.',
       ogDescription:
-        article.value.description || 'This is my amazing site, let me tell you all about it.',
+        article.value.description || 'Este é meu site incrível, deixe-me contar tudo sobre ele.',
       ogImage: article.value.image || 'https://example.com/image.png',
       twitterCard: 'summary_large_image'
     })

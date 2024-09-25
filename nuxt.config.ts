@@ -15,11 +15,13 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
         htmlAttrs: {
             lang: 'pt-br',
         },
         charset: 'utf-8',
+        viewport: 'width=device-width, initial-scale=1',
     }
   },
   eslint: {

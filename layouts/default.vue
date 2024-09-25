@@ -2,11 +2,10 @@
 <template>
   <div>
     <!-- Cabeçalho ou Navbar -->
-    <header class="container mx-auto p-7 py-8 flex justify-between">
+    <header class="container mx-auto p-7 py-8 flex justify-between items-center">
       <!-- Link para Home -->
       <div>
         <ul class="flex flex-wrap gap-4">
-          <!-- Listagem de Categorias -->
           <li>
             <NuxtLink
               to="/"
@@ -25,24 +24,43 @@
               />
             </NuxtLink>
           </li>
-          <!-- <li v-for="category in uniqueCategories" :key="category.slug" class="">
-            <NuxtLink :to="'/categorias/' + category.slug" class="hover:underline">
-              {{ category.name }}
-            </NuxtLink>
-          </li> -->
         </ul>
       </div>
 
-      <nav>
-        <ul class="flex flex-wrap gap-4">
-          <li v-for="category in uniqueCategories" :key="category.slug">
+      <!-- Menu Hambúrguer -->
+      <button class="block md:hidden" @click="isMenuOpen = !isMenuOpen">
+        <svg
+          class="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
+      <!-- Menu de navegação -->
+      <nav
+        :class="{ block: isMenuOpen, hidden: !isMenuOpen }"
+        class="hidden md:flex md:flex-wrap gap-4"
+      >
+        <ul class="flex flex-col md:flex-row md:items-center">
+          <li v-for="category in uniqueCategories" :key="category.slug" class="py-2 md:py-0">
             <NuxtLink :to="'/categorias/' + category.slug" class="hover:underline">
               {{ category.name }}
             </NuxtLink>
           </li>
         </ul>
       </nav>
-      <div class="">
+
+      <!-- Ícone de busca -->
+      <div class="hidden md:block">
         <svg
           width="22"
           height="22"
