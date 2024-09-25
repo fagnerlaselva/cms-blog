@@ -1,17 +1,24 @@
 <template>
   <div class="">
     <!-- Cabeçalho ou Navbar -->
+
     <div class="container mx-auto relative">
       <header
         :class="[
-          ' p-7 py-2 flex justify-between items-center transition-transform duration-500 ease-in-out',
+          ' p-4 py-2 flex justify-between items-center transition-transform duration-500 ease-in-out sh',
           { '-translate-y-full': !showHeader }
         ]"
         class="container bg-white fixed w-full z-20 top-0"
       >
         <nav class="container flex flex-wrap items-center justify-between mx-auto p-0 py-2">
           <!-- Logo e Título -->
-          <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <NuxtLink
+            to="/"
+            class="flex items-center space-x-3 font-black text-2xl rtl:space-x-reverse"
+          >
+            Logo
+          </NuxtLink>
+          <!-- <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <NuxtPicture
               loading="lazy"
               placeholder-class="custom"
@@ -20,7 +27,7 @@
               :width="124"
               :height="29"
             />
-          </NuxtLink>
+          </NuxtLink> -->
 
           <!-- Botão de Menu (Hambúrguer) -->
           <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -90,7 +97,7 @@
     </div>
 
     <!-- Conteúdo dinâmico -->
-    <main class="container mx-auto pt-20">
+    <main class="container mx-auto pt-20 pb-20">
       <NuxtPage />
     </main>
 
