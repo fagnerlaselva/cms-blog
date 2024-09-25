@@ -171,7 +171,9 @@
               quality="70"
               class="w-full h-60 object-cover my-4"
             />
-            <h2 class="text-2xl mb-2 text-gray-900 font-extrabold">{{ recentArticle.title }}</h2>
+            <h2 class="text-2xl mb-2 mt-4 text-gray-900 font-extrabold">
+              {{ recentArticle.title }}
+            </h2>
             <p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
           </NuxtLink>
         </article>
