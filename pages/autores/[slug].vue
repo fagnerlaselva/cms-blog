@@ -14,11 +14,17 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <article v-for="article in filteredArticles" :key="article.id" class="p-4 text-gray-900">
             <NuxtLink :to="'/post/' + article.slug" class="text-gray-800">
-              <img
+              <NuxtPicture
                 v-if="article.image"
+                loading="lazy"
+                format="webp"
                 :src="article.image"
                 :alt="article.title"
                 class="w-full h-60 object-cover mb-6"
+                sizes="(max-width: 480px) 100vw, (max-width: 480px) 50vw, 480px"
+                width="480"
+                height="270"
+                quality="70"
               />
               <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">
                 {{ article.title }}
