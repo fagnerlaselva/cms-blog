@@ -6,6 +6,8 @@
         format="webp"
         :src="author.image"
         :alt="author.title"
+        width="65"
+        height="65"
         quality="70"
         class="w-20 h-20 object-cover m-4 rounded-full"
       />
@@ -60,3 +62,8 @@ const author = authors.find((a) => a.slug === authorSlug)
 // Filtrando artigos do autor correspondente
 const filteredArticles = articles.filter((a) => a.authorSlug === authorSlug)
 </script>
+<style>
+.rounded-full img {
+  border-radius: 50px;
+}
+</style>
