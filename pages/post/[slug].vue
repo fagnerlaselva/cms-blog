@@ -162,9 +162,7 @@
             class="flex flex-wrap items-center w-full max-w-5xl p-5 mx-auto text-left border border-gray-200 rounded lg:flex-nowrap md:p-8 dark:border-gray-700"
           >
             <div class="flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2">
-              <h3 class="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-200">
-                Assine nossa Newsletter
-              </h3>
+              <h3 class="mb-2 text-2xl font-bold">Assine nossa Newsletter</h3>
               <p class="text-gray-800">
                 Para receber notificações por e-mail quando lançarmos novos produtos ou publicarmos
                 novos artigos
