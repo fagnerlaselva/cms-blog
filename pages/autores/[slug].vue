@@ -1,16 +1,18 @@
 <template>
   <div class="">
-    <section class="container p-4 pt-12">
-      <NuxtPicture
-        loading="lazy"
-        format="webp"
-        :src="author.image"
-        :alt="author.name"
-        width="60"
-        height="60"
-        quality="70"
-        class="w-20 h-20 object-cover m-4 rounded-full"
-      />
+    <section class="container pt-12">
+      <div class="px-4">
+        <NuxtPicture
+          loading="lazy"
+          format="webp"
+          :src="author.image"
+          alt="author.name"
+          width="60"
+          height="60"
+          quality="70"
+          class="w-20 h-20 object-cover m-4 rounded-full"
+        />
+      </div>
       <h1 class="grid grid-cols-1 text-3xl font-bold gap-6 p-4">{{ author.name }}</h1>
       <p class="grid grid-cols-1 lg:grid-cols-2 mb-4 gap-6 p-4">
         {{ author?.bio }}
