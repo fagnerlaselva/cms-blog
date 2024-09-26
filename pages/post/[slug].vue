@@ -156,10 +156,10 @@
 			</p>
 	</section> -->
     <section>
-      <div class="flex h-full justify-center items-center dark:bg-gray-800 my-6 sm:my-12">
+      <div class="flex h-full justify-center items-center my-6 sm:my-12">
         <div class="px-4">
           <div
-            class="flex flex-wrap items-center w-full max-w-5xl p-5 mx-auto text-left border border-gray-200 rounded lg:flex-nowrap md:p-8 dark:border-gray-700"
+            class="flex flex-wrap items-center w-full max-w-5xl p-5 mx-auto text-left border border-gray-200 rounded lg:flex-nowrap md:p-8"
           >
             <div class="flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2">
               <h3 class="mb-2 text-2xl font-bold">Assine nossa Newsletter</h3>
@@ -177,11 +177,11 @@
                     type="email"
                     name="email"
                     placeholder="Insira seu endereço de e-mail"
-                    class="flex-1 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                    class="flex-1 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                   />
                   <button
                     type="submit"
-                    class="w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap dark:bg-gray-900"
+                    class="w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap"
                   >
                     Inscrever-se
                   </button>
