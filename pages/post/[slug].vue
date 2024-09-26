@@ -13,7 +13,7 @@
               v-if="author.image"
               :src="author.image"
               :alt="author.name"
-              class="h-16 w-16 rounded-full mb-4 flex-none mr-2"
+              class="h-14 w-14 rounded-full mb-4 flex-none mr-2"
             />
             <div class="flex-1 w-64">
               <NuxtLink
