@@ -10,7 +10,7 @@
           width="60"
           height="60"
           quality="70"
-          class="w-20 h-20 object-cover m-4 rounded-full"
+          class="h-14 w-14 object-cover rounded-full"
         />
       </div>
       <h1 class="grid grid-cols-1 text-3xl font-bold gap-6 p-4">{{ author.name }}</h1>
