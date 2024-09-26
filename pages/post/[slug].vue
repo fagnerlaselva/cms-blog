@@ -3,7 +3,7 @@
     <article v-if="article" class="container mx-auto p-4 max-w-5xl">
       <header class="mb-8">
         <h1
-          class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl lg:w-3/4 py-10 px-4 sm:px-20 pb-10 flex items-center box-decoration-slice"
+          class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-5xl lg:w-3/4 px-4 sm:px-20 pb-10 flex items-center box-decoration-slice"
         >
           {{ article.title }}
         </h1>
@@ -28,8 +28,8 @@
         </div>
       </header>
 
-      <section class="mb-8 text-xl font-serif tracking-wide text-gray-900">
-        <figure class="my-12">
+      <section class="text-xl font-serif tracking-wide text-gray-900">
+        <figure class="my-6 sm:my-12">
           <NuxtPicture
             v-if="article.image"
             loading="lazy"
@@ -66,7 +66,7 @@
           animations, each template is crafted with precision and creativity to help you bring your
           ideas to life in ways you never thought possible
         </p>
-        <figure class="my-12">
+        <figure class="my-6 sm:my-12">
           <NuxtPicture
             v-if="article.image"
             loading="lazy"
@@ -156,8 +156,8 @@
 			</p>
 	</section> -->
     <section>
-      <div class="flex h-full justify-center items-center dark:bg-gray-800 py-8">
-        <div class="p-6">
+      <div class="flex h-full justify-center items-center dark:bg-gray-800 my-6 sm:my-12">
+        <div class="px-4">
           <div
             class="flex flex-wrap items-center w-full max-w-5xl p-5 mx-auto text-left border border-gray-200 rounded lg:flex-nowrap md:p-8 dark:border-gray-700"
           >

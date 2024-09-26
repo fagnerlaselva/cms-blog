@@ -61,7 +61,6 @@
               </svg>
             </button>
           </div>
-
           <!-- Menu de Navegação -->
           <div
             id="navbar-sticky"
