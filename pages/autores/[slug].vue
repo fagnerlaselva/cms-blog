@@ -5,9 +5,9 @@
         loading="lazy"
         format="webp"
         :src="author.image"
-        :alt="author.title"
-        width="65"
-        height="65"
+        :alt="author.name"
+        width="60"
+        height="60"
         quality="70"
         class="w-20 h-20 object-cover m-4 rounded-full"
       />
