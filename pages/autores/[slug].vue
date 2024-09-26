@@ -1,9 +1,12 @@
 <template>
   <div class="">
     <section class="container p-4 pt-12">
-      <img
+      <NuxtPicture
+        loading="lazy"
+        format="webp"
         :src="author.image"
         :alt="author.title"
+        quality="70"
         class="w-20 h-20 object-cover m-4 rounded-full"
       />
       <h1 class="grid grid-cols-1 text-3xl font-bold gap-6 p-4">{{ author.name }}</h1>
@@ -26,9 +29,9 @@
                 height="270"
                 quality="70"
               />
-              <h3 class="text-2xl mb-2 text-gray-900 font-extrabold">
+              <h2 class="text-2xl mb-2 text-gray-900 font-extrabold">
                 {{ article.title }}
-              </h3>
+              </h2>
               <p class="text-gray-600 mb-4">{{ article.excerpt }}</p>
             </NuxtLink>
           </article>
