@@ -34,16 +34,16 @@
             v-if="article.image"
             loading="lazy"
             format="webp"
-            width="1200"
-            height="700"
+            width="1000"
+            height="578"
             quality="70"
             :src="article.image"
             :alt="article.title"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1200px"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1000px"
             :srcset="[
               { src: article.image, width: 400 },
               { src: article.image, width: 800 },
-              { src: article.image, width: 1200 }
+              { src: article.image, width: 1000 }
             ]"
             class="w-full sm:w-1/2 lg:w-[1200px] h-auto object-cover"
             placeholder-class="custom"
@@ -71,16 +71,16 @@
             v-if="article.image"
             loading="lazy"
             format="webp"
-            width="1200"
-            height="700"
+            width="1000"
+            height="578"
             quality="70"
             :src="article.image"
             :alt="article.title"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1200px"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 1000px"
             :srcset="[
               { src: article.image, width: 400 },
               { src: article.image, width: 800 },
-              { src: article.image, width: 1200 }
+              { src: article.image, width: 1000 }
             ]"
             class="w-full sm:w-1/2 lg:w-[1200px] h-auto object-cover"
             placeholder-class="custom"
