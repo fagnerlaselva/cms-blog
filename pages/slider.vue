@@ -41,7 +41,7 @@
           >
             <div
               ref="slider"
-              class="flex space-x-3 transition-transform duration-300 ease-in-out p-4"
+              class="flex space-x-3 transition-transform duration-200 ease-in-out p-4"
               :style="{ transform: `translateX(${currentPosition}px)` }"
             >
               <div
@@ -54,7 +54,7 @@
                   class="rounded-t-xl"
                 />
                 <div class="p-4">
-                  <span>Assitência veicular</span>
+                  <span>Assistência veicular</span>
                   <h2 class="text-xl font-bold mb-2">Socorro Mecânico card {{ index + 1 }}</h2>
                   <p>
                     Caso o seu carro tenha sofrido algum dano, mandaremos até você um profissional
