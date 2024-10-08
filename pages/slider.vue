@@ -1,7 +1,39 @@
 <template>
-  <div class="container mx-auto">
-    <!-- Seção de Assinatura -->
-    <!-- Seção de Artigos -->
+  <div>
+    <section
+      class="sm: rounded-2xl relative bg-[url(https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-assisty24h-new-nFSUObqPthiDmI0ElbKPkqmwBQykMO.webp)] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="absolute inset-0 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+      />
+
+      <div
+        class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:py-56 lg:flex lg:items-left lg:px-8"
+      >
+        <div class="max-w-2xl">
+          <h1 class="text-4xl font-medium sm:text-6xl text-white">
+            <strong class="font-medium" style="color: #bae7f3">Assistência 24h</strong>
+            onde quer que você esteja.
+          </h1>
+
+          <p class="mt-4 max-w-lg sm:text-xl/relaxed text-white">
+            Por apenas R$ 44,90 mensais, leve a segurança com você para qualquer lugar. Seja em
+            casa, no trabalho ou durante uma viagem, você está protegido!
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4 text-center">
+            <a
+              href="#"
+              style="background-color: #bae7f3; color: #010e78"
+              class="block text-2xl w-full rounded-2xl px-12 py-3 font-bold shadow focus:outline-none focus:ring sm:w-auto"
+            >
+              SAIBA MAIS
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="pt-12">
       <div class="flex flex-wrap items-center w-full md:flex-row-reverse">
         <!-- Slider de Cards -->
@@ -29,7 +61,9 @@
                 />
                 <div class="p-4">
                   <span>Assistência veicular</span>
-                  <h2 class="text-xl font-bold mb-2">Socorro Mecânico card {{ index + 1 }}</h2>
+                  <h2 class="text-xl/relaxed font-bold mb-2">
+                    Socorro Mecânico card {{ index + 1 }}
+                  </h2>
                   <p class="text-sm">
                     Caso o seu carro tenha sofrido algum dano, mandaremos até você um profissional
                     credenciado para fazer um reparo paliativo do veículo. {{ card.content }}
@@ -42,7 +76,9 @@
         <div class="relative w-full md:w-1/3">
           <!-- Texto explicativo -->
           <div class="p-4">
-            <h2 class="text-5xl font-medium">Conheça os serviços de assistências emergenciais</h2>
+            <h2 class="text-5xl leading-snug font-medium">
+              Conheça os serviços de assistências emergenciais
+            </h2>
             <p class="text-lg pt-10 sm:pr-40">
               Não importa onde você esteja, nós estamos com você 24h por dia!
             </p>
@@ -97,7 +133,7 @@
     <section class="pt-12">
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
         <div class="min-h-32 rounded-lg p-4">
-          <h2 class="text-5xl font-medium">
+          <h2 class="text-5xl leading-tight font-medium">
             Assistência veicular e residencial, vinculada a você!
           </h2>
           <p class="text-lg py-6 font-medium">
@@ -165,10 +201,10 @@
             Dúvidas? Fale conosco <br />
             contato@assisty24h.com.br
           </p>
-          <p class="pb-4">
-            SAC Assisty <br />
-            0800 717 7747
-          </p>
+          <div class="pb-4">
+            <div class="block">Assisty</div>
+            08007177747
+          </div>
         </div>
         <div class="min-h-32 rounded-lg p-8 lg:col-span-2">
           <div class="space-y-4">
