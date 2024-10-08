@@ -3,34 +3,8 @@
     <!-- Seção de Assinatura -->
     <!-- Seção de Artigos -->
     <section class="pt-12">
-      <div class="flex flex-wrap items-center w-full">
+      <div class="flex flex-wrap items-center w-full md:flex-row-reverse">
         <!-- Slider de Cards -->
-        <div class="relative w-full md:w-1/3 p-4">
-          <!-- Texto explicativo -->
-          <div>
-            <h2>Conheça os serviços de assistências emergenciais</h2>
-            <p>Não importa onde você esteja, nós estamos com você 24h por dia!</p>
-          </div>
-
-          <!-- Botões de navegação -->
-          <div class="relative flex justify-between mt-4">
-            <button
-              class="p-2 rounded-full h-14 w-14"
-              style="background: #deeffe; color: #020f83"
-              @click="prev"
-            >
-              &lt;
-            </button>
-            <button
-              class="p-2 rounded-full h-14 w-14"
-              style="background: #deeffe; color: #020f83"
-              @click="next"
-            >
-              &gt;
-            </button>
-          </div>
-        </div>
-
         <div class="w-full md:w-2/3">
           <!-- Wrapper do slider -->
           <div
@@ -41,13 +15,13 @@
           >
             <div
               ref="slider"
-              class="flex space-x-3 transition-transform duration-200 ease-in-out p-4"
+              class="flex transition-transform duration-200 ease-in-out p-4"
               :style="{ transform: `translateX(${currentPosition}px)` }"
             >
               <div
                 v-for="(card, index) in cards"
                 :key="index"
-                class="min-w-[300px] bg-white p-0 shadow-lg rounded-xl"
+                class="min-w-[300px] bg-white p-0 shadow-lg rounded-xl m-2"
               >
                 <NuxtImg
                   src="https://cms-blog-lilac.vercel.app/_vercel/image?url=%2Fassets%2Fimg%2FFeatures-Designed-4.webp&w=1024&q=70"
@@ -56,13 +30,268 @@
                 <div class="p-4">
                   <span>Assistência veicular</span>
                   <h2 class="text-xl font-bold mb-2">Socorro Mecânico card {{ index + 1 }}</h2>
-                  <p>
+                  <p class="text-sm">
                     Caso o seu carro tenha sofrido algum dano, mandaremos até você um profissional
                     credenciado para fazer um reparo paliativo do veículo. {{ card.content }}
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="relative w-full md:w-1/3">
+          <!-- Texto explicativo -->
+          <div class="p-4">
+            <h2 class="text-5xl font-medium">Conheça os serviços de assistências emergenciais</h2>
+            <p class="text-lg pt-10 sm:pr-40">
+              Não importa onde você esteja, nós estamos com você 24h por dia!
+            </p>
+          </div>
+          <!-- Botões de navegação -->
+          <div class="relative flex justify-normal mt-4 px-4 mr-4">
+            <button
+              class="inline-block rounded-full p-4 font-extrabold border-2 mr-3"
+              style="background: #deeffe; color: #020f83; border-color: #020f83"
+              @click="prev"
+            >
+              <svg
+                class="size-5 rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </button>
+            <button
+              class="inline-block rounded-full p-4 font-extrabold border-2"
+              style="background: #deeffe; color: #020f83; border-color: #020f83"
+              @click="next"
+            >
+              <svg
+                class="size-5 rtl:rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-12">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
+        <div class="min-h-32 rounded-lg p-4">
+          <h2 class="text-5xl font-medium">
+            Assistência veicular e residencial, vinculada a você!
+          </h2>
+          <p class="text-lg py-6 font-medium">
+            Atendemos seus assinantes em todo território nacional e não está vinculado ao seu
+            endereço. Nossos clientes são atendidos em casa de férias, de campo, de praia ou em
+            qualquer lugar.
+          </p>
+          <div>
+            <a
+              class="rounded-full inline-block border text-2xl border-indigo-600 bg-indigo-600 px-12 py-2 font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+              href="#"
+            >
+              ASSINE AGORA!
+            </a>
+          </div>
+        </div>
+        <div class="min-h-32 rounded-lg p-8">imagem</div>
+      </div>
+    </section>
+
+    <section class="pt-12">
+      <h2 class="text-5xl font-medium text-center pb-10">
+        Profissionais capacitados, garantindo o suporte que você merece na hora que mais precisa.
+      </h2>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
+        <div class="min-h-32 rounded-lg bg-gray-200 p-8">
+          <h3 class="text-2xl font-medium pb-4">Respondemos em até uma hora</h3>
+          <p>
+            Após entrar em contato através do nosso 0800 e abrir um chamado, nossos clientes são
+            atendidos o mais rápido possível. Buscamos realizar todos os chamados em até uma hora.
+          </p>
+        </div>
+        <div class="min-h-32 rounded-lg bg-gray-200 p-8">
+          <h3 class="text-2xl font-medium pb-4">Respondemos em até uma hora</h3>
+          <p>
+            Após entrar em contato através do nosso 0800 e abrir um chamado, nossos clientes são
+            atendidos o mais rápido possível. Buscamos realizar todos os chamados em até uma hora.
+          </p>
+        </div>
+        <div class="min-h-32 rounded-lg bg-gray-200 p-8">
+          <h3 class="text-2xl font-medium pb-4">Respondemos em até uma hora</h3>
+          <p>
+            Após entrar em contato através do nosso 0800 e abrir um chamado, nossos clientes são
+            atendidos o mais rápido possível. Buscamos realizar todos os chamados em até uma hora.
+          </p>
+        </div>
+        <div class="min-h-32 rounded-lg bg-gray-200 p-8">
+          <h3 class="text-2xl font-medium pb-4">Respondemos em até uma hora</h3>
+          <p>
+            Após entrar em contato através do nosso 0800 e abrir um chamado, nossos clientes são
+            atendidos o mais rápido possível. Buscamos realizar todos os chamados em até uma hora.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="pt-12">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+        <div class="min-h-32 rounded-lg p-4">
+          <h2 class="text-5xl font-medium">Ficou com alguma dúvida?</h2>
+          <p class="py-6 text-sm">
+            Separamos algumas dúvidas comuns, mas caso essas não te ajudem, entre em contato com
+            nosso time pelos canais de contato abaixo. Estamos prontos para te ajudar!
+          </p>
+          <p class="pb-4">
+            Dúvidas? Fale conosco <br />
+            contato@assisty24h.com.br
+          </p>
+          <p class="pb-4">
+            SAC Assisty <br />
+            0800 717 7747
+          </p>
+        </div>
+        <div class="min-h-32 rounded-lg p-8 lg:col-span-2">
+          <div class="space-y-4">
+            <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-4 text-lg font-medium">
+                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                </h2>
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-4 text-lg font-medium">
+                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                </h2>
+
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-4 text-lg font-medium">
+                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                </h2>
+
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-4 text-lg font-medium">
+                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                </h2>
+
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
           </div>
         </div>
       </div>
