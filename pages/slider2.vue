@@ -152,7 +152,7 @@ export default {
           '(min-width: 1024px)': {
             slides: {
               origin: 'auto',
-              perView: 1.5,
+              perView: 3,
               spacing: 32
             }
           }
