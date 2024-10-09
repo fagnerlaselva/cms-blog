@@ -24,6 +24,7 @@
     "@nuxtjs/robots": "^4.1.7",
     "@nuxtjs/seo": "^2.0.0-rc.21",
     "@nuxtjs/sitemap": "^6.0.1",
+    "keen-slider": "^6.8.6",
     "nuxt": "^3.13.0",
     "nuxt-vitalizer": "^0.10.0",
     "vue": "^3.5.3",

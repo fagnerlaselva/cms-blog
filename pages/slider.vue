@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="sm: rounded-2xl relative bg-[url(https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-assisty24h-new-nFSUObqPthiDmI0ElbKPkqmwBQykMO.webp)] bg-cover bg-center bg-no-repeat"
+      class="sm:rounded-2xl relative bg-[url(https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-assisty24h-new-nFSUObqPthiDmI0ElbKPkqmwBQykMO.webp)] bg-cover bg-center bg-no-repeat"
     >
       <div
         class="absolute inset-0 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
@@ -11,6 +11,34 @@
         class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:py-56 lg:flex lg:items-left lg:px-8"
       >
         <div class="max-w-2xl">
+          <div
+            class="fixed bottom-4 end-4 z-50 flex items-center justify-center gap-4 rounded-lg bg-black px-5 py-3 text-white"
+          >
+            <a
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              class="text-sm font-medium hover:opacity-75"
+            >
+              Hey! Come Check This Out 👋
+            </a>
+
+            <button class="rounded bg-white/20 p-1 hover:bg-white/10">
+              <span class="sr-only">Close</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
           <h1 class="text-4xl font-medium sm:text-6xl text-white">
             <strong class="font-medium" style="color: #bae7f3">Assistência 24h</strong>
             onde quer que você esteja.
