@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="absolute lg:inset-x-24 bottom-0 p-4">
+      <div class="absolute lg:inset-x-24 bottom-0 p-4" style="display: none !important">
         <div
           class="relative flex items-center justify-between gap-4 rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg"
         >
