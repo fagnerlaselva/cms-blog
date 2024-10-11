@@ -193,31 +193,33 @@
       </div>
     </section>
     <section class="w-full">
-      <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">Últimos Artigos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
-          <NuxtLink :to="'/post/' + recentArticle.slug">
-            <NuxtPicture
-              loading="lazy"
-              format="webp"
-              :src="recentArticle.image"
-              :alt="recentArticle.title"
-              sizes="(max-width: 370px) 100vw, (max-width: 370px) 50vw, 370px"
-              width="600"
-              height="300"
-              quality="70"
-              class="w-full h-60 object-cover my-4"
-            />
-            <h2 class="text-2xl mb-2 mt-4 text-gray-900 font-extrabold">
-              {{ recentArticle.title }}
-            </h2>
-            <p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
-          </NuxtLink>
-        </article>
+      <div class="container mx-auto grid gap-6">
+        <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">Últimos Artigos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
+            <NuxtLink :to="'/post/' + recentArticle.slug">
+              <NuxtPicture
+                loading="lazy"
+                format="webp"
+                :src="recentArticle.image"
+                :alt="recentArticle.title"
+                sizes="(max-width: 370px) 100vw, (max-width: 370px) 50vw, 370px"
+                width="600"
+                height="300"
+                quality="70"
+                class="w-full h-60 object-cover my-4"
+              />
+              <h2 class="text-2xl mb-2 mt-4 text-gray-900 font-extrabold">
+                {{ recentArticle.title }}
+              </h2>
+              <p class="text-gray-600 mb-4">{{ recentArticle.excerpt }}</p>
+            </NuxtLink>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="container p-4 py-12">
+    <section class="container mx-auto grid gap-6 py-12">
       <NuxtLink to="/" class="text-blue-600 hover:underline"> ← Voltar para a Home </NuxtLink>
     </section>
     <footer class="p-2">

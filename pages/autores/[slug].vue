@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <section class="container pt-12">
-      <div class="px-4">
+    <section class="container mx-auto grid gap-6 pt-12">
+      <div class="grid px-4">
         <NuxtPicture
           loading="lazy"
           format="webp"
@@ -13,8 +13,8 @@
           class="h-14 w-14 object-cover rounded-full"
         />
       </div>
-      <h1 class="grid grid-cols-1 text-3xl font-bold gap-6 p-4">{{ author.name }}</h1>
-      <p class="grid grid-cols-1 lg:grid-cols-2 mb-4 gap-6 p-4">
+      <h1 class="grid grid-cols-1 text-3xl font-bold gap-6 px-4">{{ author.name }}</h1>
+      <p class="grid grid-cols-1 lg:grid-cols-2 mb-4 gap-6 px-4">
         {{ author?.bio }}
       </p>
       <div v-if="filteredArticles.length > 0">
@@ -45,7 +45,7 @@
         <p class="text-gray-600">Não há artigos para este autor.</p>
       </div>
     </section>
-    <section class="container p-4 py-12">
+    <section class="container mx-auto p-4 py-12">
       <NuxtLink to="/" class="text-blue-600 hover:underline"> ← Voltar para a Home </NuxtLink>
     </section>
   </div>

@@ -13,7 +13,7 @@
         <nav class="container flex flex-wrap items-center justify-between mx-auto p-0 py-2">
           <!-- Logo e Título -->
           <NuxtLink
-            to="/"
+            to="/slider2"
             class="flex items-center space-x-3 font-black text-2xl rtl:space-x-reverse"
           >
             Logo
@@ -70,6 +70,17 @@
             <ul
               class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
             >
+              <!-- <li class="py-2 px-2">
+                <NuxtLink
+                  to="/slider2"
+                  aria-current="page"
+                  alt="Home Page"
+                  aria-label="Ir para Home page"
+                  class="text-1xl text-gray-900 hover:underline"
+                >
+                  Home 2
+                </NuxtLink>
+              </li> -->
               <li class="py-2 px-2">
                 <NuxtLink
                   to="/"
@@ -78,7 +89,7 @@
                   aria-label="Ir para Home page"
                   class="text-1xl text-gray-900 hover:underline"
                 >
-                  Home
+                  Blog
                 </NuxtLink>
               </li>
               <li v-for="category in uniqueCategories" :key="category.slug" class="py-2 px-2">
@@ -96,7 +107,7 @@
     </div>
 
     <!-- Conteúdo dinâmico -->
-    <main class="container mx-auto pt-20 pb-20">
+    <main class="pt-20 pb-20">
       <NuxtPage />
     </main>
 
@@ -146,6 +157,30 @@
         </NuxtLink>
       </div>
     </footer>
+
+    <div
+      class="fixed bottom-4 end-4 z-50 flex items-center justify-center gap-4 rounded-lg bg-black px-5 py-3 text-white"
+    >
+      <a href="#" target="_blank" rel="noreferrer" class="text-sm font-medium hover:opacity-75">
+        Ei! Inscreve-sa na nossa newsletter 👋
+      </a>
+
+      <button class="rounded bg-white/20 p-1 hover:bg-white/10">
+        <span class="sr-only">Close</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-4"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </template>
 

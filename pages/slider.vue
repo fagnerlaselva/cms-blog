@@ -1,27 +1,19 @@
 <template>
   <div>
     <section
-      class="sm:rounded-2xl relative bg-[url(https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-assisty24h-new-nFSUObqPthiDmI0ElbKPkqmwBQykMO.webp)] bg-cover bg-center bg-no-repeat"
+      class="container mx-auto sm:rounded-2xl relative bg-[url(https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-assisty24h-new-nFSUObqPthiDmI0ElbKPkqmwBQykMO.webp)] bg-cover bg-center bg-no-repeat"
     >
       <div
         class="absolute inset-0 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
       />
-
       <div
         class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:py-56 lg:flex lg:items-left lg:px-8"
       >
-        <div class="max-w-2xl">
-          <div
-            class="fixed bottom-4 end-4 z-50 flex items-center justify-center gap-4 rounded-lg bg-black px-5 py-3 text-white"
-          >
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              class="text-sm font-medium hover:opacity-75"
-            >
-              Hey! Come Check This Out 👋
-            </a>
+        <div class="w-full">
+          <div class="flex items-left gap-4 rounded-full bg-black px-5 py-3 text-white">
+            <div class="text-sm font-medium hover:opacity-75">
+              Somos uma assistência, não um seguro! 😊
+            </div>
 
             <button class="rounded bg-white/20 p-1 hover:bg-white/10">
               <span class="sr-only">Close</span>
@@ -63,7 +55,7 @@
     </section>
 
     <section class="pt-12">
-      <div class="flex flex-wrap items-center w-full md:flex-row-reverse">
+      <div class="container mx-auto flex flex-wrap items-center w-full md:flex-row-reverse">
         <!-- Slider de Cards -->
         <div class="w-full md:w-2/3">
           <!-- Wrapper do slider -->
@@ -159,7 +151,7 @@
     </section>
 
     <section class="pt-12">
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
+      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
         <div class="min-h-32 rounded-lg p-4">
           <h2 class="text-5xl leading-tight font-medium">
             Assistência veicular e residencial, vinculada a você!
@@ -183,10 +175,10 @@
     </section>
 
     <section class="pt-12">
-      <h2 class="text-5xl font-medium text-center pb-10">
+      <h2 class="container mx-auto text-5xl font-medium text-center pb-10">
         Profissionais capacitados, garantindo o suporte que você merece na hora que mais precisa.
       </h2>
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
+      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
         <div class="min-h-32 rounded-lg bg-gray-200 p-8">
           <h3 class="text-2xl font-medium pb-4">Respondemos em até uma hora</h3>
           <p>
@@ -218,7 +210,7 @@
       </div>
     </section>
     <section class="pt-12">
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
         <div class="min-h-32 rounded-lg p-4">
           <h2 class="text-5xl font-medium">Ficou com alguma dúvida?</h2>
           <p class="py-6 text-sm">

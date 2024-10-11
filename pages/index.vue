@@ -51,7 +51,7 @@
 
     <!-- Seção de Artigos -->
     <section class="pt-12">
-      <div class="grid gap-6">
+      <div class="container mx-auto grid gap-6">
         <!-- Primeiro card: Imagem à esquerda e texto à direita -->
         <article
           v-for="(article, index) in articles"
