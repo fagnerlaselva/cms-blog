@@ -161,9 +161,14 @@
     <div
       class="fixed bottom-4 end-4 z-50 flex items-center justify-center gap-4 rounded-lg bg-black px-5 py-3 text-white"
     >
-      <a href="#" target="_blank" rel="noreferrer" class="text-sm font-medium hover:opacity-75">
+      <NuxtLink
+        to="/newsletter"
+        target="_blank"
+        rel="noreferrer"
+        class="text-sm font-medium hover:opacity-75"
+      >
         Ei! Inscreve-sa na nossa newsletter 👋
-      </a>
+      </NuxtLink>
 
       <button class="rounded bg-white/20 p-1 hover:bg-white/10">
         <span class="sr-only">Close</span>

@@ -8,7 +8,7 @@
       />
 
       <div
-        class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:py-48 lg:flex lg:items-left lg:px-8"
+        class="relative mx-auto max-w-screen-xl px-4 py-32 lg:py-48 lg:flex lg:items-left sm:px-8"
       >
         <div class="max-w-2xl">
           <span
@@ -201,6 +201,29 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="pt-12">
+      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-2">
+        <div class="min-h-32 rounded-lg p-4">
+          <h2 class="text-5xl leading-tight font-medium">
+            Assistência veicular e residencial, vinculada a você!
+          </h2>
+          <p class="text-lg py-6 font-medium">
+            Atendemos seus assinantes em todo território nacional e não está vinculado ao seu
+            endereço. Nossos clientes são atendidos em casa de férias, de campo, de praia ou em
+            qualquer lugar.
+          </p>
+          <div>
+            <a
+              class="rounded-full inline-block border text-2xl border-indigo-600 bg-indigo-600 px-12 py-2 font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+              href="#"
+            >
+              ASSINE AGORA!
+            </a>
+          </div>
+        </div>
+        <div class="min-h-32 rounded-lg p-8">imagem</div>
       </div>
     </section>
   </div>
