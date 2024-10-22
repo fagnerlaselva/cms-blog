@@ -81,9 +81,7 @@
                 />
                 <div class="p-4">
                   <span>Assistência veicular</span>
-                  <h2 class="text-xl/relaxed font-bold mb-2">
-                    Socorro Mecânico card {{ index + 1 }}
-                  </h2>
+                  <h2 class="text-xl/relaxed font-bold mb-2">Socorro Mecânico {{ index + 1 }}</h2>
                   <p class="text-sm">
                     Caso o seu carro tenha sofrido algum dano, mandaremos até você um profissional
                     credenciado para fazer um reparo paliativo do veículo. {{ card.content }}
