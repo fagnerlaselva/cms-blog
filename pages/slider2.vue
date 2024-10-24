@@ -451,7 +451,7 @@
       >
         Profissionais capacitados, garantindo o suporte que você merece na hora que mais precisa.
       </h2>
-      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+      <div class="container mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
         <div class="min-h-32 rounded-[20px] p-8" style="background: #f5f5f5">
           <span
             class="bg-primary mr-2.5 flex h-[52px] w-full max-w-[52px] items-center justify-center rounded-full text-base text-white"
@@ -711,12 +711,14 @@
     </section>
     <section class="pt-16 p-4">
       <div class="container mx-auto grid lg:grid-cols-2">
-        <div class="bg-[#F3F3F3] rounded-t-2xl lg:rounded-none lg:rounded-l-2xl p-8 md:p-16">
-          <h3 class="text-[34px] text-[#010E78] font-semibold max-w-[400px] mb-8">
+        <div
+          class="bg-[#F3F3F3] rounded-t-2xl lg:rounded-none lg:rounded-l-2xl p-8 md:p-45 xl:pl-36 content-center items-center justify-center"
+        >
+          <h2 class="text-[34px] text-[#010E78] font-semibold max-w-[400px] mb-8 font-sans">
             Ao adquirir agora, você receberá não apenas uma assistência, mas também..
-          </h3>
-          <ol class="space-y-3 text-[#010E78] text-xl font-normal">
-            <li class="text-body-color dark:text-dark-6 flex pb-2 items-center">
+          </h2>
+          <ol class="space-y-2 text-[#010E78] text-xl font-normal">
+            <li class="text-body-color font-medium dark:text-dark-6 flex pb-2 items-center">
               <span
                 class="bg-primary mr-4 flex h-[24px] w-full max-w-[24px] items-center justify-center rounded-full"
                 style="background: #00b900"
@@ -736,7 +738,7 @@
               </span>
               Cobertura em todo território nacional
             </li>
-            <li class="text-body-color dark:text-dark-6 flex pb-2 items-center">
+            <li class="text-body-color font-medium dark:text-dark-6 flex pb-2 items-center">
               <span
                 class="bg-primary mr-4 flex h-[24px] w-full max-w-[24px] items-center justify-center rounded-full"
                 style="background: #00b900"
@@ -756,8 +758,7 @@
               </span>
               Sem limites, utilize quando precisar
             </li>
-
-            <li class="text-body-color dark:text-dark-6 flex pb-2 items-center">
+            <li class="text-body-color font-medium dark:text-dark-6 flex pb-2 items-center">
               <span
                 class="bg-primary mr-4 flex h-[24px] w-full max-w-[24px] items-center justify-center rounded-full"
                 style="background: #00b900"
@@ -777,7 +778,7 @@
               </span>
               Atendimento onde você estiver
             </li>
-            <li class="text-body-color dark:text-dark-6 flex pb-2 items-center">
+            <li class="text-body-color font-medium dark:text-dark-6 flex pb-2 items-center">
               <span
                 class="bg-primary mr-4 flex h-[24px] w-full max-w-[24px] items-center justify-center rounded-full"
                 style="background: #00b900"
@@ -800,23 +801,539 @@
           </ol>
         </div>
         <div
-          class="relative itens-center bg-[#010E78] text-[#fff] rounded-b-2xl lg:rounded-none lg:rounded-r-2xl p-16 content-center items-center justify-items-center"
+          class="relative itens-center bg-[#010E78] text-[#fff] rounded-b-2xl lg:rounded-none lg:rounded-r-2xl p-16 pb-8 content-center items-center justify-items-center"
         >
           <div
-            class="-mt-[64px] md:-mt-[64px] lg:-mt-[90px] xl:-mt-[64px] bg-[#0015BE] p-4 rounded-b-2xl font-semibold"
+            class="-mt-[64px] md:-mt-[64px] lg:-mt-[90px] xl:-mt-[64px] flex flex-row space-x-2 bg-[#0015BE] p-4 rounded-b-2xl font-semibold"
           >
-            OFERTA LIMITADA
+            <svg
+              width="25"
+              height="26"
+              viewBox="0 0 25 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.1983 2.91656C12.8174 2.53568 12.1826 2.53568 11.8017 2.91656C11.8017 2.91656 11.8017 2.91655 11.8017 2.91656L10.0318 4.68649C9.77569 4.94262 9.4429 5.13499 9.13452 5.26285C8.82662 5.3905 8.45695 5.48952 8.09849 5.48952H5.59501C5.05262 5.48952 4.60525 5.9369 4.60525 6.47924V8.98276C4.60525 9.34124 4.50621 9.71091 4.37854 10.0188C4.25068 10.3272 4.05831 10.66 3.80219 10.9161C3.80219 10.9161 3.80219 10.9161 3.80219 10.9161L2.03229 12.686C1.6514 13.0669 1.6514 13.7017 2.03229 14.0825L3.79707 15.8474C4.05845 16.1013 4.25144 16.4345 4.37854 16.741C4.50759 17.0522 4.60525 17.4242 4.60525 17.7858V20.2892C4.60525 20.8316 5.0527 21.279 5.59501 21.279H8.09849C8.45695 21.279 8.82662 21.3781 9.13452 21.5057C9.4429 21.6336 9.77568 21.8259 10.0318 22.0821L11.8017 23.852C12.1826 24.2329 12.8174 24.2329 13.1983 23.852L14.9682 22.0821C15.2243 21.8259 15.5571 21.6336 15.8654 21.5057C16.1733 21.3781 16.543 21.279 16.9015 21.279H19.405C19.9473 21.279 20.3947 20.8316 20.3947 20.2892V17.7858C20.3947 17.4273 20.4938 17.0576 20.6214 16.7497C20.7493 16.4414 20.9417 16.1086 21.1978 15.8525L22.9677 14.0825C23.3486 13.7017 23.3486 13.0669 22.9677 12.686L21.1978 10.9161C20.9417 10.66 20.7493 10.3272 20.6214 10.0188C20.4938 9.71091 20.3947 9.34124 20.3947 8.98276V6.47924C20.3947 5.93688 19.9474 5.48952 19.405 5.48952H16.9015C16.543 5.48952 16.1733 5.3905 15.8654 5.26284C15.5571 5.13499 15.2243 4.94262 14.9682 4.68649L13.1983 2.91656ZM10.5667 1.68152C11.6296 0.618531 13.3703 0.618531 14.4333 1.68152L16.2032 3.45145C16.2499 3.49807 16.3654 3.57932 16.5344 3.6494C16.7039 3.71968 16.8407 3.7429 16.9015 3.7429H19.405C20.912 3.7429 22.1413 4.97224 22.1413 6.47924V8.98276C22.1413 9.04347 22.1646 9.18032 22.2348 9.34983C22.3049 9.51887 22.3862 9.6344 22.4328 9.68103L24.2028 11.451C25.2657 12.5139 25.2657 14.2546 24.2028 15.3176L22.4328 17.0875C22.3862 17.1342 22.3049 17.2497 22.2348 17.4187C22.1646 17.5882 22.1413 17.7251 22.1413 17.7858V20.2892C22.1413 21.7961 20.9121 23.0257 19.405 23.0257H16.9015C16.8407 23.0257 16.7039 23.0489 16.5344 23.1192C16.3654 23.1892 16.2499 23.2705 16.2032 23.3171L14.4333 25.087C13.3703 26.15 11.6296 26.15 10.5667 25.087L8.79676 23.3171C8.75015 23.2705 8.63463 23.1892 8.46559 23.1192C8.29608 23.0489 8.15922 23.0257 8.09849 23.0257H5.59501C4.08794 23.0257 2.85862 21.7961 2.85862 20.2892V17.7858C2.85862 17.7166 2.83401 17.5762 2.76511 17.41C2.69542 17.2419 2.61712 17.1358 2.57936 17.0995L2.56713 17.0875L0.797237 15.3176C0.797235 15.3176 0.797239 15.3176 0.797237 15.3176C-0.265742 14.2546 -0.265748 12.514 0.797231 11.451C0.797229 11.451 0.797233 11.451 0.797231 11.451L2.56713 9.68104C2.61376 9.63441 2.69503 9.51887 2.76511 9.34983C2.8354 9.18032 2.85862 9.04347 2.85862 8.98276V6.47924C2.85862 4.97222 4.08803 3.7429 5.59501 3.7429H8.09849C8.15922 3.7429 8.29608 3.71967 8.46559 3.6494C8.63462 3.57932 8.75014 3.49807 8.79676 3.45145C8.79675 3.45146 8.79676 3.45145 8.79676 3.45145L10.5667 1.68152Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.4226 9.46185C16.748 9.78729 16.748 10.3149 16.4226 10.6404L9.75593 17.307C9.4305 17.6325 8.90286 17.6325 8.57742 17.307C8.25198 16.9816 8.25198 16.454 8.57742 16.1285L15.2441 9.46185C15.5695 9.13641 16.0972 9.13641 16.4226 9.46185Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.1026 16.2689C14.1026 15.5608 14.674 14.9868 15.3789 14.9868H15.3904C16.0952 14.9868 16.6667 15.5608 16.6667 16.2689C16.6667 16.9769 16.0952 17.5509 15.3904 17.5509H15.3789C14.674 17.5509 14.1026 16.9769 14.1026 16.2689Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.33334 10.4998C8.33334 9.79177 8.90477 9.21777 9.60966 9.21777H9.62113C10.326 9.21777 10.8974 9.79177 10.8974 10.4998C10.8974 11.2079 10.326 11.7819 9.62113 11.7819H9.60966C8.90477 11.7819 8.33334 11.2079 8.33334 10.4998Z"
+                fill="white"
+              />
+            </svg>
+            <spam>OFERTA LIMITADA</spam>
           </div>
           <div class="items-center text-center pt-[30px] center max-w-[280px] text-[20px]">
             Garanta essa condição e <strong>assine o seu plano agora!</strong>
           </div>
-          <div class="items-center">
-            R$
-            <span class="text-[100px] md:text-[144px]">44,90</span>
+          <div class="items-center relative">
+            <div class="items-center absolute top-4 md:top-8 font-medium text-[30px] -ml-4">R$</div>
+            <span class="font-semibold text-[100px] md:text-[130px]">44,90</span>
           </div>
-          <div>QUERO TER MAIS TRANQUILIDADE!</div>
-          <div>OFERTA LIMITADA</div>
-          <div>Os seus dados estão 100% seguros</div>
+          <div class="block">
+            <a
+              class="rounded-2xl inline-block text-[20px] px-8 mt-4 py-2 font-medium text-white bg-[#2A85FF] hover:border-[#2A85FF] *: focus:outline-none focus:ring text-center"
+              href="#"
+            >
+              QUERO TER MAIS TRANQUILIDADE!
+            </a>
+          </div>
+
+          <div class="mt-[22px]">LOGO LOGO LOGO LOGO LOGO</div>
+          <div class="text-[10px] mt-[50px] flex flex-row space-x-2 justify-center items-center">
+            <svg
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.75079 17.876C11.9599 17.876 13.7508 16.0851 13.7508 13.876C13.7508 11.6668 11.9599 9.87598 9.75079 9.87598C7.54165 9.87598 5.75079 11.6668 5.75079 13.876C5.75079 16.0851 7.54165 17.876 9.75079 17.876Z"
+                stroke="#61A3FC"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.19122 13.876L8.84122 14.526C9.03122 14.716 9.34122 14.726 9.53122 14.536L11.3112 12.896"
+                stroke="#61A3FC"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6.7508 20.876H12.7508C16.7708 20.876 17.4908 19.266 17.7008 17.306L18.4508 11.306C18.7208 8.86598 18.0208 6.87598 13.7508 6.87598H5.7508C1.4808 6.87598 0.780803 8.86598 1.0508 11.306L1.8008 17.306C2.0108 19.266 2.7308 20.876 6.7508 20.876Z"
+                stroke="#61A3FC"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5.25079 6.54599V5.57598C5.25079 3.32598 7.06079 1.11599 9.31079 0.905985C11.9908 0.645985 14.2508 2.75599 14.2508 5.38599V6.76599"
+                stroke="#61A3FC"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <spam>Os seus dados estão 100% seguros</spam>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Cards Section Start -->
+    <section class="bg-gray-2 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <div class="container mx-auto">
+        <h2
+          class="container mx-auto text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
+        >
+          Leia os últimos posts do nosso blog
+        </h2>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+            <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
+              <NuxtImg
+                src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-01.jpg"
+                alt="image"
+                class="w-full"
+              />
+              <div class="bg-[#000BA4] text-[16x] font-semibold text-[#BAE7F3] px-4 py-2">
+                FINANÇAS
+              </div>
+              <div class="p-4 text-left">
+                <h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[18px] xl:text-xl 2xl:text-[22px]"
+                  >
+                    Quer começar a investir, mas não sabe como? Veja mais!
+                  </a>
+                </h3>
+
+                <a
+                  href="javascript:void(0)"
+                  class="inline-block py-1 text-base font-medium transition border border-white hover:border rounded-full text-body-color bg-white hover:border-gray-3 px-5 text-[14px]"
+                >
+                  LEIA MATÉRIA COMPLETA
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+            <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
+              <NuxtImg
+                src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-02.jpg"
+                alt="image"
+                height="250"
+              />
+              <div class="bg-[#000BA4] text-[16px] font-semibold text-[#BAE7F3] px-4 py-2">
+                SEGURANÇA
+              </div>
+              <div class="p-4 text-left">
+                <h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+                  >
+                    9 situações em que é possível acionar o seguro residência.
+                  </a>
+                </h3>
+
+                <a
+                  href="javascript:void(0)"
+                  class="inline-block py-1 text-base font-medium transition border border-white hover:border rounded-full text-body-color bg-white hover:border-gray-3 px-5 text-[14px]"
+                >
+                  LEIA MATÉRIA COMPLETA
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+            <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
+              <NuxtImg
+                src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                alt="image"
+                class="w-full"
+              />
+              <div class="bg-[#000BA4] text-[16px] font-semibold text-[#BAE7F3] px-4 py-2">
+                TECNOLOGIA
+              </div>
+              <div class="p-4 text-left">
+                <h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-darkhover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+                  >
+                    Smart Home: tudo o que você precisa saber sobre o tema!
+                  </a>
+                </h3>
+
+                <a
+                  href="javascript:void(0)"
+                  class="inline-block py-1 text-base font-medium transition border border-white hover:border rounded-full text-body-color bg-white hover:border-gray-3 px-5 text-[14px]"
+                >
+                  LEIA MATÉRIA COMPLETA
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+            <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
+              <NuxtImg
+                src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                alt="image"
+                class="w-full"
+              />
+              <div class="bg-[#000BA4] text-[16px] font-semibold text-[#BAE7F3] px-4 py-2">
+                TECNOLOGIA
+              </div>
+              <div class="p-4 text-left">
+                <h3>
+                  <a
+                    href="javascript:void(0)"
+                    class="text-darkhover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+                  >
+                    Smart Home: tudo o que você precisa saber sobre o tema!
+                  </a>
+                </h3>
+
+                <a
+                  href="javascript:void(0)"
+                  class="inline-block py-1 text-base font-medium transition border border-white hover:border rounded-full text-body-color bg-white hover:border-gray-3 px-5 text-[14px]"
+                >
+                  LEIA MATÉRIA COMPLETA
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Cards Section End -->
+
+    <section class="pt-12">
+      <div
+        class="container mx-auto flex flex-col px-4 gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
+      >
+        <div class="rounded-lg flex justify-center lg:w-2/3">
+          <NuxtImg
+            src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assintecia-a-todo-alcanvce-banner-min-w0kRIcXeoQLtmAzGahKBFS9RcsJxZq.png"
+            class="rounded-t-xl"
+          />
+        </div>
+        <div class="min-h-32 rounded-lg content-center max-w-2xl justify-center lg:w-1/3">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Tudo ao alcance de uma só chamada.
+          </h2>
+          <p class="text-lg py-6 font-medium">
+            Obtenha a assistência que precisa em poucos cliques.
+          </p>
+          <div class="block">
+            <a
+              class="rounded-full inline-block border text-xl px-8 mt-4 py-2 font-medium text-white hover:bg-transparent bg-[#0011FF] hover:border-[#0011FF] *: hover:text-indigo-600 focus:outline-none focus:ring active:text-[#0011FF]"
+              href="#"
+            >
+              ASSINE AGORA!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-24">
+      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+        <div class="min-h-32 rounded-lg p-4">
+          <h2 class="text-5xl font-medium">Ficou com alguma dúvida?</h2>
+          <p class="py-6 text-sm">
+            Separamos algumas dúvidas comuns, mas caso essas não te ajudem, entre em contato com
+            nosso time pelos canais de contato abaixo. Estamos prontos para te ajudar!
+          </p>
+          <div class="flex flex-wrap gap-4 content-center items-center pb-4">
+            <div
+              class="bg-[#D2EBFF] w-[34px] h-[34px] rounded-lg flex items-center justify-center content-center"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.2 20.4098C11.54 21.2898 10.46 21.2898 9.79999 20.4098L8.29999 18.4098C8.12999 18.1898 7.77 18.0098 7.5 18.0098H7C3 18.0098 1 17.0098 1 12.0098V7.00977C1 3.00977 3 1.00977 7 1.00977H15C19 1.00977 21 3.00977 21 7.00977V12.0098"
+                  stroke="#000BA4"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.2 20.4391C18.9673 20.4391 20.4 19.0064 20.4 17.2391C20.4 15.4717 18.9673 14.0391 17.2 14.0391C15.4327 14.0391 14 15.4717 14 17.2391C14 19.0064 15.4327 20.4391 17.2 20.4391Z"
+                  stroke="#000BA4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 21.0391L20 20.0391"
+                  stroke="#000BA4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.9965 10.043H15.0054"
+                  stroke="#000BA4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.9955 10.043H11.0045"
+                  stroke="#000BA4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.99451 10.043H7.00349"
+                  stroke="#000BA4"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div>
+              <p>
+                Dúvidas? Fale conosco
+                <strong class="font-semibold block">contato@assisty24h.com.br</strong>
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4 content-center items-center">
+            <div
+              class="bg-[#D2EBFF] w-[34px] h-[34px] rounded-lg flex items-center justify-center content-center"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.97 17.3671C20.97 17.7271 20.89 18.0971 20.72 18.4571C20.55 18.8171 20.33 19.1571 20.04 19.4771C19.55 20.0171 19.01 20.4071 18.4 20.6571C17.8 20.9071 17.15 21.0371 16.45 21.0371C15.43 21.0371 14.34 20.7971 13.19 20.3071C12.04 19.8171 10.89 19.1571 9.75 18.3271C8.6 17.4871 7.51 16.5571 6.47 15.5271C5.44 14.4871 4.51 13.3971 3.68 12.2571C2.86 11.1171 2.2 9.97711 1.72 8.84711C1.24 7.70711 1 6.61711 1 5.57711C1 4.89711 1.12 4.24711 1.36 3.64711C1.6 3.03711 1.98 2.47711 2.51 1.97711C3.15 1.34711 3.85 1.03711 4.59 1.03711C4.87 1.03711 5.15 1.09711 5.4 1.21711C5.66 1.33711 5.89 1.51711 6.07 1.77711L8.39 5.04711C8.57 5.29711 8.7 5.52711 8.79 5.74711C8.88 5.95711 8.93 6.16711 8.93 6.35711C8.93 6.59711 8.86 6.83711 8.72 7.06711C8.59 7.29711 8.4 7.53711 8.16 7.77711L7.4 8.56711C7.29 8.67711 7.24 8.80711 7.24 8.96711C7.24 9.04711 7.25 9.11711 7.27 9.19711C7.3 9.27711 7.33 9.33711 7.35 9.39711C7.53 9.72711 7.84 10.1571 8.28 10.6771C8.73 11.1971 9.21 11.7271 9.73 12.2571C10.27 12.7871 10.79 13.2771 11.32 13.7271C11.84 14.1671 12.27 14.4671 12.61 14.6471C12.66 14.6671 12.72 14.6971 12.79 14.7271C12.87 14.7571 12.95 14.7671 13.04 14.7671C13.21 14.7671 13.34 14.7071 13.45 14.5971L14.21 13.8471C14.46 13.5971 14.7 13.4071 14.93 13.2871C15.16 13.1471 15.39 13.0771 15.64 13.0771C15.83 13.0771 16.03 13.1171 16.25 13.2071C16.47 13.2971 16.7 13.4271 16.95 13.5971L20.26 15.9471C20.52 16.1271 20.7 16.3371 20.81 16.5871C20.91 16.8371 20.97 17.0871 20.97 17.3671Z"
+                  stroke="#000BA4"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M17.5 8.03711C17.5 7.43711 17.03 6.51711 16.33 5.76711C15.69 5.07711 14.84 4.53711 14 4.53711"
+                  stroke="#000BA4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 8.03711C21 4.16711 17.87 1.03711 14 1.03711"
+                  stroke="#000BA4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div>
+              <p>
+                Assisty
+                <strong class="font-semibold block">0800 717 7747</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="min-h-32 rounded-lg lg:px-8 lg:col-span-2">
+          <div class="space-y-4">
+            <details class="group [&_summary::-webkit-details-marker]:hidden border-b" open>
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-2 text-2xl font-semibold">Por que é tão barato?</h2>
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                A Assisty24h escolheu ser mais barata, mostrando que menor preço nada tem a ver com
+                baixa qualidade. Por aqui, o que nos move é a missão de proteger com qualidade todos
+                os brasileiros.
+              </p>
+            </details>
+
+            <details
+              class="group [&_summary::-webkit-details-marker]:hidden border-b"
+              style="margin-top: 0"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-2 text-2xl font-semibold">Para quem é o Assisty24h?</h2>
+
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details
+              class="group [&_summary::-webkit-details-marker]:hidden border-b"
+              style="margin-top: 0"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-2 text-2xl font-semibold">
+                  Quais as formas de pagamento disponíveis?
+                </h2>
+
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details
+              class="group [&_summary::-webkit-details-marker]:hidden border-b"
+              style="margin-top: 0"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-2 text-2xl font-semibold">
+                  Tem algum tipo de carência na Assisty24h?
+                </h2>
+
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details
+              class="[&_summary::-webkit-details-marker]:hidden border-b"
+              style="margin-top: 0"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+              >
+                <h2 class="py-2 text-2xl font-semibold">
+                  A assistência tem algum prazo de seguro?
+                </h2>
+
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+
+              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
+                culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
+                officiis explicabo consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+          </div>
         </div>
       </div>
     </section>
