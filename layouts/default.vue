@@ -1,108 +1,90 @@
 <template>
-  <div class="">
+  <div>
     <!-- Cabeçalho ou Navbar -->
 
-    <div class="container mx-auto relative">
+    <div class="w-full bg-white">
       <header
         :class="[
-          ' p-4 py-2 flex justify-between items-center transition-transform duration-500 ease-in-out sh',
+          'p-4 py-2 flex justify-between items-center transition-transform duration-500 ease-in-out sh',
           { '-translate-y-full': !showHeader }
         ]"
-        class="container bg-white fixed w-full z-20 top-0"
+        class="fixed w-full z-20 top-0 bg-white"
       >
-        <nav class="container flex flex-wrap items-center justify-between mx-auto p-0 py-2">
-          <!-- Logo e Título -->
-          <NuxtLink
-            to="/slider2"
-            class="flex items-center space-x-3 font-black text-2xl rtl:space-x-reverse"
-          >
-            Logo
-          </NuxtLink>
-          <!-- <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <NuxtPicture
-              loading="lazy"
-              placeholder-class="custom"
-              src="/assets/img/logo-assysty24g.svg"
-              alt="Logo Assisaty 24h"
-              :width="124"
-              :height="29"
-            />
-          </NuxtLink> -->
+        <div class="container mx-auto">
+          <nav class="flex flex-wrap items-center justify-between p-0 py-2">
+            <!-- Logo e Título -->
+            <NuxtLink
+              to="/slider2"
+              class="flex items-center space-x-3 font-black text-2xl rtl:space-x-reverse"
+            >
+              Logo
+            </NuxtLink>
 
-          <!-- Botão de Menu (Hambúrguer) -->
-          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button
-              type="button"
-              class="text-gray-900 hover:text-white bg-white border border-gray-200 hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-4 py-2 text-center"
-            >
-              Assine agora
-            </button>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-400"
-              @click="toggleMenu"
-            >
-              <span class="sr-only">Abrir menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
+            <!-- Botão de Menu (Hambúrguer) -->
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+              <button
+                type="button"
+                class="text-gray-900 hover:text-white bg-white border border-gray-200 hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-4 py-2 text-center"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-          </div>
-          <!-- Menu de Navegação -->
-          <div
-            id="navbar-sticky"
-            :class="{ hidden: !isMenuOpen }"
-            class="items-center justify-between w-full md:flex md:w-auto md:order-1"
-          >
-            <ul
-              class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+                Assine agora
+              </button>
+              <button
+                data-collapse-toggle="navbar-sticky"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-500 dark:focus:ring-gray-400"
+                @click="toggleMenu"
+              >
+                <span class="sr-only">Abrir menu</span>
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 17 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Menu de Navegação -->
+            <div
+              id="navbar-sticky"
+              :class="{ hidden: !isMenuOpen }"
+              class="items-center justify-between w-full md:flex md:w-auto md:order-1"
             >
-              <!-- <li class="py-2 px-2">
-                <NuxtLink
-                  to="/slider2"
-                  aria-current="page"
-                  alt="Home Page"
-                  aria-label="Ir para Home page"
-                  class="text-1xl text-gray-900 hover:underline"
-                >
-                  Home 2
-                </NuxtLink>
-              </li> -->
-              <li class="py-2 px-2">
-                <NuxtLink
-                  to="/"
-                  aria-current="page"
-                  alt="Home Page"
-                  aria-label="Ir para Home page"
-                  class="text-1xl text-gray-900 hover:underline"
-                >
-                  Blog
-                </NuxtLink>
-              </li>
-              <li v-for="category in uniqueCategories" :key="category.slug" class="py-2 px-2">
-                <NuxtLink
-                  :to="'/categorias/' + category.slug"
-                  class="text-1xl text-gray-900 hover:underline"
-                >
-                  {{ category.name }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </div>
-        </nav>
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+              >
+                <li class="py-2 px-2">
+                  <NuxtLink
+                    to="/"
+                    aria-current="page"
+                    alt="Home Page"
+                    aria-label="Ir para Home page"
+                    class="text-1xl text-gray-900 hover:underline"
+                  >
+                    Blog
+                  </NuxtLink>
+                </li>
+                <li v-for="category in uniqueCategories" :key="category.slug" class="py-2 px-2">
+                  <NuxtLink
+                    :to="'/categorias/' + category.slug"
+                    class="text-1xl text-gray-900 hover:underline"
+                  >
+                    {{ category.name }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
     </div>
 

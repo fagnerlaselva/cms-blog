@@ -11,7 +11,7 @@
       >
         <div class="max-w-2xl">
           <span
-            class="inline-flex items-center justify-center rounded-full bg-blue-700 px-2.5 py-0.5 mb-8 bg-opacity-[0.45]"
+            class="inline-flex items-center justify-center rounded-full bg-accent px-2.5 py-0.5 mb-8 bg-opacity-[0.45]"
           >
             <p class="whitespace-nowrap text-sm p-2 text-white">
               Somos uma assistência, não um seguro! 😊
@@ -31,8 +31,7 @@
             <div>
               <a
                 href="#"
-                style="color: #010e78"
-                class="bg-[#bae7f3] block text-1xl w-full rounded-2xl px-12 py-3 font-bold shadow focus:outline-none focus:ring sm:w-auto"
+                class="bg-sky text-default block text-1xl w-full rounded-2xl px-12 py-3 font-bold sm:w-auto"
               >
                 SAIBA MAIS
               </a>
@@ -413,9 +412,9 @@
       </div>
     </section>
 
-    <section class="pt-12">
+    <section class="py-12 lg:py-24 px-4">
       <div
-        class="container mx-auto flex flex-col px-4 gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
+        class="container mx-auto flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
       >
         <div class="min-h-32 rounded-lg p-4 flex justify-center flex-1">
           <NuxtImg
@@ -424,18 +423,18 @@
             width="600"
           />
         </div>
-        <div class="min-h-32 rounded-lg p-4 content-center max-w-2xl justify-center flex-1">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <div class="min-h-32 rounded-lg content-center max-w-2xl justify-center flex-1">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl max-w-[450px]">
             Assistência veicular e residencial, vinculada a você!
           </h2>
-          <p class="text-lg py-6 font-medium">
+          <p class="text-lg py-6 font-medium max-w-[560px]">
             Atendemos seus assinantes em todo território nacional e não está vinculado ao seu
             endereço. Nossos clientes são atendidos em casa de férias, de campo, de praia ou em
             qualquer lugar.
           </p>
           <div class="block">
             <a
-              class="rounded-full inline-block border text-xl px-8 mt-4 py-2 font-medium text-white hover:bg-transparent bg-[#0011FF] hover:border-[#0011FF] *: hover:text-indigo-600 focus:outline-none focus:ring active:text-[#0011FF]"
+              class="rounded-full inline-block border text-xl px-8 mt-4 py-2 font-medium text-white hover:bg-transparent bg-deep hover:border-blue *: hover:text-indigo-600 focus:outline-none focus:ring active:text-blue"
               href="#"
             >
               ASSINE AGORA!
@@ -445,7 +444,7 @@
       </div>
     </section>
 
-    <section class="pt-24 p-4">
+    <section class="py-12 lg:py-24 px-4">
       <h2
         class="container mx-auto text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
       >
@@ -565,7 +564,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-24 p-4">
+    <section class="py-12 lg:py-24 px-4">
       <h2
         class="container mx-auto text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
       >
@@ -698,7 +697,7 @@
               Depois de ler essa lista nós não precisamos te dizer mais nada para te convencer.
               <div class="block">
                 <a
-                  class="rounded-full inline-block border text-xl px-8 mt-4 xl:mt-8 py-2 font-medium text-white hover:bg-transparent bg-[#0011FF] hover:shadow-lg hover:border-[#0011FF] *: hover:text-[#0011FF] focus:outline-none focus:ring active:text-[#0011FF]"
+                  class="rounded-full inline-block border text-xl px-8 mt-4 xl:mt-8 py-2 font-medium text-white hover:bg-transparent bg-deep hover:shadow-lg hover:border-blue *: hover:text-blue focus:outline-none focus:ring active:text-blue"
                   href="#"
                 >
                   ASSINE AGORA!
@@ -709,8 +708,8 @@
         </div>
       </div>
     </section>
-    <section class="pt-16 p-4">
-      <div class="container mx-auto grid lg:grid-cols-2">
+    <section class="py-12 lg:py-24">
+      <div class="container mx-auto grid lg:grid-cols-2 p-4">
         <div
           class="bg-[#F3F3F3] rounded-t-2xl lg:rounded-none lg:rounded-l-2xl p-8 md:p-45 xl:pl-36 content-center items-center justify-center"
         >
@@ -904,7 +903,128 @@
       </div>
     </section>
     <!-- ====== Cards Section Start -->
-    <section class="bg-gray-2 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+
+    <section class="py-12 lg:py-24">
+      <div
+        class="container mx-auto flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
+      >
+        <div class="min-h-32 rounded-lg p-4 flex justify-center flex-1">
+          <NuxtImg
+            src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/acomponhe-passo-apasso-1-eRRlp7dKco0coxUSahigeUtDn2r6Ir.png"
+            class="rounded-t-xl"
+            width="¨600"
+          />
+        </div>
+        <div class="min-h-32 rounded-lg p-4 content-center max-w-2xl justify-center flex-1">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Acompanhe um passo a passo de como contratar o seu plano assistêncial
+          </h2>
+          <div class="min-h-32 rounded-lg pt-8 lg:col-span-2">
+            <div class="space-y-4">
+              <details
+                class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[3px] open:border-deep open:bg-light"
+                open
+              >
+                <summary
+                  class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+                >
+                  <h2 class="py-2 text-lg text-[#010E78] font-semibold">
+                    1. Realize o seu cadastro
+                  </h2>
+                  <svg
+                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+
+                <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                  Escolha o plano de acordo com sua necessidade.
+                </p>
+              </details>
+
+              <details
+                class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[3px] open:border-deep open:bg-light"
+                style="margin-top: 0"
+              >
+                <summary
+                  class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+                >
+                  <h2 class="py-2 text-lg text-[#010E78] font-semibold">
+                    2. Faça o cadastro do seu cartão
+                  </h2>
+
+                  <svg
+                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+
+                <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
+                  molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate
+                  dicta quo officiis explicabo consequuntur distinctio corporis earum similique!
+                </p>
+              </details>
+              <details
+                class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[3px] open:border-deep open:bg-light"
+                style="margin-top: 0"
+              >
+                <summary
+                  class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
+                >
+                  <h2 class="py-2 text-lg text-[#010E78] font-semibold">
+                    3. Comece a aproveitar todos os benefícios
+                  </h2>
+
+                  <svg
+                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </summary>
+
+                <p class="mb-4 px-4 leading-relaxed text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
+                  molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate
+                  dicta quo officiis explicabo consequuntur distinctio corporis earum similique!
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-2 py-12 lg:py-24">
       <div class="container mx-auto">
         <h2
           class="container mx-auto text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
@@ -919,7 +1039,7 @@
                 alt="image"
                 class="w-full"
               />
-              <div class="bg-[#000BA4] text-[16x] font-semibold text-[#BAE7F3] px-4 py-2">
+              <div class="bg-[#000BA4] text-sky text-[16x] font-semibold text-bg-sky px-4 py-2">
                 FINANÇAS
               </div>
               <div class="p-4 text-left">
@@ -948,7 +1068,7 @@
                 alt="image"
                 height="250"
               />
-              <div class="bg-[#000BA4] text-[16px] font-semibold text-[#BAE7F3] px-4 py-2">
+              <div class="bg-[#000BA4] text-sky text-[16px] font-semibold text-bg-sky px-4 py-2">
                 SEGURANÇA
               </div>
               <div class="p-4 text-left">
@@ -977,7 +1097,7 @@
                 alt="image"
                 class="w-full"
               />
-              <div class="bg-[#000BA4] text-[16px] font-semibold text-[#BAE7F3] px-4 py-2">
+              <div class="bg-[#000BA4] text-sky text-[16px] font-semibold text-bg-sky px-4 py-2">
                 TECNOLOGIA
               </div>
               <div class="p-4 text-left">
@@ -1006,7 +1126,7 @@
                 alt="image"
                 class="w-full"
               />
-              <div class="bg-[#000BA4] text-[16px] font-semibold text-[#BAE7F3] px-4 py-2">
+              <div class="bg-[#000BA4] text-sky text-[16px] font-semibold text-bg-sky px-4 py-2">
                 TECNOLOGIA
               </div>
               <div class="p-4 text-left">
@@ -1052,10 +1172,81 @@
           </p>
           <div class="block">
             <a
-              class="rounded-full inline-block border text-xl px-8 mt-4 py-2 font-medium text-white hover:bg-transparent bg-[#0011FF] hover:border-[#0011FF] *: hover:text-indigo-600 focus:outline-none focus:ring active:text-[#0011FF]"
+              class="rounded-full inline-block border text-xl px-4 mt-4 py-2 font-medium text-white hover:bg-transparent bg-deep hover:border-blue *: hover:text-indigo-600 focus:outline-none focus:ring active:text-blue items-center"
               href="#"
             >
-              ASSINE AGORA!
+              <div class="flex flex-row space-x-2 items-center">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 1.75872C6.31936 1.75872 1.71429 6.36379 1.71429 12.0444C1.71429 17.7251 6.31936 22.3301 12 22.3301C17.6806 22.3301 22.2857 17.7251 22.2857 12.0444C22.2857 6.36379 17.6806 1.75872 12 1.75872ZM0 12.0444C0 5.41702 5.37258 0.0444336 12 0.0444336C18.6274 0.0444336 24 5.41702 24 12.0444C24 18.6719 18.6274 24.0444 12 24.0444C5.37258 24.0444 0 18.6719 0 12.0444Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 8.61586C10.1065 8.61586 8.57143 10.1509 8.57143 12.0444C8.57143 13.938 10.1065 15.473 12 15.473C13.8935 15.473 15.4286 13.938 15.4286 12.0444C15.4286 10.1509 13.8935 8.61586 12 8.61586ZM6.85714 12.0444C6.85714 9.20411 9.15968 6.90158 12 6.90158C14.8403 6.90158 17.1429 9.20411 17.1429 12.0444C17.1429 14.8848 14.8403 17.1873 12 17.1873C9.15968 17.1873 6.85714 14.8848 6.85714 12.0444Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.37672 0.367432C9.84924 0.338794 10.2555 0.698632 10.2841 1.17115L10.7127 8.24258C10.7414 8.7151 10.3815 9.12137 9.909 9.15001C9.43648 9.17864 9.03021 8.81881 9.00157 8.34629L8.573 1.27486C8.54436 0.802338 8.9042 0.39607 9.37672 0.367432Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.6233 0.367432C15.0958 0.39607 15.4556 0.802338 15.427 1.27486L14.9984 8.34629C14.9698 8.81881 14.5635 9.17864 14.091 9.15001C13.6185 9.12137 13.2586 8.7151 13.2873 8.24258L13.7159 1.17115C13.7445 0.698632 14.1508 0.338794 14.6233 0.367432Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.909 14.9389C10.3815 14.9675 10.7414 15.3738 10.7127 15.8463L10.2841 22.9177C10.2555 23.3902 9.84924 23.7501 9.37672 23.7214C8.9042 23.6928 8.54436 23.2865 8.573 22.814L9.00157 15.7426C9.03021 15.2701 9.43648 14.9102 9.909 14.9389Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.091 14.9389C14.5635 14.9102 14.9698 15.2701 14.9984 15.7426L15.427 22.814C15.4556 23.2865 15.0958 23.6928 14.6233 23.7214C14.1508 23.7501 13.7445 23.3902 13.7159 22.9177L13.2873 15.8463C13.2586 15.3738 13.6185 14.9675 14.091 14.9389Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M23.677 9.42115C23.7056 9.89367 23.3458 10.2999 22.8733 10.3286L15.8019 10.7571C15.3293 10.7858 14.9231 10.4259 14.8944 9.95343C14.8658 9.48091 15.2256 9.07464 15.6981 9.046L22.7696 8.61743C23.2421 8.58879 23.6484 8.94863 23.677 9.42115Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.8944 14.1354C14.9231 13.6629 15.3293 13.3031 15.8019 13.3317L22.8733 13.7603C23.3458 13.7889 23.7056 14.1952 23.677 14.6677C23.6484 15.1402 23.2421 15.5001 22.7696 15.4714L15.6981 15.0429C15.2256 15.0142 14.8658 14.608 14.8944 14.1354Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.322998 9.42115C0.351636 8.94863 0.757904 8.58879 1.23042 8.61743L8.30185 9.046C8.77437 9.07464 9.13421 9.48091 9.10557 9.95343C9.07694 10.4259 8.67067 10.7858 8.19815 10.7571L1.12672 10.3286C0.654199 10.2999 0.294361 9.89367 0.322998 9.42115Z"
+                    fill="#91E8FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.10557 14.1354C9.13421 14.608 8.77437 15.0142 8.30185 15.0429L1.23042 15.4714C0.757904 15.5001 0.351636 15.1402 0.322998 14.6677C0.294361 14.1952 0.654199 13.7889 1.12672 13.7603L8.19815 13.3317C8.67067 13.3031 9.07694 13.6629 9.10557 14.1354Z"
+                    fill="#91E8FF"
+                  />
+                </svg>
+
+                <span>Solicitar Assistência</span>
+              </div>
             </a>
           </div>
         </div>
@@ -1175,7 +1366,10 @@
         </div>
         <div class="min-h-32 rounded-lg lg:px-8 lg:col-span-2">
           <div class="space-y-4">
-            <details class="group [&_summary::-webkit-details-marker]:hidden border-b" open>
+            <details
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
+              open
+            >
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
@@ -1204,7 +1398,7 @@
             </details>
 
             <details
-              class="group [&_summary::-webkit-details-marker]:hidden border-b"
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
               style="margin-top: 0"
             >
               <summary
@@ -1235,7 +1429,7 @@
               </p>
             </details>
             <details
-              class="group [&_summary::-webkit-details-marker]:hidden border-b"
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
               style="margin-top: 0"
             >
               <summary
@@ -1268,7 +1462,7 @@
               </p>
             </details>
             <details
-              class="group [&_summary::-webkit-details-marker]:hidden border-b"
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
               style="margin-top: 0"
             >
               <summary
@@ -1301,7 +1495,7 @@
               </p>
             </details>
             <details
-              class="[&_summary::-webkit-details-marker]:hidden border-b"
+              class="[&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
               style="margin-top: 0"
             >
               <summary
