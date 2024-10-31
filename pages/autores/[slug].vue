@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <section class="container mx-auto grid gap-6 pt-12">
+    <section class="container mx-auto max-w-custom grid gap-6 pt-12">
       <div class="grid px-4">
         <NuxtPicture
           loading="lazy"

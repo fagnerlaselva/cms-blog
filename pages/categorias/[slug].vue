@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <section class="pt-12 container mx-auto">
+    <section class="pt-12 container max-w-custom mx-auto">
       <div v-if="category && filteredArticles.length > 0" class="">
         <h1 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">{{ category.name }}</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -21,7 +21,7 @@
         <p class="text-gray-600">Nenhum artigo encontrado para esta categoria.</p>
       </div>
     </section>
-    <section class="w-full container mx-auto grid gap-6">
+    <section class="w-full container max-w-custom mx-auto grid gap-6">
       <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4 py-10">Últimos Artigos</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <article v-for="article in recentArticles" :key="article.id" class="p-4">
@@ -33,7 +33,7 @@
         </article>
       </div>
     </section>
-    <section class="container mx-auto grid gap-6 p-4 py-12">
+    <section class="container max-w-custom mx-auto grid gap-6 p-4 py-12">
       <NuxtLink to="/" class="text-blue-600 hover:underline"> ← Voltar para a Home </NuxtLink>
     </section>
   </div>

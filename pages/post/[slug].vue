@@ -193,7 +193,7 @@
       </div>
     </section>
     <section class="w-full">
-      <div class="container mx-auto grid gap-6">
+      <div class="container mx-auto max-w-custom grid gap-6">
         <h2 class="grid grid-cols-1 text-3xl font-bold mb-4 gap-6 p-4">Últimos Artigos</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <article v-for="recentArticle in recentArticles" :key="recentArticle.id" class="p-4">
@@ -219,7 +219,7 @@
       </div>
     </section>
 
-    <section class="container mx-auto grid gap-6">
+    <section class="container mx-auto max-w-custom grid gap-6">
       <NuxtLink to="/" class="text-blue-600 px-4 hover:underline"> ← Voltar para a Home </NuxtLink>
     </section>
     <footer class="p-2">

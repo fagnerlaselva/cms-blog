@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="lg:container mx-auto lg:rounded-2xl relative bg-[url(https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-assisty24h-new-nFSUObqPthiDmI0ElbKPkqmwBQykMO.webp)] bg-cover bg-center bg-no-repeat"
+      class="lg:container mx-auto lg:max-w-custom lg:rounded-2xl relative bg-[url(https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-assisty24h-new-nFSUObqPthiDmI0ElbKPkqmwBQykMO.webp)] bg-cover bg-center bg-no-repeat"
     >
       <div
         class="absolute inset-0 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
@@ -162,9 +162,9 @@
     </section>
     <section class="mt-4 sm:pt-48 md:pt-36 lg:pt-24" style="background: #010e78">
       <div
-        class="mx-auto max-w-[1580px] px-4 py-12 sm:px-6 lg:me-8 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+        class="container mx-auto max-w-[1580px] py-12 sm:px-6 lg:me-8 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
       >
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-8">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-center lg:gap-8">
           <div class="mx-6 max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
             <h2
               class="text-3xl font-bold tracking-tight text-white sm:text-4xl w-full xl:max-w-[360px]"
@@ -414,7 +414,7 @@
 
     <section class="py-12 lg:py-24 px-4">
       <div
-        class="container mx-auto flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
+        class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
       >
         <div class="min-h-32 rounded-lg p-4 flex justify-center flex-1">
           <NuxtImg
@@ -446,11 +446,11 @@
 
     <section class="py-12 lg:py-24 px-4">
       <h2
-        class="container mx-auto text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
+        class="container mx-auto max-w-custom text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center"
       >
         Profissionais capacitados, garantindo o suporte que você merece na hora que mais precisa.
       </h2>
-      <div class="container mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
+      <div class="container mx-auto max-w-custom grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
         <div class="min-h-32 rounded-[20px] p-8" style="background: #f5f5f5">
           <span
             class="bg-primary mr-2.5 flex h-[52px] w-full max-w-[52px] items-center justify-center rounded-full text-base text-white"
@@ -570,7 +570,7 @@
       >
         Esse plano é para você?
       </h2>
-      <div class="container mx-auto grid lg:grid-cols-2 gap-4">
+      <div class="container mx-auto max-w-[1350px] grid lg:grid-cols-2 gap-4">
         <div class="flex flex-row">
           <div
             class="w-full mb-4 lg:mr-4 rounded-[20px] p-8 xl:p-16 xl:min-h-[580px] text-white"
@@ -709,7 +709,7 @@
       </div>
     </section>
     <section class="py-12 lg:py-24">
-      <div class="container mx-auto grid lg:grid-cols-2 p-4">
+      <div class="container mx-auto max-w-custom grid lg:grid-cols-2 p-4">
         <div
           class="bg-[#F3F3F3] rounded-t-2xl lg:rounded-none lg:rounded-l-2xl p-8 md:p-45 xl:pl-36 content-center items-center justify-center"
         >
@@ -906,7 +906,7 @@
 
     <section class="py-12 lg:py-24">
       <div
-        class="container mx-auto flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
+        class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
       >
         <div class="min-h-32 rounded-lg p-4 flex justify-center flex-1">
           <NuxtImg
@@ -1025,14 +1025,14 @@
     </section>
 
     <section class="bg-gray-2 py-12 lg:py-24">
-      <div class="container mx-auto">
+      <div class="container mx-auto max-w-custom">
         <h2
-          class="container mx-auto text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
+          class="container mx-auto max-w-custom text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center"
         >
           Leia os últimos posts do nosso blog
         </h2>
         <div class="flex flex-wrap">
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/3">
             <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
               <NuxtImg
                 src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-01.jpg"
@@ -1061,7 +1061,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/3">
             <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
               <NuxtImg
                 src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-02.jpg"
@@ -1090,36 +1090,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
-            <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
-              <NuxtImg
-                src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
-                alt="image"
-                class="w-full"
-              />
-              <div class="bg-[#000BA4] text-sky text-[16px] font-semibold text-bg-sky px-4 py-2">
-                TECNOLOGIA
-              </div>
-              <div class="p-4 text-left">
-                <h3>
-                  <a
-                    href="javascript:void(0)"
-                    class="text-darkhover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
-                  >
-                    Smart Home: tudo o que você precisa saber sobre o tema!
-                  </a>
-                </h3>
-
-                <a
-                  href="javascript:void(0)"
-                  class="inline-block py-1 text-base font-medium transition border border-white hover:border rounded-full text-body-color bg-white hover:border-gray-3 px-5 text-[14px]"
-                >
-                  LEIA MATÉRIA COMPLETA
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
+          <div class="w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/3">
             <div class="mb-10 overflow-hidden duration-300 bg-[#F5F5F5] rounded-2xl flex flex-col">
               <NuxtImg
                 src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
@@ -1155,7 +1126,7 @@
 
     <section class="pt-12">
       <div
-        class="container mx-auto flex flex-col px-4 gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
+        class="container mx-auto max-w-custom flex flex-col px-4 gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
       >
         <div class="rounded-lg flex justify-center lg:w-2/3">
           <NuxtImg
@@ -1253,7 +1224,7 @@
       </div>
     </section>
     <section class="pt-24">
-      <div class="container mx-auto grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+      <div class="container mx-auto max-w-custom grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
         <div class="min-h-32 rounded-lg p-4">
           <h2 class="text-5xl font-medium">Ficou com alguma dúvida?</h2>
           <p class="py-6 text-sm">
@@ -1364,7 +1335,7 @@
             </div>
           </div>
         </div>
-        <div class="min-h-32 rounded-lg lg:px-8 lg:col-span-2">
+        <div class="min-h-32 rounded-lg px-4 lg:px-8 lg:col-span-2">
           <div class="space-y-4">
             <details
               class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
@@ -1373,7 +1344,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-2xl font-semibold">Por que é tão barato?</h2>
+                <h2 class="py-2 text-xl md:text-2xl font-semibold">Por que é tão barato?</h2>
                 <svg
                   class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1404,7 +1375,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-2xl font-semibold">Para quem é o Assisty24h?</h2>
+                <h2 class="py-2 text-xl md:text-2xl font-semibold">Para quem é o Assisty24h?</h2>
 
                 <svg
                   class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
@@ -1435,7 +1406,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-2xl font-semibold">
+                <h2 class="py-2 text-xl md:text-2xl font-semibold">
                   Quais as formas de pagamento disponíveis?
                 </h2>
 
@@ -1468,7 +1439,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-2xl font-semibold">
+                <h2 class="py-2 text-xl md:text-2xl font-semibold">
                   Tem algum tipo de carência na Assisty24h?
                 </h2>
 
@@ -1501,7 +1472,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-2xl font-semibold">
+                <h2 class="py-2 text-xl md:text-2xl font-semibold">
                   A assistência tem algum prazo de seguro?
                 </h2>
 

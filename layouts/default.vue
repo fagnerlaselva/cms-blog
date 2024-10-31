@@ -10,7 +10,7 @@
         ]"
         class="fixed w-full z-20 top-0 bg-white"
       >
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-custom">
           <nav class="flex flex-wrap items-center justify-between p-0 py-2">
             <!-- Logo e Título -->
             <NuxtLink
@@ -96,7 +96,7 @@
     <!-- Rodapé -->
     <footer class="bg-black text-white">
       <div
-        class="container mx-auto p-4 py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-black"
+        class="container mx-auto max-w-custom p-4 py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-black"
       >
         <ul>
           <li>

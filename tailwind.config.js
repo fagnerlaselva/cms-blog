@@ -5,6 +5,7 @@ export default {
     fontFamily: {
       sans: ['Segoe UI', 'ui-sans-serif', 'system-ui'],
     },
+
     colors: {
       default: '#010E78',     // Cor principal
       deep: '#0011FF',        // Azul profundo
@@ -17,7 +18,11 @@ export default {
       black: '#000000', //Preto
       gray: '#D9D9D9' //cinza
     },
-    extend: {},
+    extend: {
+      maxWidth: {
+        'custom': '1350px', // Define um valor de largura máxima específico
+      },
+    },
   },
   plugins: [],
 };
