@@ -7,7 +7,7 @@
         class="absolute inset-0 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
       />
       <div
-        class="relative mx-auto max-w-screen-xl px-4 py-32 lg:py-48 lg:flex lg:items-left sm:px-8"
+        class="relative mx-auto max-w-screen-xl px-4 py-24 lg:py-36 lg:flex lg:items-left sm:px-8"
       >
         <div class="max-w-2xl">
           <span
@@ -160,6 +160,7 @@
         </div>
       </div>
     </section>
+
     <section class="mt-4 sm:pt-48 md:pt-36 lg:pt-24" style="background: #010e78">
       <div
         class="container mx-auto max-w-[1580px] py-12 sm:px-6 lg:me-8 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
@@ -219,7 +220,7 @@
               </button>
             </div>
           </div>
-          <div class="mx-6 lg:col-span-2 lg:mx-0">
+          <div class="mx-0 lg:col-span-2 lg:mx-0">
             <div ref="keenSlider" class="keen-slider">
               <div class="keen-slider__slide bg-white rounded-xl">
                 <NuxtImg
@@ -446,7 +447,7 @@
 
     <section class="py-12 lg:py-24 px-4">
       <h2
-        class="container mx-auto max-w-custom text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center"
+        class="container mx-auto max-w-3xl font-bold text-3xl sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center"
       >
         Profissionais capacitados, garantindo o suporte que você merece na hora que mais precisa.
       </h2>
@@ -688,12 +689,14 @@
           />
 
           <div
-            class="rounded-[20px] p-8 min-h-[308px] text-[34px] lg:text-[34px] xl:text-[34px] font-semibold bg-[#EDEDED] bg-right bg-no-repeat"
+            class="rounded-[20px] p-8 min-h-[308px] font-semibold bg-[#EDEDED] bg-right bg-no-repeat"
             style="
               background-image: url('https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assity24h-plano-para-voce-2-Ali3zTiRoJ1wz325kevbTJ37lJQj00.png');
             "
           >
-            <div class="max-w-[350px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[462px]">
+            <div
+              class="max-w-[350px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[462px] text-[28px] lg:text-[34px] xl:text-[34px]"
+            >
               Depois de ler essa lista nós não precisamos te dizer mais nada para te convencer.
               <div class="block">
                 <a
@@ -844,7 +847,7 @@
           </div>
           <div class="items-center relative">
             <div class="items-center absolute top-4 md:top-8 font-medium text-[30px] -ml-4">R$</div>
-            <span class="font-semibold text-[100px] md:text-[130px]">44,90</span>
+            <span class="font-semibold text-[80px] sm:text-[100px] md:text-[130px]">44,90</span>
           </div>
           <div class="block">
             <a
