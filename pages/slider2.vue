@@ -417,7 +417,7 @@
       <div
         class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
       >
-        <div class="min-h-32 rounded-lg p-4 flex justify-center flex-1">
+        <div class="min-h-32 rounded-lg lg:p-4 flex justify-center flex-1">
           <NuxtImg
             src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/bqanner-assistencia-veicular-residencial-para-voce-HzxD4473u1uhaTET8J9GkkzLKSIF2H.png"
             class="rounded-t-xl"
@@ -911,7 +911,7 @@
       <div
         class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
       >
-        <div class="min-h-32 rounded-lg p-4 flex justify-center flex-1">
+        <div class="w-full xl:min-h-32 rounded-lg lg:p-4 flex justify-center flex-1">
           <NuxtImg
             src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/acomponhe-passo-apasso-1-eRRlp7dKco0coxUSahigeUtDn2r6Ir.png"
             class="rounded-t-xl"
@@ -1503,6 +1503,51 @@
             </details>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="mt-40">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div
+          class="min-h-[400px] bg-default bg-cover bg-center flex flex-col items-center justify-center text-center"
+        >
+          <h2 class="text-xl font-extrabold text-white tracking-tight sm:text-3xl max-w-xl">
+            Inscreva-se para receber novidades da Assisty 24h
+          </h2>
+
+          <div class="flex flex-col justify-center p-4 w-full">
+            <div class="flex flex-col items-center w-full">
+              <div
+                class="flex w-full flex-col sm:flex-row overflow-hidden rounded-lg"
+                style="background-color: rgb(249, 250, 251); border: 0px"
+              >
+                <div class="flex w-full items-center" style="background-color: rgb(249, 250, 251)">
+                  <input
+                    autocomplete="email"
+                    required
+                    class="wt-button-font px-2 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-md font-normal text-center placeholder-default"
+                    placeholder="Insira o seu endereço de e-mail"
+                    type="email"
+                    name="email"
+                    style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 50px"
+                  />
+                </div>
+                <input
+                  class="cursor-pointer mx-2 my-2 font-normal w-full sm:w-auto text-md rounded-none sm:rounded-r-lg bg-default rounded-lg"
+                  type="submit"
+                  value="Se increver"
+                  style="color: rgb(255, 255, 255); font-family: Roboto; min-height: 50px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="min-h-[300px] bg-cover bg-center"
+          style="
+            background-image: url('https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-newsleter-a24-Gy3LZpELRlkmREZyDYDw1rz4NtckIH.webp');
+          "
+        />
       </div>
     </section>
   </div>

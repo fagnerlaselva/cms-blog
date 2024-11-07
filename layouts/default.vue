@@ -89,7 +89,7 @@
     </div>
 
     <!-- Conteúdo dinâmico -->
-    <main class="pt-20 pb-20">
+    <main class="pt-20">
       <NuxtPage />
     </main>
 
