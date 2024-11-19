@@ -1230,7 +1230,7 @@
       <div class="container mx-auto max-w-custom grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
         <div class="min-h-32 rounded-lg p-4">
           <h2 class="text-5xl font-medium">Ficou com alguma dúvida?</h2>
-          <p class="py-6 text-sm">
+          <p class="py-6 text-md">
             Separamos algumas dúvidas comuns, mas caso essas não te ajudem, entre em contato com
             nosso time pelos canais de contato abaixo. Estamos prontos para te ajudar!
           </p>
@@ -1364,7 +1364,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
                 A Assisty24h escolheu ser mais barata, mostrando que menor preço nada tem a ver com
                 baixa qualidade. Por aqui, o que nos move é a missão de proteger com qualidade todos
                 os brasileiros.
@@ -1396,7 +1396,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
@@ -1429,7 +1429,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
@@ -1462,7 +1462,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
@@ -1495,7 +1495,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
@@ -1511,32 +1511,32 @@
         <div
           class="min-h-[400px] bg-default bg-cover bg-center flex flex-col items-center justify-center text-center"
         >
-          <h2 class="text-xl font-extrabold text-white tracking-tight sm:text-3xl max-w-xl">
+          <h2 class="font-regular text-white max-w-[520px] text-[44px] text-">
             Inscreva-se para receber novidades da Assisty 24h
           </h2>
 
           <div class="flex flex-col justify-center p-4 w-full">
             <div class="flex flex-col items-center w-full">
               <div
-                class="flex w-full flex-col sm:flex-row overflow-hidden rounded-lg"
+                class="flex w-full flex-col sm:flex-row overflow-hidden rounded-3xl max-w-[520px]"
                 style="background-color: rgb(249, 250, 251); border: 0px"
               >
                 <div class="flex w-full items-center" style="background-color: rgb(249, 250, 251)">
                   <input
                     autocomplete="email"
                     required
-                    class="wt-button-font px-2 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-md font-normal text-center placeholder-default"
+                    class="wt-button-font px-4 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-md font-normal text-left placeholder-default"
                     placeholder="Insira o seu endereço de e-mail"
                     type="email"
                     name="email"
-                    style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 50px"
+                    style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 40px"
                   />
                 </div>
                 <input
-                  class="cursor-pointer mx-2 my-2 font-normal w-full sm:w-auto text-md rounded-none sm:rounded-r-lg bg-default rounded-lg"
+                  class="cursor-pointer mx-2 -py-2 my-1 font-normal w-full sm:w-auto text-md bg-default rounded-3xl px-3"
                   type="submit"
-                  value="Se increver"
-                  style="color: rgb(255, 255, 255); font-family: Roboto; min-height: 50px"
+                  value="Se inscrever"
+                  style="color: rgb(255, 255, 255); font-family: Roboto; min-height: 40px"
                 />
               </div>
             </div>
