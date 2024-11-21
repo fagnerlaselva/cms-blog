@@ -27,7 +27,7 @@
             casa, no trabalho ou durante uma viagem, você está protegido!
           </p>
 
-          <div class="mt-8 flex flex-wrap gap-4 text-center">
+          <div class="mt-8 flex flex-wrap gap-4 text-center lg:pb-10">
             <div>
               <a
                 href="#"
@@ -160,11 +160,40 @@
         </div>
       </div>
     </section>
-
-    <section class="mt-4 sm:pt-48 md:pt-36 lg:pt-24" style="background: #010e78">
+    <section class="p-4 mt-0 sm:pt-48 md:pt-36 lg:pt-24">
       <div
-        class="container mx-auto max-w-[1580px] py-12 sm:px-6 lg:me-8 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+        class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center py-0 sm:px-6 lg:py-8 lg:pe-0 lg:ps-8 xl:py-24"
       >
+        <div class="min-h-32 rounded-lg lg:p-4 xl:p-0 flex justify-center flex-1">
+          <NuxtImg
+            src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-video-home-THnejEVdniwQqlNdVvGjJBRnxqgH9W.png"
+            class="rounded-t-xl"
+            width="600"
+          />
+        </div>
+        <div class="min-h-32 rounded-lg content-center max-w-2xl justify-center flex-1">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl max-w-[450px]">
+            Assistência veicular e residencial, vinculada a você!
+          </h2>
+          <p class="text-lg py-6 font-medium max-w-[560px]">
+            Atendemos seus assinantes em todo território nacional e não está vinculado ao seu
+            endereço. Nossos clientes são atendidos em casa de férias, de campo, de praia ou em
+            qualquer lugar.
+          </p>
+          <div class="block">
+            <a
+              class="rounded-full inline-block border text-xl px-8 mt-4 py-2 font-medium text-white hover:bg-transparent bg-deep hover:border-blue *: hover:text-indigo-600 focus:outline-none focus:ring active:text-blue"
+              href="#"
+            >
+              ASSINE AGORA!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-4 sm:pt-24" style="background: #010e78">
+      <div class="container mx-auto max-w-[1580px] py-12 sm:px-6 lg:me-8 lg:py-16 lg:pe-0 lg:ps-8">
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-center lg:gap-8">
           <div class="mx-6 max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
             <h2
@@ -408,38 +437,6 @@
                 </svg>
               </button>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-12 lg:py-24 px-4">
-      <div
-        class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
-      >
-        <div class="min-h-32 rounded-lg lg:p-4 flex justify-center flex-1">
-          <NuxtImg
-            src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/bqanner-assistencia-veicular-residencial-para-voce-HzxD4473u1uhaTET8J9GkkzLKSIF2H.png"
-            class="rounded-t-xl"
-            width="600"
-          />
-        </div>
-        <div class="min-h-32 rounded-lg content-center max-w-2xl justify-center flex-1">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl max-w-[450px]">
-            Assistência veicular e residencial, vinculada a você!
-          </h2>
-          <p class="text-lg py-6 font-medium max-w-[560px]">
-            Atendemos seus assinantes em todo território nacional e não está vinculado ao seu
-            endereço. Nossos clientes são atendidos em casa de férias, de campo, de praia ou em
-            qualquer lugar.
-          </p>
-          <div class="block">
-            <a
-              class="rounded-full inline-block border text-xl px-8 mt-4 py-2 font-medium text-white hover:bg-transparent bg-deep hover:border-blue *: hover:text-indigo-600 focus:outline-none focus:ring active:text-blue"
-              href="#"
-            >
-              ASSINE AGORA!
-            </a>
           </div>
         </div>
       </div>
@@ -1518,14 +1515,14 @@
           <div class="flex flex-col justify-center p-4 w-full">
             <div class="flex flex-col items-center w-full">
               <div
-                class="flex w-full flex-col sm:flex-row overflow-hidden rounded-3xl max-w-[520px]"
+                class="flex w-full flex-col sm:flex-row overflow-hidden rounded-3xl max-w-[480px]"
                 style="background-color: rgb(249, 250, 251); border: 0px"
               >
                 <div class="flex w-full items-center" style="background-color: rgb(249, 250, 251)">
                   <input
                     autocomplete="email"
                     required
-                    class="wt-button-font px-4 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-md font-normal text-left placeholder-default"
+                    class="wt-button-font px-4 z-10 w-full border-none bg-transparent placeholder-shown:text-ellipsis text-md font-normal text-left placeholder-default focus:outline-none"
                     placeholder="Insira o seu endereço de e-mail"
                     type="email"
                     name="email"
