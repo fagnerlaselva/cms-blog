@@ -192,7 +192,7 @@
       </div>
     </section>
 
-    <section class="mt-4 sm:pt-24" style="background: #010e78">
+    <section class="py-12 lg:py-24 px-4" style="background: #010e78">
       <div class="container mx-auto max-w-[1580px] py-12 sm:px-6 lg:me-8 lg:py-16 lg:pe-0 lg:ps-8">
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-center lg:gap-8">
           <div class="mx-6 max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">

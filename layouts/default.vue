@@ -103,7 +103,7 @@
             <strong class="font-bold sm:text-lg text-white">Assisty 24h</strong>
           </li>
           <li class="py-2 hover:underline">
-            <NuxtLink to="/" class="p-2 hover:underline">Home</NuxtLink>
+            <NuxtLink to="/sobre" class="p-2 hover:underline">Sobre a Assisty 24</NuxtLink>
           </li>
           <li class="py-2 hover:underline">
             <NuxtLink to="/" class="p-2 hover:underline">Home</NuxtLink>
