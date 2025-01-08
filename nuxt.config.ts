@@ -13,7 +13,13 @@ export default defineNuxtConfig({
     'nuxt-vitalizer',
     '@nuxtjs/robots',
     '@nuxt/image',
+    '@nuxtjs/google-fonts'
   ],
+  googleFonts: {
+    families: {
+      Sora: [300, 400, 500, 600, 700], // Pesos que deseja usar
+    },
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {

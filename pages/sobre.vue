@@ -122,7 +122,7 @@
                   </defs>
                 </svg>
               </div>
-              <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2022</h3>
+              <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2023</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
             <p class="py-6">
@@ -173,7 +173,7 @@
                   </defs>
                 </svg>
               </div>
-              <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2022</h3>
+              <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2024</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
             <p class="py-6">
@@ -224,7 +224,7 @@
                   </defs>
                 </svg>
               </div>
-              <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2022</h3>
+              <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2025</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
             <p class="py-6">
@@ -268,6 +268,54 @@
             >
               Saiba mais
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="place-content-center min-h-96">
+      <div class="grid grid-rows gap-4 place-content-center min-h-full center">
+        <div class="mt-6 text-center max-w-5xl p-4">
+          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl center">
+            Imprensa
+          </h1>
+          <p class="mt-6 text-xl text-gray-500 center">
+            Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
+            inventore a commodi internos.
+          </p>
+        </div>
+        <div
+          class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center py-0 sm:px-6 lg:py-8 lg:pe-0 lg:ps-8 xl:py-24"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 p-4">
+            <div
+              class="rounded-lg p-6 bg-soft w-full md:w-auto min-h-[210px] flex flex-col justify-between"
+              style="border-radius: 20px; font-size: 14px"
+            >
+              <h3 class="text-3xl font-medium">Logotipos</h3>
+              <p class="text-gray-600">Acessar pasta</p>
+            </div>
+            <div
+              class="rounded-lg p-6 bg-soft w-full md:w-auto min-h-[210px] flex flex-col justify-between"
+              style="border-radius: 20px; font-size: 14px"
+            >
+              <h3 class="text-3xl font-medium">
+                Imagens da <br />
+                plataforma
+              </h3>
+              <p class="text-gray-600">Acessar pasta</p>
+            </div>
+
+            <div
+              class="rounded-lg p-6 bg-soft w-full md:w-auto min-h-[210px] flex flex-col justify-between"
+              style="border-radius: 20px; font-size: 14px"
+            >
+              <h3 class="text-3xl font-medium">Relações Públicas</h3>
+              <p class="text-gray-600">
+                Quer marcar uma entrevista, escrever uma matéria ou saber mais informações sobre a
+                Assisty24h?
+              </p>
+              <p class="text-gray-600">Escreva para: contato@assisty24h.com.br</p>
+            </div>
           </div>
         </div>
       </div>

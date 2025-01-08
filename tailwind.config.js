@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['./components/**/*.{vue,js}', './pages/**/*.vue'],
   theme: {
     fontFamily: {
-      sans: ['Segoe UI', 'ui-sans-serif', 'system-ui'],
+      sora: ['Sora', 'sans-serif'],
+      // sans: ['Segoe UI', 'ui-sans-serif', 'system-ui'],
     },
 
     colors: {

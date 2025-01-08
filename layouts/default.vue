@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-sora">
     <!-- Cabeçalho ou Navbar -->
 
     <div class="w-full bg-white">
@@ -96,7 +96,7 @@
     <!-- Rodapé -->
     <footer class="bg-black text-white">
       <div
-        class="container mx-auto max-w-custom p-4 py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-black"
+        class="container mx-auto max-w-custom p-4 py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-[url('/assets/img/bg-logo-footer.png')] bg-cover bg-center"
       >
         <ul>
           <li>
@@ -106,10 +106,13 @@
             <NuxtLink to="/sobre" class="p-2 hover:underline">Sobre a Assisty 24</NuxtLink>
           </li>
           <li class="py-2 hover:underline">
-            <NuxtLink to="/" class="p-2 hover:underline">Home</NuxtLink>
+            <NuxtLink to="/" class="p-2 hover:underline">Blog da Assisty24h</NuxtLink>
           </li>
           <li class="py-2 hover:underline">
-            <NuxtLink to="/" class="p-2 hover:underline">Home</NuxtLink>
+            <NuxtLink to="/" class="p-2 hover:underline">Perguntas frequentes</NuxtLink>
+          </li>
+          <li class="py-2 hover:underline">
+            <NuxtLink to="/" class="p-2 hover:underline">Carreiras</NuxtLink>
           </li>
         </ul>
         <ul>

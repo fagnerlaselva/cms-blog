@@ -1344,7 +1344,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xl md:text-2xl font-semibold">Por que é tão barato?</h2>
+                <h2 class="py-2 text-xg md:text-xl font-semibold">Por que é tão barato?</h2>
                 <svg
                   class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1361,7 +1361,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xg">
                 A Assisty24h escolheu ser mais barata, mostrando que menor preço nada tem a ver com
                 baixa qualidade. Por aqui, o que nos move é a missão de proteger com qualidade todos
                 os brasileiros.
@@ -1375,7 +1375,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xl md:text-2xl font-semibold">Para quem é o Assisty24h?</h2>
+                <h2 class="py-2 text-xg md:text-xl font-semibold">Para quem é o Assisty24h?</h2>
 
                 <svg
                   class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
@@ -1393,7 +1393,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xg">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
@@ -1406,7 +1406,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xl md:text-2xl font-semibold">
+                <h2 class="py-2 text-xg md:text-xl font-semibold">
                   Quais as formas de pagamento disponíveis?
                 </h2>
 
@@ -1426,7 +1426,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xg">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
@@ -1439,7 +1439,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xl md:text-2xl font-semibold">
+                <h2 class="py-2 text-xg md:text-xl font-semibold">
                   Tem algum tipo de carência na Assisty24h?
                 </h2>
 
@@ -1459,7 +1459,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xg">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
@@ -1472,7 +1472,7 @@
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xl md:text-2xl font-semibold">
+                <h2 class="py-2 text-xg md:text-xl font-semibold">
                   A assistência tem algum prazo de seguro?
                 </h2>
 
@@ -1492,7 +1492,7 @@
                 </svg>
               </summary>
 
-              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xl">
+              <p class="mb-4 px-4 leading-relaxed text-gray-700 text-xg">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias
                 culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo
                 officiis explicabo consequuntur distinctio corporis earum similique!
