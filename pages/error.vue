@@ -61,7 +61,7 @@
                   :src="article.image"
                   :alt="article.title"
                   class="w-full h-48 object-cover mb-4"
-                />
+                >
                 {{ article.title }}
                 teste
               </NuxtLink>

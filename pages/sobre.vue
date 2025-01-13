@@ -25,9 +25,12 @@
         class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row lg:gap-2 justify-center py-0 sm:px-6 lg:py-8 lg:pe-0 lg:ps-8 xl:py-24 relative lg:min-h-screen"
       >
         <!-- Div Sticky -->
-        <div class="sticky top-4 h-screen p-4 bg-blue-100 flex-row pe-80" style="">
+        <div
+          class="xl:sticky xl:top-4 xl:h-screen p-4 bg-blue-100 flex-row sm:pe-40 xl:pe-80"
+          style=""
+        >
           <h2
-            class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl"
+            class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-4xl xl:text-5xl"
             style="position: -webkit-sticky; position: sticky; top: 80px; border-radius: 10px"
           >
             História
@@ -74,7 +77,7 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2022</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6">
+            <p class="py-6 font-light tracking-tight">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
               sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam. Aut ipsum
@@ -125,17 +128,10 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2023</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6">
+            <p class="py-6 font-light tracking-tight">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
-              sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam. Aut ipsum
-              veniam in enim alias qui asperiores adipisci ut asperiores animi ex laboriosam quia ut
-              animi laborum et mollitia debitis. Est beatae esse et optio laborum quo similique
-              incidunt quo assumenda odio ut natus esse et sunt laboriosam. Ab dolore error aut
-              cumque aspernatur et quod quam. Sit provident possimus vel rerum maiores aut
-              reiciendis accusamus in galisum cupiditate sed aliquam perferendis ea quia sequi in
-              cupiditate magni. In porro natus est eligendi ratione et veniam rerum. Sit recusandae
-              distinctio aut quia saepe ut accusamus harum!
+              sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam.
             </p>
           </div>
           <div>
@@ -176,7 +172,7 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2024</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6">
+            <p class="py-6 font-light tracking-tight">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
               sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam. Aut ipsum
@@ -227,17 +223,10 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2025</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6">
+            <p class="py-6 font-light tracking-tight">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
-              sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam. Aut ipsum
-              veniam in enim alias qui asperiores adipisci ut asperiores animi ex laboriosam quia ut
-              animi laborum et mollitia debitis. Est beatae esse et optio laborum quo similique
-              incidunt quo assumenda odio ut natus esse et sunt laboriosam. Ab dolore error aut
-              cumque aspernatur et quod quam. Sit provident possimus vel rerum maiores aut
-              reiciendis accusamus in galisum cupiditate sed aliquam perferendis ea quia sequi in
-              cupiditate magni. In porro natus est eligendi ratione et veniam rerum. Sit recusandae
-              distinctio aut quia saepe ut accusamus harum!
+              sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam.
             </p>
           </div>
         </div>
@@ -273,18 +262,19 @@
       </div>
     </section>
     <section class="place-content-center min-h-96">
-      <div class="grid grid-rows gap-4 place-content-center min-h-full center">
-        <div class="mt-6 text-center max-w-5xl p-4">
-          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl center">
+      <div class="grid gap-4 place-content-center min-h-full">
+        <div class="mt-6 text-center p-4">
+          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl text-center">
             Imprensa
           </h1>
-          <p class="mt-6 text-xl text-gray-500 center">
+          <p class="mt-6 text-xl text-gray-500 text-center">
             Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
             inventore a commodi internos.
           </p>
         </div>
+
         <div
-          class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center py-0 sm:px-6 lg:py-8 lg:pe-0 lg:ps-8 xl:py-24"
+          class="container mx-auto max-w-custom flex flex-col gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center py-0 sm:px-6 lg:py-8 lg:pe-0 lg:ps-8 xl:py-12"
         >
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 p-4">
             <div
@@ -292,7 +282,36 @@
               style="border-radius: 20px; font-size: 14px"
             >
               <h3 class="text-3xl font-medium">Logotipos</h3>
-              <p class="text-gray-600">Acessar pasta</p>
+              <a class="flex flex-wrap items-center underline decoration-1" href="#">
+                <div
+                  class="flex flex-wrap items-center justify-center rounded-full w-[39px] h-[39px] hover:bg-transparent bg-white focus:outline-none focus:ring active:bg-blue"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21.094C16.5228 21.094 21 16.6168 21 11.094C21 5.57115 16.5228 1.09399 11 1.09399C5.47715 1.09399 1 5.57115 1 11.094C1 16.6168 5.47715 21.094 11 21.094Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.73999 14.624L13.26 11.094L9.73999 7.56396"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="text-gray-600 font-light inline-block pl-2">Acessar pasta</div>
+              </a>
             </div>
             <div
               class="rounded-lg p-6 bg-soft w-full md:w-auto min-h-[210px] flex flex-col justify-between"
@@ -302,19 +321,56 @@
                 Imagens da <br />
                 plataforma
               </h3>
-              <p class="text-gray-600">Acessar pasta</p>
+              <NuxtLink
+                to="/"
+                target="_blank"
+                rel="noreferrer"
+                class="flex flex-wrap items-center underline decoration-1"
+                href="#"
+              >
+                <div
+                  class="flex flex-wrap items-center justify-center rounded-full w-[39px] h-[39px] hover:bg-transparent bg-white focus:outline-none focus:ring active:bg-blue"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 21.094C16.5228 21.094 21 16.6168 21 11.094C21 5.57115 16.5228 1.09399 11 1.09399C5.47715 1.09399 1 5.57115 1 11.094C1 16.6168 5.47715 21.094 11 21.094Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.73999 14.624L13.26 11.094L9.73999 7.56396"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="text-gray-600 font-light inline-block pl-2">Acessar pasta</div>
+              </NuxtLink>
             </div>
 
             <div
               class="rounded-lg p-6 bg-soft w-full md:w-auto min-h-[210px] flex flex-col justify-between"
               style="border-radius: 20px; font-size: 14px"
             >
-              <h3 class="text-3xl font-medium">Relações Públicas</h3>
-              <p class="text-gray-600">
-                Quer marcar uma entrevista, escrever uma matéria ou saber mais informações sobre a
-                Assisty24h?
-              </p>
-              <p class="text-gray-600">Escreva para: contato@assisty24h.com.br</p>
+              <div>
+                <h3 class="text-3xl font-medium">Relações Públicas</h3>
+                <p class="text-gray-600 font-light">
+                  Quer marcar uma entrevista, escrever uma matéria ou saber mais informações sobre a
+                  Assisty24h?
+                </p>
+              </div>
+              <p class="text-gray-600 font-light">Escreva para: contato@assisty24h.com.br</p>
             </div>
           </div>
         </div>

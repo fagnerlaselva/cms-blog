@@ -14,7 +14,7 @@
               :src="author.image"
               :alt="author.name"
               class="h-14 w-14 rounded-full mb-4 flex-none mr-2"
-            />
+            >
             <div class="flex-1 w-64">
               <NuxtLink
                 :to="'/autores/' + author.slug"
@@ -170,7 +170,7 @@
             </div>
             <div class="w-full px-1 flex-0 md:w-auto lg:w-1/2">
               <form novalidate="">
-                <input type="hidden" name="tags" value="earlyaccess" />
+                <input type="hidden" name="tags" value="earlyaccess" >
                 <div class="flex flex-col sm:flex-row">
                   <input
                     id="email"
@@ -178,7 +178,7 @@
                     name="email"
                     placeholder="Insira seu endereço de e-mail"
                     class="flex-1 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
-                  />
+                  >
                   <button
                     type="submit"
                     class="w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap"

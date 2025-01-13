@@ -67,7 +67,7 @@
                   />
                 </div>
                 <div class="ml-4 text-white text-left">
-                  O próximo a ser beneficiado <br />
+                  O próximo a ser beneficiado <br >
                   pode ser você.
                 </div>
               </div>
@@ -1508,7 +1508,7 @@
         <div
           class="min-h-[400px] bg-default bg-cover bg-center flex flex-col items-center justify-center text-center"
         >
-          <h2 class="font-regular text-white max-w-[520px] text-[44px] text-">
+          <h2 class="font-regular text-white max-w-[520px] text-[40px]">
             Inscreva-se para receber novidades da Assisty 24h
           </h2>
 
@@ -1527,14 +1527,14 @@
                     type="email"
                     name="email"
                     style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 40px"
-                  />
+                  >
                 </div>
                 <input
                   class="cursor-pointer mx-2 -py-2 my-1 font-normal w-full sm:w-auto text-md bg-default rounded-3xl px-3"
                   type="submit"
                   value="Se inscrever"
                   style="color: rgb(255, 255, 255); font-family: Roboto; min-height: 40px"
-                />
+                >
               </div>
             </div>
           </div>

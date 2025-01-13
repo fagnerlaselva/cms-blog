@@ -17,7 +17,8 @@ export default {
       accent: '#003D8C73',    // Azul com opacidade de 45%
       white: '#ffffff', //Branco
       black: '#000000', //Preto
-      gray: '#D9D9D9' //cinza
+      gray: '#D9D9D9', //cinza
+      graySpace: '#212121' //graySpace 212121
     },
     extend: {
       maxWidth: {

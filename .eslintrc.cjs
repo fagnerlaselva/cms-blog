@@ -23,7 +23,14 @@ export default new FlatConfigArray([
          'object-curly-spacing': ['error', 'always'],
          'consistent-return': 'warn',
          'vue/singleline-html-element-content-newline': 'off',
-         'vue/multiline-html-element-content-newline': ['error', { 'ignoreWhenNoAttributes': false, 'ignoreWhenNoContents': false }]
+         'vue/multiline-html-element-content-newline': ['error', { 'ignoreWhenNoAttributes': false, 'ignoreWhenNoContents': false }],
+         'vue/html-self-closing': ['error', {
+            html: {
+               void: 'always', // Permite fechamento automático
+               normal: 'never',
+               component: 'always',
+            },
+         }],
       }
    }
 ]);

@@ -94,51 +94,82 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-black text-white">
+    <footer
+      class="bg-graySpace bg-[url('/assets/img/bg-logo-footer.png')] bg-no-repeat bg-left-top text-white"
+      style="background-size: 480px 376px"
+    >
       <div
-        class="container mx-auto max-w-custom p-4 py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-[url('/assets/img/bg-logo-footer.png')] bg-cover bg-center"
+        class="container mx-auto max-w-custom p-4 py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 font-light"
       >
-        <ul>
-          <li>
-            <strong class="font-bold sm:text-lg text-white">Assisty 24h</strong>
-          </li>
-          <li class="py-2 hover:underline">
-            <NuxtLink to="/sobre" class="p-2 hover:underline">Sobre a Assisty 24</NuxtLink>
-          </li>
-          <li class="py-2 hover:underline">
-            <NuxtLink to="/" class="p-2 hover:underline">Blog da Assisty24h</NuxtLink>
-          </li>
-          <li class="py-2 hover:underline">
-            <NuxtLink to="/" class="p-2 hover:underline">Perguntas frequentes</NuxtLink>
-          </li>
-          <li class="py-2 hover:underline">
-            <NuxtLink to="/" class="p-2 hover:underline">Carreiras</NuxtLink>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <strong class="font-bold sm:text-lg text-white">Blog</strong>
-          </li>
-          <li v-for="category in uniqueCategories" :key="category.slug" class="p-2 hover:underline">
-            <NuxtLink :to="'/categorias/' + category.slug" class="hover:underline">
-              {{ category.name }}
-            </NuxtLink>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <strong class="font-bold sm:text-lg text-white">Autores</strong>
-          </li>
-          <li v-for="author in uniqueAuthors" :key="author.name" class="py-2 hover:underline">
-            <NuxtLink :to="'/autores/' + author.slug" class="hover:underline">
-              {{ author.name }}
-            </NuxtLink>
-          </li>
-        </ul>
+        <div class="grid grid-cols-2">
+          <ul class="mr-4">
+            <li class="">
+              <strong class="font-bold sm:text-lg text-white">Assisty 24h</strong>
+            </li>
+            <li class="mt-4 py-2 hover:underline">
+              <NuxtLink to="/sobre" class="py-2 hover:underline">Sobre a Assisty 24</NuxtLink>
+            </li>
+            <li class="py-2 hover:underline">
+              <NuxtLink to="/" class="py-2 hover:underline">Blog da Assisty24h</NuxtLink>
+            </li>
+            <li class="py-2 hover:underline">
+              <NuxtLink to="/" class="py-2 hover:underline">Perguntas frequentes</NuxtLink>
+            </li>
+            <li class="py-2 hover:underline">
+              <NuxtLink to="/" class="py-2 hover:underline">Carreiras</NuxtLink>
+            </li>
+          </ul>
+          <ul class="mt-11">
+            <li class="py-2 hover:underline">
+              <NuxtLink to="/sobre" class="py-2 hover:underline">Transparência</NuxtLink>
+            </li>
+            <li class="py-2 hover:underline">
+              <NuxtLink to="/" class="py-2 hover:underline">Termos de uso</NuxtLink>
+            </li>
+            <li class="py-2 hover:underline">
+              <NuxtLink to="/" class="py-2 hover:underline">Política de privacidade</NuxtLink>
+            </li>
+            <li class="py-2 hover:underline">
+              <NuxtLink to="/" class="py-2 hover:underline">Institucional</NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <strong class="font-bold sm:text-lg text-white">Blog</strong>
+            </li>
+            <div class="mt-4">
+              <li
+                v-for="category in uniqueCategories"
+                :key="category.slug"
+                class="py-2 hover:underline"
+              >
+                <NuxtLink :to="'/categorias/' + category.slug" class="hover:underline">
+                  {{ category.name }}
+                </NuxtLink>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <strong class="font-bold sm:text-lg text-white">Autores</strong>
+            </li>
+            <div class="mt-4">
+              <li v-for="author in uniqueAuthors" :key="author.name" class="py-2 hover:underline">
+                <NuxtLink :to="'/autores/' + author.slug" class="hover:underline">
+                  {{ author.name }}
+                </NuxtLink>
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
       <div class="text-center py-10">
         <NuxtLink to="https://nuxtjs.org" target="_blank" class="hover:underline">
-          © 2024 CMS Blog. Todos os direitos reservados.
+          © 2025 Assisty 24h. Todos os direitos reservados.
         </NuxtLink>
       </div>
     </footer>
@@ -147,7 +178,7 @@
       class="fixed bottom-4 end-4 z-50 flex items-center justify-center gap-4 rounded-lg bg-black px-5 py-3 text-white"
     >
       <NuxtLink
-        to="/newsletter"
+        to="/"
         target="_blank"
         rel="noreferrer"
         class="text-sm font-medium hover:opacity-75"
