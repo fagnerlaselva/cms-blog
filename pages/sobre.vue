@@ -12,7 +12,7 @@
             inventore a commodi internos.
           </p>
         </div>
-        <div class="center">
+        <div class="center p-4">
           <NuxtImg
             src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assisty24-blog/banner-top-sobre-GqhDeR3ENk9qgjbwB3HEVZwp1Ao9En.webp"
             class="rounded-t-xl w-full"
@@ -77,17 +77,19 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2022</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6 font-light tracking-tight">
+            <p class="pt-6 font-light tracking-tight leading-loose">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
-              sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam. Aut ipsum
-              veniam in enim alias qui asperiores adipisci ut asperiores animi ex laboriosam quia ut
-              animi laborum et mollitia debitis. Est beatae esse et optio laborum quo similique
-              incidunt quo assumenda odio ut natus esse et sunt laboriosam. Ab dolore error aut
-              cumque aspernatur et quod quam. Sit provident possimus vel rerum maiores aut
-              reiciendis accusamus in galisum cupiditate sed aliquam perferendis ea quia sequi in
-              cupiditate magni. In porro natus est eligendi ratione et veniam rerum. Sit recusandae
-              distinctio aut quia saepe ut accusamus harum!
+              sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam.
+            </p>
+            <p class="pt-6 font-light tracking-tight leading-loose">
+              Aut ipsumveniam in enim alias qui asperiores adipisci ut asperiores animi ex
+              laboriosam quia utanimi laborum et mollitia debitis. Est beatae esse et optio laborum
+              quo similique incidunt quo assumenda odio ut natus esse et sunt laboriosam. Ab dolore
+              error aut cumque aspernatur et quod quam. Sit provident possimus vel rerum maiores aut
+              reiciendis accusamus in galisum cupiditate sed aliquam perferendis ea quia sequi
+              incupiditate magni. In porro natus est eligendi ratione et veniam rerum. Sit
+              recusandae distinctio aut quia saepe ut accusamus harum!
             </p>
           </div>
           <div>
@@ -128,7 +130,7 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2023</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6 font-light tracking-tight">
+            <p class="py-6 font-light tracking-tight leading-loose">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
               sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam.
@@ -172,7 +174,7 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2024</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6 font-light tracking-tight">
+            <p class="py-6 font-light tracking-tight leading-loose">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
               sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam. Aut ipsum
@@ -223,7 +225,7 @@
               <h3 class="w-30 text-lg font-semibold sm:text-3xl flex">2025</h3>
               <div class="w-[70%] border-b-2 border-default flex" />
             </div>
-            <p class="py-6 font-light tracking-tight">
+            <p class="py-6 font-light tracking-tight leading-loose">
               Lorem ipsum dolor sit amet. Ex repellendus tempore hic tempore aliquid id deserunt
               inventore a commodi internos. Quo velit quisquam sed mollitia aperiam ad assumenda
               sunt eos enim possimus qui sunt aliquam sit sunt modi 33 tempora quisquam.

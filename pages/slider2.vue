@@ -67,7 +67,7 @@
                   />
                 </div>
                 <div class="ml-4 text-white text-left">
-                  O próximo a ser beneficiado <br >
+                  O próximo a ser beneficiado <br />
                   pode ser você.
                 </div>
               </div>
@@ -172,7 +172,7 @@
           />
         </div>
         <div class="min-h-32 rounded-lg content-center max-w-2xl justify-center flex-1">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl max-w-[450px]">
+          <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl max-w-[450px]">
             Assistência veicular e residencial, vinculada a você!
           </h2>
           <p class="text-lg py-6 font-medium max-w-[560px]">
@@ -197,7 +197,7 @@
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-center lg:gap-8">
           <div class="mx-6 max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
             <h2
-              class="text-3xl font-bold tracking-tight text-white sm:text-4xl w-full xl:max-w-[360px]"
+              class="text-3xl font-semibold tracking-tight text-white sm:text-4xl w-full xl:max-w-[425px]"
             >
               Conheça os serviços de assistências emergenciais
             </h2>
@@ -444,7 +444,7 @@
 
     <section class="py-12 lg:py-24 px-4">
       <h2
-        class="container mx-auto max-w-3xl font-bold text-3xl sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center"
+        class="container mx-auto max-w-3xl font-semibold text-3xl sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center"
       >
         Profissionais capacitados, garantindo o suporte que você merece na hora que mais precisa.
       </h2>
@@ -467,7 +467,7 @@
               />
             </svg>
           </span>
-          <h3 class="text-1xl font-bold py-4" style="font-size: 28px">
+          <h3 class="text-1xl font-semibold py-4" style="font-size: 28px">
             Respondemos em até uma hora
           </h3>
           <p>
@@ -499,7 +499,7 @@
               />
             </svg>
           </span>
-          <h3 class="text-1xl font-bold py-4" style="font-size: 28px">Suporte 24h por dia</h3>
+          <h3 class="text-1xl font-semibold py-4" style="font-size: 28px">Suporte 24h por dia</h3>
           <p>
             Nossos serviços são disponibilizados dia e noite aos assinantes. Nossos canais para
             solicitação e abertura de chamados estão disponíveis a todos nossos clientes 24 horas
@@ -525,7 +525,9 @@
               />
             </svg>
           </span>
-          <h3 class="text-1xl font-bold py-4" style="font-size: 28px">Atendentes Qualificado</h3>
+          <h3 class="text-1xl font-semibold py-4" style="font-size: 28px">
+            Atendentes Qualificado
+          </h3>
           <p>
             Nossos prestadores de serviços são profissionais capacitados e habituados com serviços
             emergenciais, com deslocamento rápido e materiais necessários para socorros imediatos
@@ -551,7 +553,7 @@
               />
             </svg>
           </span>
-          <h3 class="text-1xl font-bold py-4" style="font-size: 28px">
+          <h3 class="text-1xl font-semibold py-4" style="font-size: 28px">
             Cobrimos todo território nacional
           </h3>
           <p>
@@ -564,7 +566,7 @@
     </section>
     <section class="py-12 lg:py-24 px-4">
       <h2
-        class="container mx-auto text-3xl font-bold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
+        class="container mx-auto text-3xl font-semibold sm:text-4xl text-center pb-10 tracking-tight text-gray-900 content-center max-w-3xl"
       >
         Esse plano é para você?
       </h2>
@@ -711,9 +713,9 @@
     <section class="py-12 lg:py-24">
       <div class="container mx-auto max-w-custom grid lg:grid-cols-2 p-4">
         <div
-          class="bg-[#F3F3F3] rounded-t-2xl lg:rounded-none lg:rounded-l-2xl p-8 md:p-45 xl:pl-36 content-center items-center justify-center"
+          class="bg-[#F3F3F3] rounded-t-2xl lg:rounded-none lg:rounded-l-2xl p-8 md:p-45 xl:pl-32 content-center items-center justify-center"
         >
-          <h2 class="text-[34px] text-[#010E78] font-semibold max-w-[400px] mb-8 font-sans">
+          <h2 class="text-[34px] text-[#010E78] font-semibold max-w-[525px] mb-8 font-sans">
             Ao adquirir agora, você receberá não apenas uma assistência, mas também..
           </h2>
           <ol class="space-y-2 text-[#010E78] text-xl font-normal">
@@ -1039,14 +1041,14 @@
                 alt="image"
                 class="w-full"
               />
-              <div class="bg-[#000BA4] text-sky text-[16x] font-semibold text-bg-sky px-4 py-2">
+              <div class="bg-[#000BA4] text-sky text-[20px] font-semibold text-bg-sky px-4 py-2">
                 FINANÇAS
               </div>
               <div class="p-4 text-left">
                 <h3>
                   <a
                     href="javascript:void(0)"
-                    class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[18px] xl:text-xl 2xl:text-[22px]"
+                    class="text-dark hover:text-primary mb-6 block text-xl font-medium sm:text-[22px] md:text-xl lg:text-[18px] xl:text-xl 2xl:text-[22px]"
                   >
                     Quer começar a investir, mas não sabe como? Veja mais!
                   </a>
@@ -1068,14 +1070,14 @@
                 alt="image"
                 height="250"
               />
-              <div class="bg-[#000BA4] text-sky text-[16px] font-semibold text-bg-sky px-4 py-2">
+              <div class="bg-[#000BA4] text-sky text-[20px] font-semibold text-bg-sky px-4 py-2">
                 SEGURANÇA
               </div>
               <div class="p-4 text-left">
                 <h3>
                   <a
                     href="javascript:void(0)"
-                    class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+                    class="text-dark hover:text-primary mb-6 block text-xl font-medium sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
                   >
                     9 situações em que é possível acionar o seguro residência.
                   </a>
@@ -1097,14 +1099,14 @@
                 alt="image"
                 class="w-full"
               />
-              <div class="bg-[#000BA4] text-sky text-[16px] font-semibold text-bg-sky px-4 py-2">
+              <div class="bg-[#000BA4] text-sky text-[20px] font-semibold text-bg-sky px-4 py-2">
                 TECNOLOGIA
               </div>
               <div class="p-4 text-left">
                 <h3>
                   <a
                     href="javascript:void(0)"
-                    class="text-darkhover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+                    class="text-darkhover:text-primary mb-6 block text-xl font-medium sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
                   >
                     Smart Home: tudo o que você precisa saber sobre o tema!
                   </a>
@@ -1126,16 +1128,17 @@
 
     <section class="pt-12">
       <div
-        class="container mx-auto max-w-custom flex flex-col px-4 gap-4 md:flex-row-reverse lg:gap-2 content-center justify-center reverse"
+        class="container mx-auto max-w-custom flex flex-col px-4 gap-4 md:flex-row-reverse lg:gap-10 content-center justify-center reverse"
       >
         <div class="rounded-lg flex justify-center lg:w-2/3">
           <NuxtImg
             src="https://nfsvpaoqkxppakxh.public.blob.vercel-storage.com/assintecia-a-todo-alcanvce-banner-min-w0kRIcXeoQLtmAzGahKBFS9RcsJxZq.png"
             class="rounded-t-xl"
+            width="755"
           />
         </div>
         <div class="min-h-32 rounded-lg content-center max-w-2xl justify-center lg:w-1/3">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
             Tudo ao alcance de uma só chamada.
           </h2>
           <p class="text-lg py-6 font-medium">
@@ -1226,7 +1229,7 @@
     <section class="pt-24">
       <div class="container mx-auto max-w-custom grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
         <div class="min-h-32 rounded-lg p-4">
-          <h2 class="text-5xl font-medium">Ficou com alguma dúvida?</h2>
+          <h2 class="text-4xl font-semibold max-w-[327px]">Ficou com alguma dúvida?</h2>
           <p class="py-6 text-md">
             Separamos algumas dúvidas comuns, mas caso essas não te ajudem, entre em contato com
             nosso time pelos canais de contato abaixo. Estamos prontos para te ajudar!
@@ -1288,9 +1291,9 @@
               </svg>
             </div>
             <div>
-              <p>
+              <p class="text-[16px]">
                 Dúvidas? Fale conosco
-                <strong class="font-semibold block">contato@assisty24h.com.br</strong>
+                <strong class="font-medium block text-[18px]">contato@assisty24h.com.br</strong>
               </p>
             </div>
           </div>
@@ -1328,23 +1331,23 @@
               </svg>
             </div>
             <div>
-              <p>
+              <p class="">
                 Assisty
-                <strong class="font-semibold block">0800 717 7747</strong>
+                <strong class="font-medium block text-[18px]">0800 717 7747</strong>
               </p>
             </div>
           </div>
         </div>
         <div class="min-h-32 rounded-lg px-4 lg:px-8 lg:col-span-2">
-          <div class="space-y-4">
+          <div ref="faqContainer" class="space-y-4">
             <details
-              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px]"
               open
             >
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xg md:text-xl font-semibold">Por que é tão barato?</h2>
+                <h2 class="py-2 text-xl md:text-3xl font-semibold">Por que é tão barato?</h2>
                 <svg
                   class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
                   xmlns="http://www.w3.org/2000/svg"
@@ -1369,13 +1372,13 @@
             </details>
 
             <details
-              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px]"
               style="margin-top: 0"
             >
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xg md:text-xl font-semibold">Para quem é o Assisty24h?</h2>
+                <h2 class="py-4 text-xl md:text-2xl font-semibold">Para quem é o Assisty24h?</h2>
 
                 <svg
                   class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
@@ -1400,13 +1403,13 @@
               </p>
             </details>
             <details
-              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px]"
               style="margin-top: 0"
             >
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xg md:text-xl font-semibold">
+                <h2 class="py-4 text-xl md:text-2xl font-semibold">
                   Quais as formas de pagamento disponíveis?
                 </h2>
 
@@ -1433,13 +1436,13 @@
               </p>
             </details>
             <details
-              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
+              class="group [&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px]"
               style="margin-top: 0"
             >
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xg md:text-xl font-semibold">
+                <h2 class="py-4 text-xl md:text-2xl font-semibold">
                   Tem algum tipo de carência na Assisty24h?
                 </h2>
 
@@ -1466,13 +1469,13 @@
               </p>
             </details>
             <details
-              class="[&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px] open:border-deep open:bg-light"
+              class="[&_summary::-webkit-details-marker]:hidden border-gray border-b-[2px]"
               style="margin-top: 0"
             >
               <summary
                 class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg p-4 text-gray-900"
               >
-                <h2 class="py-2 text-xg md:text-xl font-semibold">
+                <h2 class="py-4 text-xl md:text-2xl font-semibold">
                   A assistência tem algum prazo de seguro?
                 </h2>
 
@@ -1527,14 +1530,14 @@
                     type="email"
                     name="email"
                     style="font-family: Roboto; color: rgb(17, 24, 39); min-height: 40px"
-                  >
+                  />
                 </div>
                 <input
                   class="cursor-pointer mx-2 -py-2 my-1 font-normal w-full sm:w-auto text-md bg-default rounded-3xl px-3"
                   type="submit"
                   value="Se inscrever"
                   style="color: rgb(255, 255, 255); font-family: Roboto; min-height: 40px"
-                >
+                />
               </div>
             </div>
           </div>
@@ -1549,20 +1552,43 @@
     </section>
   </div>
 </template>
-
 <script>
 import { onMounted, ref } from 'vue'
 import KeenSlider from 'keen-slider'
 
 export default {
   setup() {
+    // Refs para o slider e botões
     const keenSlider = ref(null)
     const keenSliderPrevious = ref(null)
     const keenSliderNext = ref(null)
     const keenSliderPreviousDesktop = ref(null)
     const keenSliderNextDesktop = ref(null)
 
+    // Ref para o container do FAQ
+    const faqContainer = ref(null)
+
+    // Lógica de montagem
     onMounted(() => {
+      // Configuração do FAQ
+      if (faqContainer.value) {
+        faqContainer.value.addEventListener('click', (event) => {
+          const clickedSummary = event.target.closest('summary') // Verifica se o clique foi em um <summary>
+          if (!clickedSummary) return
+
+          // Seleciona o <details> associado ao <summary> clicado
+          const clickedDetails = clickedSummary.parentElement
+
+          // Fecha todos os <details>, exceto o clicado
+          faqContainer.value.querySelectorAll('details').forEach((details) => {
+            if (details !== clickedDetails) {
+              details.removeAttribute('open')
+            }
+          })
+        })
+      }
+
+      // Configuração do KeenSlider
       const slider = new KeenSlider(keenSlider.value, {
         loop: true,
         slides: {
@@ -1595,6 +1621,7 @@ export default {
         }
       })
 
+      // Adiciona eventos aos botões do slider
       keenSliderPrevious.value.addEventListener('click', () => slider.prev())
       keenSliderNext.value.addEventListener('click', () => slider.next())
       keenSliderPreviousDesktop.value.addEventListener('click', () => slider.prev())
@@ -1602,6 +1629,7 @@ export default {
     })
 
     return {
+      faqContainer,
       keenSlider,
       keenSliderPrevious,
       keenSliderNext,
@@ -1614,4 +1642,21 @@ export default {
 
 <style scoped>
 @import 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css';
+
+.transition-details {
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease-out,
+    padding 0.3s ease-out;
+}
+
+.transition-details[open] {
+  max-height: 100vh; /* Altura máxima suficiente para o conteúdo expandido */
+  padding-bottom: 1rem; /* Opcional, para animação de espaçamento */
+}
+
+.transition-details:not([open]) {
+  max-height: 0;
+  padding-bottom: 0;
+}
 </style>
